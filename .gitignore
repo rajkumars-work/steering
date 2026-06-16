@@ -1,0 +1,6 @@
+*.pt
+.venv/
+__pycache__/
+*.pyc
+hf_cache/
+models/

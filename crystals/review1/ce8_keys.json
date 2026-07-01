@@ -1,0 +1,139 @@
+{
+  "keys": {
+    "els_nat": {
+      "carryover_r2": {
+        "density": {
+          "r2": 0.993,
+          "n_groups": 24,
+          "ci95": [
+            0.98,
+            0.999
+          ]
+        },
+        "bvs_gii": {
+          "r2": 0.709,
+          "n_groups": 17,
+          "ci95": [
+            0.559,
+            0.949
+          ]
+        },
+        "e_above_hull": {
+          "r2": 0.526,
+          "n_groups": 24,
+          "ci95": [
+            0.219,
+            0.729
+          ]
+        }
+      },
+      "data_TE_split": {
+        "density": {
+          "T_within": 0.48149,
+          "E_between": 10.22654,
+          "between_frac": 0.955
+        },
+        "bvs_gii": {
+          "T_within": 0.00902,
+          "E_between": 0.03148,
+          "between_frac": 0.777
+        },
+        "e_above_hull": {
+          "T_within": 0.00021,
+          "E_between": 0.00027,
+          "between_frac": 0.571
+        }
+      }
+    },
+    "els_only": {
+      "carryover_r2": {
+        "density": {
+          "r2": 0.991,
+          "n_groups": 20,
+          "ci95": [
+            0.956,
+            0.999
+          ]
+        },
+        "bvs_gii": {
+          "r2": 0.84,
+          "n_groups": 14,
+          "ci95": [
+            0.009,
+            0.97
+          ]
+        },
+        "e_above_hull": {
+          "r2": 0.31,
+          "n_groups": 20,
+          "ci95": [
+            0.01,
+            0.659
+          ]
+        }
+      },
+      "data_TE_split": {
+        "density": {
+          "T_within": 0.5649,
+          "E_between": 8.61893,
+          "between_frac": 0.938
+        },
+        "bvs_gii": {
+          "T_within": 0.0047,
+          "E_between": 0.02009,
+          "between_frac": 0.81
+        },
+        "e_above_hull": {
+          "T_within": 0.00012,
+          "E_between": 0.00013,
+          "between_frac": 0.517
+        }
+      }
+    },
+    "anion": {
+      "carryover_r2": {
+        "density": {
+          "r2": 0.999,
+          "n_groups": 4,
+          "ci95": [
+            0.999,
+            1.0
+          ]
+        },
+        "bvs_gii": {
+          "r2": 0.807,
+          "n_groups": 3,
+          "ci95": [
+            0.807,
+            1.0
+          ]
+        },
+        "e_above_hull": {
+          "r2": 0.569,
+          "n_groups": 4,
+          "ci95": [
+            0.352,
+            1.0
+          ]
+        }
+      },
+      "data_TE_split": {
+        "density": {
+          "T_within": 7.49314,
+          "E_between": 2.93631,
+          "between_frac": 0.282
+        },
+        "bvs_gii": {
+          "T_within": 0.01728,
+          "E_between": 0.03157,
+          "between_frac": 0.646
+        },
+        "e_above_hull": {
+          "T_within": 0.00037,
+          "E_between": 0.00016,
+          "between_frac": 0.309
+        }
+      }
+    }
+  }
+}

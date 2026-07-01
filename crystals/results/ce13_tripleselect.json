@@ -1,0 +1,57 @@
+{
+  "n_chem": 36,
+  "corr_matrix": {
+    "gap": {
+      "gap": 1.0,
+      "eps0": -0.424,
+      "eps_inf": -0.915,
+      "density": -0.291,
+      "bvs_gii": -0.442
+    },
+    "eps0": {
+      "gap": -0.424,
+      "eps0": 1.0,
+      "eps_inf": 0.516,
+      "density": 0.613,
+      "bvs_gii": 0.345
+    },
+    "eps_inf": {
+      "gap": -0.915,
+      "eps0": 0.516,
+      "eps_inf": 1.0,
+      "density": 0.429,
+      "bvs_gii": 0.621
+    },
+    "density": {
+      "gap": -0.291,
+      "eps0": 0.613,
+      "eps_inf": 0.429,
+      "density": 1.0,
+      "bvs_gii": 0.499
+    },
+    "bvs_gii": {
+      "gap": -0.442,
+      "eps0": 0.345,
+      "eps_inf": 0.621,
+      "density": 0.499,
+      "bvs_gii": 1.0
+    }
+  },
+  "third_property_candidates": {
+    "density": {
+      "corr_gap": -0.291,
+      "corr_eps0": 0.613,
+      "max_corr_with_pair": 0.613
+    },
+    "bvs_gii": {
+      "corr_gap": -0.442,
+      "corr_eps0": 0.345,
+      "max_corr_with_pair": 0.345
+    },
+    "eps_inf": {
+      "corr_gap": -0.915,
+      "corr_eps0": 0.516,
+      "max_corr_with_pair": 0.516
+    }
+  }
+}

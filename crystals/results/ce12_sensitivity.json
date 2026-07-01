@@ -1,0 +1,17 @@
+{
+  "primary_A>=3.0,eps<=25_B<=1.0,eps>=33": {
+    "telling": 0.0,
+    "conditioning": 0.017,
+    "showing": 0.401
+  },
+  "loose_A>=2.5,eps<=28_B<=1.5,eps>=31": {
+    "telling": 0.0,
+    "conditioning": 0.042,
+    "showing": 0.487
+  },
+  "tight_A>=3.5,eps<=23_B<=0.8,eps>=35": {
+    "telling": 0.0,
+    "conditioning": 0.006,
+    "showing": 0.125
+  }
+}

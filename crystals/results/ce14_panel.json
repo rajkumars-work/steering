@@ -1,0 +1,67 @@
+{
+  "N": 80,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "topk": 40,
+  "panel": {
+    "gap": {
+      "E_over_EplusT": 0.979,
+      "knob_shift": 0.0034,
+      "bin_shift": 2.7093,
+      "bin_over_knob": 801.43,
+      "ratio_ci95": [
+        15.47,
+        1420.78
+      ],
+      "knob_ci95": [
+        0.0021,
+        0.1686
+      ],
+      "bin_ci95": [
+        2.6398,
+        2.777
+      ],
+      "E_over_EplusT_note": "computed post-hoc (ce14_gap_et.json); ce2_peritem lacked per-item gap"
+    },
+    "density": {
+      "E_over_EplusT": 0.955,
+      "knob_shift": 0.0919,
+      "bin_shift": 8.4037,
+      "bin_over_knob": 91.44,
+      "ratio_ci95": [
+        19.51,
+        1735.87
+      ],
+      "knob_ci95": [
+        0.0054,
+        0.4416
+      ],
+      "bin_ci95": [
+        8.1658,
+        8.6558
+      ]
+    },
+    "stability": {
+      "E_over_EplusT": 0.573,
+      "knob_shift": 0.0094,
+      "bin_shift": 0.3849,
+      "bin_over_knob": 40.88,
+      "ratio_ci95": [
+        -99.68,
+        699.0
+      ],
+      "knob_ci95": [
+        -0.0524,
+        0.0712
+      ],
+      "bin_ci95": [
+        0.2964,
+        0.4676
+      ],
+      "metric_note": "metastable rate (e_above_hull<=0.1); replaces artifact mean-raw-eah row. ce14_stability_rerun.json 2026-06-29. ratio CI unstable (knob denom ~0); inference is in bin_ci95 (excl 0) vs knob_ci95 (incl 0)."
+    }
+  }
+}

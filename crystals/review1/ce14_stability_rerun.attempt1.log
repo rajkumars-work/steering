@@ -1,0 +1,16 @@
+[16:43:54] bin pools (an_lh dist): HI 46 tuples, LO 65 tuples; broad 500
+[16:43:54] loading model, then single-MACE ...
+Loaded ed_ckpt_final.pt (238.0M params)
+/opt/dlami/nvme/recast/.venv/lib/python3.12/site-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+/opt/dlami/nvme/recast/.venv/lib/python3.12/site-packages/mace/calculators/mace.py:199: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+[16:44:04] preflight scorer: NaCl metastable=1.0
+[16:44:35] preflight generator: bin_hi atoms-rate 12/12 = 1.00
+[17:02:27]   seed0: bin_hi=0.808(n73) bin_lo=0.462 knob_hi=0.838 knob_lo=0.890
+[17:18:22]   seed1: bin_hi=0.839(n143) bin_lo=0.444 knob_hi=0.853 knob_lo=0.853
+[17:34:00]   seed2: bin_hi=0.831(n213) bin_lo=0.446 knob_hi=0.872 knob_lo=0.863
+[17:34:00] GATE PASS (bin_hi metastable=0.831)
+[17:34:00] bin_shift=0.385 [0.2964, 0.4676] | knob_shift=0.009 [-0.0524, 0.0712] | bin/knob=40.88 [-99.68, 699.0]
+CE14-STAB-RERUN-DONE

@@ -1,0 +1,85 @@
+# Copyright 2025 Entalpic
+[project]
+name = "lemat-genbench"
+version = "0.1.0"
+description = "Benchmark and metrics materials generative models"
+readme = "README.md"
+authors = []
+requires-python = ">=3.11"
+dependencies = [
+    "ase>=3.25.0",
+    "click>=8.1.8",
+    "datasets>=3.5.0",
+    "frechetdist>=0.6",
+    "fsspec>=2024.12.0",
+    "func-timeout>=4.3.5",
+    "material-hasher",
+    "numpy>=1.26.4",
+    "pandas>=2.2.3",
+    "pyarrow>=19.0.1",
+    "pymatgen>=2025.4.20",
+    "pytest>=8.3.5",
+    "rich==13.9.4",
+    "mace-torch>=0.3.13",
+    "orb-models>=0.5.1",
+    "torch>=2.6.0",
+    "torch-geometric>=2.6.1",
+    "fairchem-core>=2.3.0",
+    "torch_scatter==2.1.2+pt26cu124; sys_platform != 'darwin'",
+    "torch-sparse==0.6.18+pt26cu124; sys_platform != 'darwin'",
+    "torch-cluster==1.6.3+pt26cu124; sys_platform != 'darwin'",
+    "torch-spline-conv==1.2.2+pt26cu124; sys_platform != 'darwin'",
+    "psutil>=7.0.0",
+    "spglib>=2.6.0",
+    "umap-learn>=0.5.9.post2",
+    "smact>=3.2.0",
+    "mp-api>=0.45.12",
+    "aflow>=0.0.11",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+lemat-genbench = "lemat_genbench.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "ipython>=8.29.0",
+    "ipdb>=0.13.13",
+    "ruff>=0.7.1",
+    "pytest>=8.3",
+    "shibuya>=2024.10.15",
+    "sphinx-autoapi>=3.3.2",
+    "sphinx-autodoc-typehints>=2.5.0",
+    "sphinx-code-include>=1.4.0",
+    "sphinx-copybutton>=0.5.2",
+    "sphinx-design>=0.6.1",
+    "sphinx-math-dollar>=1.2.1",
+    "sphinxawesome-theme>=5.3.2",
+    "pre-commit>=4.0.1",
+    "beautifulsoup4>=4.12.3",
+    "lxml>=5.3.0",
+    "requests>=2.32.3",
+    "botocore>=1.36.20",
+]
+find-links = [
+    "https://data.pyg.org/whl/torch-2.6.0+cu124.html",
+    "https://data.pyg.org/whl/torch-2.6.0+cpu.html",
+    "https://data.pyg.org/whl/torch-2.4.0+cu124.html",
+    "https://data.pyg.org/whl/torch-2.4.0+cpu.html",
+]
+override-dependencies = ["e3nn==0.5.0"]
+
+
+[tool.uv.sources]
+material-hasher = { git = "https://github.com/lematerial/material-hasher.git" }
+
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[tool.ruff.lint.per-file-ignores]
+"*.ipynb" = ["F401"]

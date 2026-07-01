@@ -1,0 +1,3984 @@
+{
+  "members": [
+    "mace0b3",
+    "mace_medium",
+    "mace_small"
+  ],
+  "n_chem": 24,
+  "stability_carryover": {
+    "single_mace": {
+      "n": 0,
+      "r2": null
+    },
+    "ensemble_median": {
+      "n": 24,
+      "r2": 0.42,
+      "ci95": [
+        0.228,
+        0.655
+      ]
+    }
+  },
+  "per": {
+    "H P Rb|12": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.04193386616385908
+        },
+        {
+          "single": null,
+          "ens": 0.02019548902595325
+        },
+        {
+          "single": null,
+          "ens": 0.04643187017213313
+        },
+        {
+          "single": null,
+          "ens": 0.025248015982508143
+        },
+        {
+          "single": null,
+          "ens": 0.0361290425684051
+        },
+        {
+          "single": null,
+          "ens": 0.03400219814108896
+        },
+        {
+          "single": null,
+          "ens": 0.001164489101503463
+        },
+        {
+          "single": null,
+          "ens": 0.03971021980823064
+        },
+        {
+          "single": null,
+          "ens": 0.05983549034279756
+        },
+        {
+          "single": null,
+          "ens": 0.014860490934668125
+        },
+        {
+          "single": null,
+          "ens": 0.05623860870321584
+        },
+        {
+          "single": null,
+          "ens": 0.02382492131705627
+        },
+        {
+          "single": null,
+          "ens": 0.026577465277357826
+        },
+        {
+          "single": null,
+          "ens": 0.04904532058116784
+        },
+        {
+          "single": null,
+          "ens": 0.020922423794255796
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 1.2704942293444232
+        },
+        {
+          "single": null,
+          "ens": 1.9667696717701348
+        },
+        {
+          "single": null,
+          "ens": 0.6726767382103305
+        },
+        {
+          "single": null,
+          "ens": 3.179250478593411
+        },
+        {
+          "single": null,
+          "ens": 4.802195045413985
+        },
+        {
+          "single": null,
+          "ens": 2.0822962675779513
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 2.1332478339171215
+        },
+        {
+          "single": null,
+          "ens": 0.7369655448156318
+        },
+        {
+          "single": null,
+          "ens": 3.2145517338163803
+        },
+        {
+          "single": null,
+          "ens": 1.9572714238625717
+        },
+        {
+          "single": null,
+          "ens": 2.752599765232106
+        },
+        {
+          "single": null,
+          "ens": 2.2524984045555563
+        },
+        {
+          "single": null,
+          "ens": 2.477612449434986
+        },
+        {
+          "single": null,
+          "ens": 2.520860364943455
+        },
+        {
+          "single": null,
+          "ens": 2.7365261136731878
+        },
+        {
+          "single": null,
+          "ens": 2.3512062190683207
+        },
+        {
+          "single": null,
+          "ens": 2.966421703335127
+        },
+        {
+          "single": null,
+          "ens": 2.133536036916385
+        },
+        {
+          "single": null,
+          "ens": 1.5782423870113644
+        },
+        {
+          "single": null,
+          "ens": 1.6626372025052103
+        },
+        {
+          "single": null,
+          "ens": 3.317168458648891
+        },
+        {
+          "single": null,
+          "ens": 3.286659064108345
+        },
+        {
+          "single": null,
+          "ens": 1.738879057441654
+        },
+        {
+          "single": null,
+          "ens": 4.106872054996504
+        },
+        {
+          "single": null,
+          "ens": 0.8993280804284047
+        }
+      ]
+    },
+    "Nd O Sm|40": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.005588749825440331
+        },
+        {
+          "single": null,
+          "ens": 0.0016422516539673637
+        },
+        {
+          "single": null,
+          "ens": 0.005155400216065864
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0062764646946158464
+        },
+        {
+          "single": null,
+          "ens": 0.005582952731725044
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.005319813668213769
+        },
+        {
+          "single": null,
+          "ens": 0.005160740792237384
+        },
+        {
+          "single": null,
+          "ens": 0.006791830295201251
+        },
+        {
+          "single": null,
+          "ens": 0.0024055725768183933
+        },
+        {
+          "single": null,
+          "ens": 0.0010101938409619038
+        },
+        {
+          "single": null,
+          "ens": 0.006582365891410369
+        },
+        {
+          "single": null,
+          "ens": 0.0007839822931101637
+        },
+        {
+          "single": null,
+          "ens": 0.006919547605783727
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 4.91030908728726
+        },
+        {
+          "single": null,
+          "ens": 0.24387205677186152
+        },
+        {
+          "single": null,
+          "ens": 0.0016152798751063457
+        },
+        {
+          "single": null,
+          "ens": 0.005176381051026802
+        },
+        {
+          "single": null,
+          "ens": 0.8344485711124028
+        },
+        {
+          "single": null,
+          "ens": 0.006965780490514106
+        },
+        {
+          "single": null,
+          "ens": 1.363935440154946
+        },
+        {
+          "single": null,
+          "ens": 0.005982808052979571
+        },
+        {
+          "single": null,
+          "ens": 0.005092839180909081
+        },
+        {
+          "single": null,
+          "ens": 0.007461616087229395
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0012795865157313457
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.005898084249774449
+        },
+        {
+          "single": null,
+          "ens": 0.0097792630073954
+        },
+        {
+          "single": null,
+          "ens": 0.4068332473569707
+        },
+        {
+          "single": null,
+          "ens": 0.38708729871809044
+        },
+        {
+          "single": null,
+          "ens": 0.22948671727110614
+        },
+        {
+          "single": null,
+          "ens": 0.6603215566322924
+        },
+        {
+          "single": null,
+          "ens": 0.9945995733340087
+        },
+        {
+          "single": null,
+          "ens": 1.14610943922102
+        },
+        {
+          "single": null,
+          "ens": 0.006358480685826784
+        }
+      ]
+    },
+    "H P Rb|9": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.026858978954872104
+        },
+        {
+          "single": null,
+          "ens": 0.006223276262997679
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0349650454453565
+        },
+        {
+          "single": null,
+          "ens": 0.00920068607713831
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.023814473410308734
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.03561219217511691
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.010455615067442414
+        },
+        {
+          "single": null,
+          "ens": 0.01008647975567123
+        },
+        {
+          "single": null,
+          "ens": 0.003261641628579115
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 4.449036822325498
+        },
+        {
+          "single": null,
+          "ens": 1.7302609302098346
+        },
+        {
+          "single": null,
+          "ens": 0.7037871133325568
+        },
+        {
+          "single": null,
+          "ens": 0.8112494836048567
+        },
+        {
+          "single": null,
+          "ens": 1.2341775265114552
+        },
+        {
+          "single": null,
+          "ens": 0.8327540413603287
+        },
+        {
+          "single": null,
+          "ens": 3.002858243137081
+        },
+        {
+          "single": null,
+          "ens": 1.0465840355619886
+        },
+        {
+          "single": null,
+          "ens": 1.9028596768574202
+        },
+        {
+          "single": null,
+          "ens": 0.833617948464981
+        },
+        {
+          "single": null,
+          "ens": 1.2190599879152202
+        },
+        {
+          "single": null,
+          "ens": 2.645452361587752
+        },
+        {
+          "single": null,
+          "ens": 2.806153633541358
+        },
+        {
+          "single": null,
+          "ens": 0.9926497882777476
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 3.989989496668938
+        },
+        {
+          "single": null,
+          "ens": 0.9030876590255612
+        },
+        {
+          "single": null,
+          "ens": 0.4208257215713256
+        },
+        {
+          "single": null,
+          "ens": 2.235491582731037
+        },
+        {
+          "single": null,
+          "ens": 0.7929042302302287
+        },
+        {
+          "single": null,
+          "ens": 3.351856417005866
+        },
+        {
+          "single": null,
+          "ens": 1.9424244400477877
+        },
+        {
+          "single": null,
+          "ens": 3.2401958163643974
+        },
+        {
+          "single": null,
+          "ens": 2.9671117536159297
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 2.3873496195658173
+        },
+        {
+          "single": null,
+          "ens": 1.3273568817190864
+        },
+        {
+          "single": null,
+          "ens": 1.7094888809056845
+        }
+      ]
+    },
+    "O Sm Tb|40": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.0020441256252574647
+        },
+        {
+          "single": null,
+          "ens": 3.63921722721372e-05
+        },
+        {
+          "single": null,
+          "ens": 0.0009709930023502622
+        },
+        {
+          "single": null,
+          "ens": 0.006519380115912021
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.007560585845964418
+        },
+        {
+          "single": null,
+          "ens": 0.007857046105591792
+        },
+        {
+          "single": null,
+          "ens": 0.006937529218313365
+        },
+        {
+          "single": null,
+          "ens": 0.00565731681596926
+        },
+        {
+          "single": null,
+          "ens": 0.007081841339128481
+        },
+        {
+          "single": null,
+          "ens": 0.007355238568899303
+        },
+        {
+          "single": null,
+          "ens": 0.0009713744720762918
+        },
+        {
+          "single": null,
+          "ens": 0.007676934112565981
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.006899382245657115
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 0.2999696834604002
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 2.2760785716721124
+        },
+        {
+          "single": null,
+          "ens": 0.307898275547819
+        },
+        {
+          "single": null,
+          "ens": 0.0076124657287772735
+        },
+        {
+          "single": null,
+          "ens": 0.5803182920643595
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.9447177123230595
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.009637925842319817
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.10739965440125232
+        },
+        {
+          "single": null,
+          "ens": 0.008878271275357896
+        },
+        {
+          "single": null,
+          "ens": 0.004830380508070498
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 3.497943536895047
+        },
+        {
+          "single": null,
+          "ens": 0.010402920985454145
+        },
+        {
+          "single": null,
+          "ens": 1.2671220121849496
+        }
+      ]
+    },
+    "Ca Sr|11": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.007894432794382844
+        },
+        {
+          "single": null,
+          "ens": 0.014664763361526001
+        },
+        {
+          "single": null,
+          "ens": 0.011710343827319503
+        },
+        {
+          "single": null,
+          "ens": 0.02162757007328031
+        },
+        {
+          "single": null,
+          "ens": 0.007856459217056688
+        },
+        {
+          "single": null,
+          "ens": 0.014703083729512456
+        },
+        {
+          "single": null,
+          "ens": 0.022099205371575836
+        },
+        {
+          "single": null,
+          "ens": 0.015763742964686522
+        },
+        {
+          "single": null,
+          "ens": 0.017854890647570065
+        },
+        {
+          "single": null,
+          "ens": 0.015113857266888187
+        },
+        {
+          "single": null,
+          "ens": 0.006781581564801797
+        },
+        {
+          "single": null,
+          "ens": 0.012792728763417194
+        },
+        {
+          "single": null,
+          "ens": 0.02419075601511267
+        },
+        {
+          "single": null,
+          "ens": 0.01913917613145688
+        },
+        {
+          "single": null,
+          "ens": 0.016378082619782353
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 3.392818824418877
+        },
+        {
+          "single": null,
+          "ens": 1.8556373169614904
+        },
+        {
+          "single": null,
+          "ens": 1.8289058844852921
+        },
+        {
+          "single": null,
+          "ens": 0.7128804213759968
+        },
+        {
+          "single": null,
+          "ens": 0.12086506825987464
+        },
+        {
+          "single": null,
+          "ens": 2.1169307282163734
+        },
+        {
+          "single": null,
+          "ens": 1.6847726915508903
+        },
+        {
+          "single": null,
+          "ens": 2.6086960740852208
+        },
+        {
+          "single": null,
+          "ens": 1.3500958952698625
+        },
+        {
+          "single": null,
+          "ens": 1.4843101768469662
+        },
+        {
+          "single": null,
+          "ens": 0.6955883986709187
+        },
+        {
+          "single": null,
+          "ens": 2.7962322988670687
+        },
+        {
+          "single": null,
+          "ens": 0.12772285357148683
+        },
+        {
+          "single": null,
+          "ens": 0.019323722490165895
+        },
+        {
+          "single": null,
+          "ens": 0.022817118208827147
+        },
+        {
+          "single": null,
+          "ens": 1.0468067157242886
+        },
+        {
+          "single": null,
+          "ens": 0.06258822631091354
+        },
+        {
+          "single": null,
+          "ens": 0.5674439940247452
+        },
+        {
+          "single": null,
+          "ens": 0.8490361567386566
+        },
+        {
+          "single": null,
+          "ens": 3.0916522899950487
+        },
+        {
+          "single": null,
+          "ens": 3.783670972301512
+        },
+        {
+          "single": null,
+          "ens": 2.353643790849541
+        },
+        {
+          "single": null,
+          "ens": 0.555710905939651
+        },
+        {
+          "single": null,
+          "ens": 0.7273422855006417
+        },
+        {
+          "single": null,
+          "ens": 1.8127365379309506
+        },
+        {
+          "single": null,
+          "ens": 0.5233347032696403
+        },
+        {
+          "single": null,
+          "ens": 0.8712323830673764
+        },
+        {
+          "single": null,
+          "ens": 0.715035725331075
+        }
+      ]
+    },
+    "La Nd|11": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.000405751531532772
+        },
+        {
+          "single": null,
+          "ens": 0.0008126445981568864
+        },
+        {
+          "single": null,
+          "ens": 0.0021365179446588556
+        },
+        {
+          "single": null,
+          "ens": 0.019561112023288363
+        },
+        {
+          "single": null,
+          "ens": 0.02748473332096646
+        },
+        {
+          "single": null,
+          "ens": 0.0011211148906817847
+        },
+        {
+          "single": null,
+          "ens": 0.0019242820604259414
+        },
+        {
+          "single": null,
+          "ens": 0.0019783814034659564
+        },
+        {
+          "single": null,
+          "ens": 0.0014691193185050189
+        },
+        {
+          "single": null,
+          "ens": 0.0017695309130090209
+        },
+        {
+          "single": null,
+          "ens": 0.000994709694925433
+        },
+        {
+          "single": null,
+          "ens": 0.0015305012654152073
+        },
+        {
+          "single": null,
+          "ens": 0.0033409219086149022
+        },
+        {
+          "single": null,
+          "ens": 0.0012133612063776056
+        },
+        {
+          "single": null,
+          "ens": 0.0021033169237512084
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 1.3353684796616003
+        },
+        {
+          "single": null,
+          "ens": 1.1167381140698045
+        },
+        {
+          "single": null,
+          "ens": 2.954824633944635
+        },
+        {
+          "single": null,
+          "ens": 1.2184252853122584
+        },
+        {
+          "single": null,
+          "ens": 0.0011764280010333472
+        },
+        {
+          "single": null,
+          "ens": 0.0008981284959728164
+        },
+        {
+          "single": null,
+          "ens": 0.09640421708605107
+        },
+        {
+          "single": null,
+          "ens": 0.4043799861290198
+        },
+        {
+          "single": null,
+          "ens": 2.68980083740299
+        },
+        {
+          "single": null,
+          "ens": 0.9602424212565046
+        },
+        {
+          "single": null,
+          "ens": 0.0006130665730323948
+        },
+        {
+          "single": null,
+          "ens": 0.02880652592350552
+        },
+        {
+          "single": null,
+          "ens": 2.003294004006336
+        },
+        {
+          "single": null,
+          "ens": 2.9218292365502814
+        },
+        {
+          "single": null,
+          "ens": 0.48647123928296043
+        },
+        {
+          "single": null,
+          "ens": 0.033093577177762956
+        },
+        {
+          "single": null,
+          "ens": 0.6124167221704875
+        },
+        {
+          "single": null,
+          "ens": 1.6012435073581568
+        },
+        {
+          "single": null,
+          "ens": 0.050491362664625505
+        },
+        {
+          "single": null,
+          "ens": 0.001382248258047003
+        },
+        {
+          "single": null,
+          "ens": 0.01192354280250063
+        },
+        {
+          "single": null,
+          "ens": 1.3603176317810972
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.20992856733906917
+        },
+        {
+          "single": null,
+          "ens": 0.08922513859714742
+        },
+        {
+          "single": null,
+          "ens": 0.0015391710319283547
+        },
+        {
+          "single": null,
+          "ens": 0.002295265554344006
+        },
+        {
+          "single": null,
+          "ens": 0.0019867952618195517
+        }
+      ]
+    },
+    "La N Ru|10": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.02350879225082858
+        },
+        {
+          "single": null,
+          "ens": 0.011395623847582304
+        },
+        {
+          "single": null,
+          "ens": 0.021921327277758085
+        },
+        {
+          "single": null,
+          "ens": 0.02572017225571166
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.032527711555101924
+        },
+        {
+          "single": null,
+          "ens": 0.010805490180590294
+        },
+        {
+          "single": null,
+          "ens": 0.004763009711840294
+        },
+        {
+          "single": null,
+          "ens": 0.00874288336906659
+        },
+        {
+          "single": null,
+          "ens": 0.002082040473558866
+        },
+        {
+          "single": null,
+          "ens": 0.0024907852855706736
+        },
+        {
+          "single": null,
+          "ens": 0.0029126908031487098
+        },
+        {
+          "single": null,
+          "ens": 0.024419381782152527
+        },
+        {
+          "single": null,
+          "ens": 0.009370591804125361
+        },
+        {
+          "single": null,
+          "ens": 0.009213623573541163
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 2.8166871024558744
+        },
+        {
+          "single": null,
+          "ens": 1.6304286130205052
+        },
+        {
+          "single": null,
+          "ens": 0.7778699568481864
+        },
+        {
+          "single": null,
+          "ens": 3.4357705644065906
+        },
+        {
+          "single": null,
+          "ens": 3.8110087922508287
+        },
+        {
+          "single": null,
+          "ens": 2.9643996766502427
+        },
+        {
+          "single": null,
+          "ens": 3.053449409362835
+        },
+        {
+          "single": null,
+          "ens": 0.9859374574119615
+        },
+        {
+          "single": null,
+          "ens": 2.599120633895835
+        },
+        {
+          "single": null,
+          "ens": 0.6493808320457504
+        },
+        {
+          "single": null,
+          "ens": 4.291024356215672
+        },
+        {
+          "single": null,
+          "ens": 1.2163573792869617
+        },
+        {
+          "single": null,
+          "ens": 0.7282924226219225
+        },
+        {
+          "single": null,
+          "ens": 0.6166212281121259
+        },
+        {
+          "single": null,
+          "ens": 4.899916167397281
+        },
+        {
+          "single": null,
+          "ens": 0.5962405732566882
+        },
+        {
+          "single": null,
+          "ens": 1.7061551621849107
+        },
+        {
+          "single": null,
+          "ens": 3.931695895522313
+        },
+        {
+          "single": null,
+          "ens": 0.6421079209739733
+        },
+        {
+          "single": null,
+          "ens": 4.660500674575047
+        },
+        {
+          "single": null,
+          "ens": 1.0205301325184628
+        },
+        {
+          "single": null,
+          "ens": 3.8334743073875477
+        },
+        {
+          "single": null,
+          "ens": 1.886256366103368
+        },
+        {
+          "single": null,
+          "ens": 3.483371882765965
+        }
+      ]
+    },
+    "La Nd Pr Sb|12": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.009170762853063064
+        },
+        {
+          "single": null,
+          "ens": 0.011777269554008818
+        },
+        {
+          "single": null,
+          "ens": 0.009174895441767195
+        },
+        {
+          "single": null,
+          "ens": 0.0037167148991974486
+        },
+        {
+          "single": null,
+          "ens": 0.010960877601667196
+        },
+        {
+          "single": null,
+          "ens": 0.007330489313837507
+        },
+        {
+          "single": null,
+          "ens": 0.006174453727883833
+        },
+        {
+          "single": null,
+          "ens": 0.0055627104843214426
+        },
+        {
+          "single": null,
+          "ens": 0.0054099248175645265
+        },
+        {
+          "single": null,
+          "ens": 0.003538815808775464
+        },
+        {
+          "single": null,
+          "ens": 0.011213012250134824
+        },
+        {
+          "single": null,
+          "ens": 0.005441656045300114
+        },
+        {
+          "single": null,
+          "ens": 0.007925962177874446
+        },
+        {
+          "single": null,
+          "ens": 0.010923366411888402
+        },
+        {
+          "single": null,
+          "ens": 0.009616826740862727
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 0.003465700777851133
+        },
+        {
+          "single": null,
+          "ens": 0.005001116427265195
+        },
+        {
+          "single": null,
+          "ens": 0.01130324668125704
+        },
+        {
+          "single": null,
+          "ens": 0.011390031044049564
+        },
+        {
+          "single": null,
+          "ens": 0.012061464500297436
+        },
+        {
+          "single": null,
+          "ens": 0.009429906574847102
+        },
+        {
+          "single": null,
+          "ens": 0.0032504882737822705
+        },
+        {
+          "single": null,
+          "ens": 0.009436900186500896
+        },
+        {
+          "single": null,
+          "ens": 0.007281549493924011
+        },
+        {
+          "single": null,
+          "ens": 0.011568096987276899
+        },
+        {
+          "single": null,
+          "ens": 0.005252886446796445
+        },
+        {
+          "single": null,
+          "ens": 0.006224680575214414
+        },
+        {
+          "single": null,
+          "ens": 0.006224680575214414
+        },
+        {
+          "single": null,
+          "ens": 0.00882166013711183
+        },
+        {
+          "single": null,
+          "ens": 0.010265325276018977
+        },
+        {
+          "single": null,
+          "ens": 0.011708558265729252
+        },
+        {
+          "single": null,
+          "ens": 0.004270601900898008
+        },
+        {
+          "single": null,
+          "ens": 0.009436900186500896
+        },
+        {
+          "single": null,
+          "ens": 0.0034147180323356174
+        },
+        {
+          "single": null,
+          "ens": 0.009616826740862727
+        },
+        {
+          "single": null,
+          "ens": 0.007339723627224792
+        },
+        {
+          "single": null,
+          "ens": 0.015339561017224668
+        },
+        {
+          "single": null,
+          "ens": 0.004805810968533386
+        },
+        {
+          "single": null,
+          "ens": 0.011184355283144765
+        },
+        {
+          "single": null,
+          "ens": 0.009687351902778474
+        },
+        {
+          "single": null,
+          "ens": 0.005896934501809614
+        },
+        {
+          "single": null,
+          "ens": 0.003538815808775464
+        },
+        {
+          "single": null,
+          "ens": 0.006533353162291089
+        },
+        {
+          "single": null,
+          "ens": 0.005730619363171208
+        },
+        {
+          "single": null,
+          "ens": 0.009304339456520427
+        }
+      ]
+    },
+    "Er O Tm|40": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.003376632295047699
+        },
+        {
+          "single": null,
+          "ens": 0.003978826037371874
+        },
+        {
+          "single": null,
+          "ens": 0.0037237793893662996
+        },
+        {
+          "single": null,
+          "ens": 0.004390745070461222
+        },
+        {
+          "single": null,
+          "ens": 0.003915335820551924
+        },
+        {
+          "single": null,
+          "ens": 0.003846671269770674
+        },
+        {
+          "single": null,
+          "ens": 0.00364910929357265
+        },
+        {
+          "single": null,
+          "ens": 0.0042096642072486645
+        },
+        {
+          "single": null,
+          "ens": 0.0032981081598268958
+        },
+        {
+          "single": null,
+          "ens": 0.0032524883917046665
+        },
+        {
+          "single": null,
+          "ens": 0.004026441481594034
+        },
+        {
+          "single": null,
+          "ens": 0.0037820366437717468
+        },
+        {
+          "single": null,
+          "ens": 0.005247643333224694
+        },
+        {
+          "single": null,
+          "ens": 0.003817513328342237
+        },
+        {
+          "single": null,
+          "ens": 0.0046725532277784865
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 0.006208947044163082
+        },
+        {
+          "single": null,
+          "ens": 0.05772898664760895
+        },
+        {
+          "single": null,
+          "ens": 0.09745898246765616
+        },
+        {
+          "single": null,
+          "ens": 0.0038699409230904536
+        },
+        {
+          "single": null,
+          "ens": 0.004261593075367998
+        },
+        {
+          "single": null,
+          "ens": 1.1526425697514986
+        },
+        {
+          "single": null,
+          "ens": 0.009407453444485014
+        },
+        {
+          "single": null,
+          "ens": 0.0064837032178992615
+        },
+        {
+          "single": null,
+          "ens": 0.004955975591467876
+        },
+        {
+          "single": null,
+          "ens": 0.41128638020723196
+        },
+        {
+          "single": null,
+          "ens": 0.005047919438715631
+        },
+        {
+          "single": null,
+          "ens": 3.7168539673776477
+        },
+        {
+          "single": null,
+          "ens": 0.004209762177860732
+        },
+        {
+          "single": null,
+          "ens": 1.5686878438281981
+        },
+        {
+          "single": null,
+          "ens": 0.003881150501079844
+        },
+        {
+          "single": null,
+          "ens": 0.004237843981708345
+        },
+        {
+          "single": null,
+          "ens": 0.5814069788175549
+        },
+        {
+          "single": null,
+          "ens": 0.007145073753147102
+        },
+        {
+          "single": null,
+          "ens": 0.0048403999074659865
+        },
+        {
+          "single": null,
+          "ens": 0.005493691306858395
+        },
+        {
+          "single": null,
+          "ens": 1.9969043068414196
+        },
+        {
+          "single": null,
+          "ens": 1.453858008449274
+        }
+      ]
+    },
+    "Er P Tb Tm|12": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.001066598634618554
+        },
+        {
+          "single": null,
+          "ens": 0.005075347552454534
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.005073440203821722
+        },
+        {
+          "single": null,
+          "ens": 0.0019320370055795344
+        },
+        {
+          "single": null,
+          "ens": 0.0015471152024724155
+        },
+        {
+          "single": null,
+          "ens": 0.0015547445970036655
+        },
+        {
+          "single": null,
+          "ens": 0.0010907583839676604
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 0.0010907583839676604
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 8.249619864963975e-05
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0014458431211092915
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.005081387489791922
+        },
+        {
+          "single": null,
+          "ens": 7.00984325363585e-05
+        },
+        {
+          "single": null,
+          "ens": 0.001066280743179604
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0003069275544440586
+        },
+        {
+          "single": null,
+          "ens": 0.00022522945467162714
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.001085672120946679
+        },
+        {
+          "single": null,
+          "ens": 0.003052649056638934
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.00019280452791381464
+        },
+        {
+          "single": null,
+          "ens": 6.183325512765236e-05
+        },
+        {
+          "single": null,
+          "ens": 8.249619864963975e-05
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        }
+      ]
+    },
+    "Er Ho P Tb|12": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        }
+      ]
+    },
+    "O Pr Sm|40": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.008021220378935823
+        },
+        {
+          "single": null,
+          "ens": 0.002231837798884584
+        },
+        {
+          "single": null,
+          "ens": 0.0036436572568927517
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.007805308513701981
+        },
+        {
+          "single": null,
+          "ens": 0.005130849987518893
+        },
+        {
+          "single": null,
+          "ens": 0.008748840880731024
+        },
+        {
+          "single": null,
+          "ens": 0.008814743413432247
+        },
+        {
+          "single": null,
+          "ens": 0.007980403118193813
+        },
+        {
+          "single": null,
+          "ens": 0.002738811065485791
+        },
+        {
+          "single": null,
+          "ens": 0.009434754160849046
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0033577786984562152
+        },
+        {
+          "single": null,
+          "ens": 0.007710480285027188
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 1.0474816843985346
+        },
+        {
+          "single": null,
+          "ens": 0.012589758262754991
+        },
+        {
+          "single": null,
+          "ens": 0.0006929229186845021
+        },
+        {
+          "single": null,
+          "ens": 0.009197739018900641
+        },
+        {
+          "single": null,
+          "ens": 3.6857508904284
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 1.3761395629502555
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0012517760680985646
+        },
+        {
+          "single": null,
+          "ens": 0.00035036310423119943
+        },
+        {
+          "single": null,
+          "ens": 1.4366699172952706
+        },
+        {
+          "single": null,
+          "ens": 3.5945503864176302
+        },
+        {
+          "single": null,
+          "ens": 1.0456618411368037
+        },
+        {
+          "single": null,
+          "ens": 1.6521203876204926
+        },
+        {
+          "single": null,
+          "ens": 0.11577093721954679
+        },
+        {
+          "single": null,
+          "ens": 0.008714035405620102
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.008042648686870102
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.012276703623738783
+        },
+        {
+          "single": null,
+          "ens": 0.2896255857179253
+        },
+        {
+          "single": null,
+          "ens": 1.2497093523923741
+        },
+        {
+          "single": null,
+          "ens": 1.1932082133058017
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 1.147348685717911
+        }
+      ]
+    },
+    "Dy O Tb|40": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.06330114625518934
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.10409403545506546
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.10406830595006245
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 1.679978989176314
+        },
+        {
+          "single": null,
+          "ens": 1.3382312639447385
+        },
+        {
+          "single": null,
+          "ens": 0.5432176507877613
+        },
+        {
+          "single": null,
+          "ens": 1.6847061955550355
+        },
+        {
+          "single": null,
+          "ens": 1.7569509305462003
+        },
+        {
+          "single": null,
+          "ens": 0.10550060063566047
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 1.2774070117213565
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 1.5027935687448735
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 1.1362780943127575
+        },
+        {
+          "single": null,
+          "ens": 3.1797173770028104
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        }
+      ]
+    },
+    "Dy O Tm|40": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.0031715153759295234
+        },
+        {
+          "single": null,
+          "ens": 0.0030605076855003688
+        },
+        {
+          "single": null,
+          "ens": 0.004452736737643903
+        },
+        {
+          "single": null,
+          "ens": 0.008421547772799798
+        },
+        {
+          "single": null,
+          "ens": 0.003929114252883004
+        },
+        {
+          "single": null,
+          "ens": 0.008008416058932433
+        },
+        {
+          "single": null,
+          "ens": 0.0028832842450228213
+        },
+        {
+          "single": null,
+          "ens": 0.008159539575631314
+        },
+        {
+          "single": null,
+          "ens": 0.00628497280673912
+        },
+        {
+          "single": null,
+          "ens": 0.0038474672915471686
+        },
+        {
+          "single": null,
+          "ens": 0.007132081619624309
+        },
+        {
+          "single": null,
+          "ens": 0.004760398292042112
+        },
+        {
+          "single": null,
+          "ens": 0.007712014081393548
+        },
+        {
+          "single": null,
+          "ens": 0.007266494413183722
+        },
+        {
+          "single": null,
+          "ens": 0.004289283179737424
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 3.555333542896098
+        },
+        {
+          "single": null,
+          "ens": 0.7617659543705528
+        },
+        {
+          "single": null,
+          "ens": 4.504272166192088
+        },
+        {
+          "single": null,
+          "ens": 0.008585333735305234
+        },
+        {
+          "single": null,
+          "ens": 0.0031565765516150535
+        },
+        {
+          "single": null,
+          "ens": 0.004250680792524442
+        },
+        {
+          "single": null,
+          "ens": 0.004595160395460596
+        },
+        {
+          "single": null,
+          "ens": 0.005685843848683092
+        },
+        {
+          "single": null,
+          "ens": 4.876238806600507
+        },
+        {
+          "single": null,
+          "ens": 1.0577481532238417
+        },
+        {
+          "single": null,
+          "ens": 0.008988990210987424
+        },
+        {
+          "single": null,
+          "ens": 0.4176547025394983
+        },
+        {
+          "single": null,
+          "ens": 0.006168267602975064
+        },
+        {
+          "single": null,
+          "ens": 0.00825522697201908
+        },
+        {
+          "single": null,
+          "ens": 0.0040409463877448815
+        },
+        {
+          "single": null,
+          "ens": 4.597797012038816
+        },
+        {
+          "single": null,
+          "ens": 0.01356032645932359
+        },
+        {
+          "single": null,
+          "ens": 4.420871258221478
+        },
+        {
+          "single": null,
+          "ens": 3.2918879715430815
+        },
+        {
+          "single": null,
+          "ens": 3.506045052881295
+        },
+        {
+          "single": null,
+          "ens": 0.3676360720278753
+        },
+        {
+          "single": null,
+          "ens": 0.5054542917246594
+        }
+      ]
+    },
+    "Dy Er O|40": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.0028422119078213015
+        },
+        {
+          "single": null,
+          "ens": 0.002439915068835674
+        },
+        {
+          "single": null,
+          "ens": 0.004050320858612899
+        },
+        {
+          "single": null,
+          "ens": 0.004174110621498528
+        },
+        {
+          "single": null,
+          "ens": 0.004223815559546651
+        },
+        {
+          "single": null,
+          "ens": 0.002678561395125456
+        },
+        {
+          "single": null,
+          "ens": 0.001592175462819867
+        },
+        {
+          "single": null,
+          "ens": 0.004284469246069733
+        },
+        {
+          "single": null,
+          "ens": 0.0030364938722362567
+        },
+        {
+          "single": null,
+          "ens": 0.0010648704271147835
+        },
+        {
+          "single": null,
+          "ens": 0.004204969820406745
+        },
+        {
+          "single": null,
+          "ens": 0.004069701790015756
+        },
+        {
+          "single": null,
+          "ens": 0.001964603789538444
+        },
+        {
+          "single": null,
+          "ens": 0.003929207057046469
+        },
+        {
+          "single": null,
+          "ens": 0.002704119866805854
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 0.0033622690187202764
+        },
+        {
+          "single": null,
+          "ens": 1.3147476341411606
+        },
+        {
+          "single": null,
+          "ens": 0.366920849010993
+        },
+        {
+          "single": null,
+          "ens": 0.34527491338845673
+        },
+        {
+          "single": null,
+          "ens": 1.596971239093488
+        },
+        {
+          "single": null,
+          "ens": 0.9497190794075121
+        },
+        {
+          "single": null,
+          "ens": 1.8403035995787587
+        },
+        {
+          "single": null,
+          "ens": 0.007310361141816379
+        },
+        {
+          "single": null,
+          "ens": 0.6951906964869292
+        },
+        {
+          "single": null,
+          "ens": 0.4857967540202326
+        },
+        {
+          "single": null,
+          "ens": 0.004621574610757406
+        },
+        {
+          "single": null,
+          "ens": 0.28096626370201694
+        },
+        {
+          "single": null,
+          "ens": 0.004269438204196341
+        },
+        {
+          "single": null,
+          "ens": 0.004487792610328611
+        },
+        {
+          "single": null,
+          "ens": 0.0010648704271147835
+        },
+        {
+          "single": null,
+          "ens": 0.004816619514625309
+        },
+        {
+          "single": null,
+          "ens": 1.2104217475990273
+        },
+        {
+          "single": null,
+          "ens": 0.0013395286302388953
+        },
+        {
+          "single": null,
+          "ens": 1.015136016245075
+        },
+        {
+          "single": null,
+          "ens": 1.4051007109339322
+        },
+        {
+          "single": null,
+          "ens": 1.3883254583970994
+        }
+      ]
+    },
+    "Pd Pt|11": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.027169540198366704
+        },
+        {
+          "single": null,
+          "ens": 0.0058583685330635404
+        },
+        {
+          "single": null,
+          "ens": 0.005380400540652364
+        },
+        {
+          "single": null,
+          "ens": 0.0025050592887261303
+        },
+        {
+          "single": null,
+          "ens": 0.0011677892666113188
+        },
+        {
+          "single": null,
+          "ens": 0.0077743869323883
+        },
+        {
+          "single": null,
+          "ens": 0.004530450495344507
+        },
+        {
+          "single": null,
+          "ens": 0.02208811449285708
+        },
+        {
+          "single": null,
+          "ens": 0.0034265176264565156
+        },
+        {
+          "single": null,
+          "ens": 0.007414436827006821
+        },
+        {
+          "single": null,
+          "ens": 0.028945628566175774
+        },
+        {
+          "single": null,
+          "ens": 0.020874000390406433
+        },
+        {
+          "single": null,
+          "ens": 0.011632451630806617
+        },
+        {
+          "single": null,
+          "ens": 0.0011958793101127796
+        },
+        {
+          "single": null,
+          "ens": 0.003336623646533976
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 0.0062165239931748495
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.2922926250420117
+        },
+        {
+          "single": null,
+          "ens": 4.28057248787937
+        },
+        {
+          "single": null,
+          "ens": 2.1076637780641034
+        },
+        {
+          "single": null,
+          "ens": 0.0014844091396581938
+        },
+        {
+          "single": null,
+          "ens": 4.686537169636136
+        },
+        {
+          "single": null,
+          "ens": 0.9179078316737592
+        },
+        {
+          "single": null,
+          "ens": 3.6201909973453676
+        },
+        {
+          "single": null,
+          "ens": 4.573037386458422
+        },
+        {
+          "single": null,
+          "ens": 2.655389491481215
+        },
+        {
+          "single": null,
+          "ens": 0.0003022003628787573
+        },
+        {
+          "single": null,
+          "ens": 4.727527305522587
+        },
+        {
+          "single": null,
+          "ens": 0.004842388694474398
+        },
+        {
+          "single": null,
+          "ens": 3.172561416716969
+        },
+        {
+          "single": null,
+          "ens": 4.523680717083027
+        },
+        {
+          "single": null,
+          "ens": 0.04325999758950827
+        },
+        {
+          "single": null,
+          "ens": 3.6754790520717084
+        },
+        {
+          "single": null,
+          "ens": 2.0113360357467314
+        },
+        {
+          "single": null,
+          "ens": 4.426681982175357
+        }
+      ]
+    },
+    "H P Rb|11": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.004231047368469021
+        },
+        {
+          "single": null,
+          "ens": 0.013233903412231518
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.03294312606850314
+        },
+        {
+          "single": null,
+          "ens": 0.017947556346200377
+        },
+        {
+          "single": null,
+          "ens": 0.039239881194954584
+        },
+        {
+          "single": null,
+          "ens": 0.02689745239560848
+        },
+        {
+          "single": null,
+          "ens": 0.05046851871253555
+        },
+        {
+          "single": null,
+          "ens": 0.030682650826849178
+        },
+        {
+          "single": null,
+          "ens": 0.015356948242964075
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.04499123347954814
+        },
+        {
+          "single": null,
+          "ens": 0.058695273913532686
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 0.9871365153080653
+        },
+        {
+          "single": null,
+          "ens": 3.997398404617021
+        },
+        {
+          "single": null,
+          "ens": 1.1201662447604135
+        },
+        {
+          "single": null,
+          "ens": 3.038755836740394
+        },
+        {
+          "single": null,
+          "ens": 2.5065828188978103
+        },
+        {
+          "single": null,
+          "ens": 1.9606106469261557
+        },
+        {
+          "single": null,
+          "ens": 3.0443232331964376
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 1.707251189167081
+        },
+        {
+          "single": null,
+          "ens": 2.4316497131349104
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 2.105671200090477
+        },
+        {
+          "single": null,
+          "ens": 3.3763696758912016
+        },
+        {
+          "single": null,
+          "ens": 2.0843209972806895
+        },
+        {
+          "single": null,
+          "ens": 3.763842268062355
+        },
+        {
+          "single": null,
+          "ens": 1.4766481819076354
+        },
+        {
+          "single": null,
+          "ens": 4.256931702742548
+        },
+        {
+          "single": null,
+          "ens": 1.2578355431212584
+        },
+        {
+          "single": null,
+          "ens": 1.2145516481482517
+        },
+        {
+          "single": null,
+          "ens": 0.8087305474924076
+        },
+        {
+          "single": null,
+          "ens": 1.8390340438406207
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 2.1263617794719876
+        }
+      ]
+    },
+    "Nb Ta|11": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.04086789536193436
+        },
+        {
+          "single": null,
+          "ens": 0.039097944183327904
+        },
+        {
+          "single": null,
+          "ens": 0.00018702428663708304
+        },
+        {
+          "single": null,
+          "ens": 0.021827769289862076
+        },
+        {
+          "single": null,
+          "ens": 0.0357541886346775
+        },
+        {
+          "single": null,
+          "ens": 0.006553037657430316
+        },
+        {
+          "single": null,
+          "ens": 0.0040672535949921595
+        },
+        {
+          "single": null,
+          "ens": 0.02312994543586644
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.026277417470667253
+        },
+        {
+          "single": null,
+          "ens": 0.023008313050886464
+        },
+        {
+          "single": null,
+          "ens": 0.033468076247942236
+        },
+        {
+          "single": null,
+          "ens": 0.006209368112863878
+        },
+        {
+          "single": null,
+          "ens": 0.0035671928546410214
+        },
+        {
+          "single": null,
+          "ens": 0.0004190272385189431
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 0.2405133573638656
+        },
+        {
+          "single": null,
+          "ens": 0.5996581339337146
+        },
+        {
+          "single": null,
+          "ens": 0.00016170856841934977
+        },
+        {
+          "single": null,
+          "ens": 0.9628492183619812
+        },
+        {
+          "single": null,
+          "ens": 0.34683486559806376
+        },
+        {
+          "single": null,
+          "ens": 3.3924513622910677
+        },
+        {
+          "single": null,
+          "ens": 3.292872180862746
+        },
+        {
+          "single": null,
+          "ens": 0.33490843356084543
+        },
+        {
+          "single": null,
+          "ens": 0.36785072641571226
+        },
+        {
+          "single": null,
+          "ens": 0.08144884993158374
+        },
+        {
+          "single": null,
+          "ens": 0.44675149712327666
+        },
+        {
+          "single": null,
+          "ens": 0.03191567673454987
+        },
+        {
+          "single": null,
+          "ens": 0.009331952556515866
+        },
+        {
+          "single": null,
+          "ens": 0.5964028100034948
+        },
+        {
+          "single": null,
+          "ens": 3.3496602146776775
+        },
+        {
+          "single": null,
+          "ens": 0.006303717956736676
+        },
+        {
+          "single": null,
+          "ens": 3.0338171071419198
+        },
+        {
+          "single": null,
+          "ens": 0.25953369358407397
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        }
+      ]
+    },
+    "La Pr|13": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0010140275544667787
+        },
+        {
+          "single": null,
+          "ens": 0.000956366938105635
+        },
+        {
+          "single": null,
+          "ens": 0.001841178673346544
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0010526146845002415
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0011396191259813726
+        },
+        {
+          "single": null,
+          "ens": 0.0001448193577986423
+        },
+        {
+          "single": null,
+          "ens": 0.001012024797967026
+        },
+        {
+          "single": null,
+          "ens": 0.0002479629030962549
+        },
+        {
+          "single": null,
+          "ens": 0.0015224606359329762
+        },
+        {
+          "single": null,
+          "ens": 0.0012568477073364726
+        },
+        {
+          "single": null,
+          "ens": 0.00019347879623943243
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 1.0466795411897534
+        },
+        {
+          "single": null,
+          "ens": 0.7449855370800877
+        },
+        {
+          "single": null,
+          "ens": 2.290282007548117
+        },
+        {
+          "single": null,
+          "ens": 1.9846974011772143
+        },
+        {
+          "single": null,
+          "ens": 1.5499738112875696
+        },
+        {
+          "single": null,
+          "ens": 1.1379030675142114
+        },
+        {
+          "single": null,
+          "ens": 3.347269410924059
+        },
+        {
+          "single": null,
+          "ens": 2.2666407075715895
+        },
+        {
+          "single": null,
+          "ens": 0.9711707340149518
+        },
+        {
+          "single": null,
+          "ens": 0.8073838607260464
+        },
+        {
+          "single": null,
+          "ens": 0.4733405840093261
+        },
+        {
+          "single": null,
+          "ens": 0.670798683656253
+        },
+        {
+          "single": null,
+          "ens": 3.804585398650243
+        },
+        {
+          "single": null,
+          "ens": 0.001130815978445554
+        },
+        {
+          "single": null,
+          "ens": 1.0352128724479188
+        },
+        {
+          "single": null,
+          "ens": 3.0316858735872145
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 1.3005032324186476
+        },
+        {
+          "single": null,
+          "ens": 0.07284239304439888
+        },
+        {
+          "single": null,
+          "ens": 0.004075857675374994
+        },
+        {
+          "single": null,
+          "ens": 0.007945721332225819
+        },
+        {
+          "single": null,
+          "ens": 0.001095750107426685
+        },
+        {
+          "single": null,
+          "ens": 0.15642807365423117
+        },
+        {
+          "single": null,
+          "ens": 0.00128824560021501
+        },
+        {
+          "single": null,
+          "ens": 0.12887677461741598
+        }
+      ]
+    },
+    "H P Rb|10": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.027586977546118607
+        },
+        {
+          "single": null,
+          "ens": 0.016218058721881423
+        },
+        {
+          "single": null,
+          "ens": 0.01927782876245354
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.02197212464084508
+        },
+        {
+          "single": null,
+          "ens": 0.0033206855585263817
+        },
+        {
+          "single": null,
+          "ens": 0.012687996062233697
+        },
+        {
+          "single": null,
+          "ens": 0.03198477472529948
+        },
+        {
+          "single": null,
+          "ens": 0.009713316241561465
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.021376684734523588
+        },
+        {
+          "single": null,
+          "ens": 0.02624041746986938
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.010369476610252892
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 3.670260756080054
+        },
+        {
+          "single": null,
+          "ens": 1.8166596818613039
+        },
+        {
+          "single": null,
+          "ens": 2.9054474138501423
+        },
+        {
+          "single": null,
+          "ens": 1.1005579727341472
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 1.4338908835815007
+        },
+        {
+          "single": null,
+          "ens": 4.304154722754859
+        },
+        {
+          "single": null,
+          "ens": 1.3959772923190004
+        },
+        {
+          "single": null,
+          "ens": 1.5423679793888532
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 1.2604122147261667
+        },
+        {
+          "single": null,
+          "ens": 0.5287455011056889
+        },
+        {
+          "single": null,
+          "ens": 0.8348244683012465
+        },
+        {
+          "single": null,
+          "ens": 1.403281572300114
+        },
+        {
+          "single": null,
+          "ens": 2.744785000627214
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 3.9628139049325837
+        },
+        {
+          "single": null,
+          "ens": 4.411122465411483
+        },
+        {
+          "single": null,
+          "ens": 2.1800036605503306
+        },
+        {
+          "single": null,
+          "ens": 1.5274407165695965
+        },
+        {
+          "single": null,
+          "ens": 2.3733722955312277
+        },
+        {
+          "single": null,
+          "ens": 1.525404891111573
+        },
+        {
+          "single": null,
+          "ens": 2.9891234119892722
+        },
+        {
+          "single": null,
+          "ens": 2.7856411729547386
+        }
+      ]
+    },
+    "Er Ho O|40": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.000650681913242579
+        },
+        {
+          "single": null,
+          "ens": 0.0025414130593723883
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0017617252210015977
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0020623233655330253
+        },
+        {
+          "single": null,
+          "ens": 0.0007853407267184309
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 2.9185734111304065
+        },
+        {
+          "single": null,
+          "ens": 2.719780520320625
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.6844916250516633
+        },
+        {
+          "single": null,
+          "ens": 0.5815785312579349
+        },
+        {
+          "single": null,
+          "ens": 0.6376824447284233
+        },
+        {
+          "single": null,
+          "ens": 1.2872600952326092
+        },
+        {
+          "single": null,
+          "ens": 0.549631918369144
+        },
+        {
+          "single": null,
+          "ens": 0.4713742096302571
+        },
+        {
+          "single": null,
+          "ens": 1.0980093698135578
+        },
+        {
+          "single": null,
+          "ens": 0.401146639355197
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.8336895057171554
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 3.488378659086731
+        },
+        {
+          "single": null,
+          "ens": 1.2892963851178427
+        },
+        {
+          "single": null,
+          "ens": 0.2879689056751795
+        },
+        {
+          "single": null,
+          "ens": 0.00029898496671343366
+        },
+        {
+          "single": null,
+          "ens": 0.9794940686509475
+        },
+        {
+          "single": null,
+          "ens": 0.005317440825012731
+        },
+        {
+          "single": null,
+          "ens": 0.0022389438489316404
+        },
+        {
+          "single": null,
+          "ens": 1.1704077627004406
+        }
+      ]
+    },
+    "Ho O Y|40": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.000554568705568137
+        },
+        {
+          "single": null,
+          "ens": 0.00045300260520786395
+        },
+        {
+          "single": null,
+          "ens": 0.0005271028852558146
+        },
+        {
+          "single": null,
+          "ens": 0.0013114193257024453
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0021032406423175942
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0022944521284200547
+        },
+        {
+          "single": null,
+          "ens": 0.0018008449848823105
+        },
+        {
+          "single": null,
+          "ens": 0.0008317500811445555
+        },
+        {
+          "single": null,
+          "ens": 0.0008775264483320555
+        },
+        {
+          "single": null,
+          "ens": 0.0009215425825210843
+        },
+        {
+          "single": null,
+          "ens": 6.401331984307035e-05
+        },
+        {
+          "single": null,
+          "ens": 0.0006255311111313944
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 0.000482924952798669
+        },
+        {
+          "single": null,
+          "ens": 0.0023364137983419297
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.4631994569976543
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 1.1185679685779908
+        },
+        {
+          "single": null,
+          "ens": 0.0014525631245305703
+        },
+        {
+          "single": null,
+          "ens": 0.4570991662211581
+        },
+        {
+          "single": null,
+          "ens": 0.28090874203507443
+        },
+        {
+          "single": null,
+          "ens": 0.8808373357677004
+        },
+        {
+          "single": null,
+          "ens": 1.6978699277301001
+        },
+        {
+          "single": null,
+          "ens": 0.0007958919268480358
+        },
+        {
+          "single": null,
+          "ens": 1.6513024396270075
+        },
+        {
+          "single": null,
+          "ens": 0.27555072697674987
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 1.1064646490095202
+        },
+        {
+          "single": null,
+          "ens": 1.8513609074306676
+        },
+        {
+          "single": null,
+          "ens": 0.002247149882325772
+        },
+        {
+          "single": null,
+          "ens": 1.5972315915564175
+        },
+        {
+          "single": null,
+          "ens": 0.40759076182654486
+        },
+        {
+          "single": null,
+          "ens": 0.5798338371865608
+        },
+        {
+          "single": null,
+          "ens": 0.001335473381534058
+        },
+        {
+          "single": null,
+          "ens": 6.439478956998812e-05
+        },
+        {
+          "single": null,
+          "ens": 1.6390125927179016
+        },
+        {
+          "single": null,
+          "ens": 1.569711842621012
+        },
+        {
+          "single": null,
+          "ens": 0.0008321315508714733
+        }
+      ]
+    },
+    "Dy Ho O|40": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.00012683537887792085
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.00016036083106563126
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.3970634956136605
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 3.9120353306655105
+        },
+        {
+          "single": null,
+          "ens": 0.6220331577469005
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 1.0525110341275008
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0014276032627060786
+        },
+        {
+          "single": null,
+          "ens": 4.254511302763141
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 4.273160163421495
+        },
+        {
+          "single": null,
+          "ens": 0.0002392005550966303
+        },
+        {
+          "single": null,
+          "ens": 0.47261699669124724
+        },
+        {
+          "single": null,
+          "ens": 0.18879351770336328
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        }
+      ]
+    },
+    "La N Ru|20": {
+      "data": [
+        {
+          "single": null,
+          "ens": 0.0058427597728751834
+        },
+        {
+          "single": null,
+          "ens": 0.03218075666856679
+        },
+        {
+          "single": null,
+          "ens": 0.024945788710789785
+        },
+        {
+          "single": null,
+          "ens": 0.012501313850023621
+        },
+        {
+          "single": null,
+          "ens": 0.011286714240648976
+        },
+        {
+          "single": null,
+          "ens": 0.010459885170220673
+        },
+        {
+          "single": null,
+          "ens": 0.004635026618578397
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 0.00627324835930132
+        },
+        {
+          "single": null,
+          "ens": 0.00753343360100045
+        },
+        {
+          "single": null,
+          "ens": 0.013836076423265897
+        },
+        {
+          "single": null,
+          "ens": 0.012362649604418241
+        },
+        {
+          "single": null,
+          "ens": 0.012920930549242371
+        },
+        {
+          "single": null,
+          "ens": 0.010155656501391164
+        },
+        {
+          "single": null,
+          "ens": 0.008886888190843933
+        }
+      ],
+      "model": [
+        {
+          "single": null,
+          "ens": 2.9144635154197416
+        },
+        {
+          "single": null,
+          "ens": 2.9280950623531092
+        },
+        {
+          "single": null,
+          "ens": 2.992107516773612
+        },
+        {
+          "single": null,
+          "ens": 4.875917786697864
+        },
+        {
+          "single": null,
+          "ens": 2.2016226223798583
+        },
+        {
+          "single": null,
+          "ens": 3.7915599397117665
+        },
+        {
+          "single": null,
+          "ens": 1.0472989036033349
+        },
+        {
+          "single": null,
+          "ens": 4.69041710808275
+        },
+        {
+          "single": null,
+          "ens": 2.2090385011131337
+        },
+        {
+          "single": null,
+          "ens": 2.6667088115512225
+        },
+        {
+          "single": null,
+          "ens": 3.129196639199038
+        },
+        {
+          "single": null,
+          "ens": 4.565733428139469
+        },
+        {
+          "single": null,
+          "ens": 1.958438502510785
+        },
+        {
+          "single": null,
+          "ens": 2.5595639092592757
+        },
+        {
+          "single": null,
+          "ens": 0.5981396710912206
+        },
+        {
+          "single": null,
+          "ens": 2.1225314821526906
+        },
+        {
+          "single": null,
+          "ens": 2.51301379174254
+        },
+        {
+          "single": null,
+          "ens": 3.1566031583085907
+        },
+        {
+          "single": null,
+          "ens": 4.729638008845399
+        },
+        {
+          "single": null,
+          "ens": 0.0
+        },
+        {
+          "single": null,
+          "ens": 3.182696381186787
+        },
+        {
+          "single": null,
+          "ens": 4.7467140470243425
+        },
+        {
+          "single": null,
+          "ens": 0.9431353002541698
+        }
+      ]
+    }
+  }
+}

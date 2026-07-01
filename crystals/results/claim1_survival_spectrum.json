@@ -1,0 +1,50 @@
+{
+  "ckpt": "/opt/dlami/nvme/recast/train/mix_ep120_ckpt",
+  "k_bins": 24,
+  "M_data": 10,
+  "M_gen": 12,
+  "ladder": {
+    "smact_pass": {
+      "data_rate": 0.85,
+      "model_rate": 0.8298611111111112
+    },
+    "bvs_pass": {
+      "data_rate": 0.9291666666666667,
+      "model_rate": 0.829861111111111
+    },
+    "validity_pass": {
+      "data_rate": 0.8041666666666667,
+      "model_rate": 0.6944444444444443
+    },
+    "metastable": {
+      "data_rate": 0.9869565217391304,
+      "model_rate": 0.6749105966497272
+    }
+  },
+  "survival": {
+    "density": {
+      "n_bins": 24,
+      "T_data": 0.44990016112130987,
+      "E_data": 8.036826099665385,
+      "T_model": 0.9108866265388809,
+      "E_model": 9.652900447550245,
+      "per_bin_mean_r2": 0.99104939599789
+    },
+    "bvs_gii": {
+      "n_bins": 15,
+      "T_data": 0.0035995826348377566,
+      "E_data": 0.42471535801460825,
+      "T_model": 0.06451142969003906,
+      "E_model": 0.47117820145358486,
+      "per_bin_mean_r2": 0.83309051532422
+    },
+    "e_above_hull": {
+      "n_bins": 22,
+      "T_data": 9.60102243581228e-05,
+      "E_data": 0.000280438240719162,
+      "T_model": 0.8076545122616404,
+      "E_model": 0.6133118633731307,
+      "per_bin_mean_r2": 0.2960789920709812
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "property": "gap",
+  "n_chems": 500,
+  "within_T": 0.0122,
+  "between_E": 0.5755,
+  "E_over_EplusT": 0.979
+}

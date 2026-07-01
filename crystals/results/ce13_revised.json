@@ -1,0 +1,108 @@
+{
+  "premise_gate": {
+    "triple": [
+      "gap",
+      "eps0",
+      "bvs_gii"
+    ],
+    "pairwise_corr": {
+      "gap-eps0": -0.424,
+      "gap-bvs_gii": -0.442,
+      "eps0-bvs_gii": 0.345
+    },
+    "all_negative": false,
+    "verdict": "FAIL \u2014 not a mutually anti-correlated triple; eps0-bvs is positive (data ~2-D). Least-correlated available triple; contamination flagged."
+  },
+  "methods": {
+    "telling": {
+      "n_corners_covered": 2,
+      "corners": {
+        "gap": {
+          "frac": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "covered": true
+        },
+        "eps": {
+          "frac": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "covered": false
+        },
+        "bvs": {
+          "frac": 0.454,
+          "ci95": [
+            0.404,
+            0.504
+          ],
+          "covered": true
+        }
+      },
+      "min_fraction_secondary": 0.0
+    },
+    "conditioning": {
+      "n_corners_covered": 3,
+      "corners": {
+        "gap": {
+          "frac": 0.078,
+          "ci95": [
+            0.05,
+            0.106
+          ],
+          "covered": true
+        },
+        "eps": {
+          "frac": 0.437,
+          "ci95": [
+            0.384,
+            0.487
+          ],
+          "covered": true
+        },
+        "bvs": {
+          "frac": 0.167,
+          "ci95": [
+            0.128,
+            0.209
+          ],
+          "covered": true
+        }
+      },
+      "min_fraction_secondary": 0.078
+    },
+    "showing": {
+      "n_corners_covered": 3,
+      "corners": {
+        "gap": {
+          "frac": 0.283,
+          "ci95": [
+            0.239,
+            0.331
+          ],
+          "covered": true
+        },
+        "eps": {
+          "frac": 0.417,
+          "ci95": [
+            0.367,
+            0.467
+          ],
+          "covered": true
+        },
+        "bvs": {
+          "frac": 0.344,
+          "ci95": [
+            0.294,
+            0.392
+          ],
+          "covered": true
+        }
+      },
+      "min_fraction_secondary": 0.283
+    }
+  }
+}

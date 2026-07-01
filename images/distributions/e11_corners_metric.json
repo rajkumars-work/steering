@@ -1,0 +1,204 @@
+{
+  "metric": "n_corners_covered (bootstrap CI excludes 0, tertile thresholds)",
+  "runs": {
+    "P2_vehicle_food": {
+      "label": "P=2 vehicle/food (E10b)",
+      "P": 2,
+      "axes": [
+        "animal",
+        "nature"
+      ],
+      "methods": {
+        "telling_best": {
+          "n_corners_covered": 1,
+          "per_corner": {
+            "animal": {
+              "frac": 0.5765625,
+              "CI95": [
+                0.540625,
+                0.6140625
+              ],
+              "covered": true
+            },
+            "nature": {
+              "frac": 0.0,
+              "CI95": [
+                0.0,
+                0.0
+              ],
+              "covered": false
+            }
+          },
+          "min_fraction": 0.0
+        },
+        "compositional": {
+          "n_corners_covered": 1,
+          "per_corner": {
+            "animal": {
+              "frac": 0.0,
+              "CI95": [
+                0.0,
+                0.0
+              ],
+              "covered": false
+            },
+            "nature": {
+              "frac": 0.0765625,
+              "CI95": [
+                0.05625,
+                0.0984375
+              ],
+              "covered": true
+            }
+          },
+          "min_fraction": 0.0
+        },
+        "showing_2bin": {
+          "n_corners_covered": 2,
+          "per_corner": {
+            "animal": {
+              "frac": 0.303125,
+              "CI95": [
+                0.26875,
+                0.3390625
+              ],
+              "covered": true
+            },
+            "nature": {
+              "frac": 0.4875,
+              "CI95": [
+                0.45,
+                0.5265625
+              ],
+              "covered": true
+            }
+          },
+          "min_fraction": 0.303125
+        },
+        "showing_broad": {
+          "n_corners_covered": 2,
+          "per_corner": {
+            "animal": {
+              "frac": 0.0578125,
+              "CI95": [
+                0.040625,
+                0.0765625
+              ],
+              "covered": true
+            },
+            "nature": {
+              "frac": 0.5171875,
+              "CI95": [
+                0.478125,
+                0.5546875
+              ],
+              "covered": true
+            }
+          },
+          "min_fraction": 0.0578125
+        }
+      }
+    },
+    "P3_vehicle_food_brightness": {
+      "label": "P=3 vehicle/food/brightness (E11b)",
+      "P": 3,
+      "axes": [
+        "sim_vehicle",
+        "sim_food",
+        "brightness"
+      ],
+      "methods": {
+        "telling": {
+          "n_corners_covered": 1,
+          "per_corner": {
+            "sim_vehicle": {
+              "frac": 0.1390625,
+              "CI95": [
+                0.1125,
+                0.1640625
+              ],
+              "covered": true
+            },
+            "sim_food": {
+              "frac": 0.0,
+              "CI95": [
+                0.0,
+                0.0
+              ],
+              "covered": false
+            },
+            "brightness": {
+              "frac": 0.0,
+              "CI95": [
+                0.0,
+                0.0
+              ],
+              "covered": false
+            }
+          },
+          "min_fraction": 0.0
+        },
+        "compositional": {
+          "n_corners_covered": 2,
+          "per_corner": {
+            "sim_vehicle": {
+              "frac": 0.0,
+              "CI95": [
+                0.0,
+                0.0
+              ],
+              "covered": false
+            },
+            "sim_food": {
+              "frac": 0.0171875,
+              "CI95": [
+                0.0078125,
+                0.028125
+              ],
+              "covered": true
+            },
+            "brightness": {
+              "frac": 0.0109375,
+              "CI95": [
+                0.003125,
+                0.0203125
+              ],
+              "covered": true
+            }
+          },
+          "min_fraction": 0.0
+        },
+        "showing": {
+          "n_corners_covered": 3,
+          "per_corner": {
+            "sim_vehicle": {
+              "frac": 0.0546875,
+              "CI95": [
+                0.0375,
+                0.0734375
+              ],
+              "covered": true
+            },
+            "sim_food": {
+              "frac": 0.3296875,
+              "CI95": [
+                0.29375,
+                0.365625
+              ],
+              "covered": true
+            },
+            "brightness": {
+              "frac": 0.15,
+              "CI95": [
+                0.121875,
+                0.178125
+              ],
+              "covered": true
+            }
+          },
+          "min_fraction": 0.0546875
+        }
+      }
+    }
+  }
+}

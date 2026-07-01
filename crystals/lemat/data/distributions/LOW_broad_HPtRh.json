@@ -1,0 +1,429 @@
+{
+ "description": "Broad low-Combined pool within an_lh: H+Pt/Rh chemistry; scan Combined=0.083 (n=24). Broad/reusable low anchor (vs the narrow n=10 pool that hit 0.033).",
+ "source_scan_pools": [
+  60
+ ],
+ "n_en_tuples": 84,
+ "tuples": [
+  {
+   "elements": "Ca H Pt",
+   "natoms": 17,
+   "count": 2
+  },
+  {
+   "elements": "H Pt Sc Zn",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "H Nd Pt",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Au H K Pt",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "As Gd H Pt",
+   "natoms": 4,
+   "count": 1
+  },
+  {
+   "elements": "H Ir Pt Sm",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Co H Nd Pt",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy H Pt",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "H Pr Pt",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "H K Pb Pt",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Ba H Pt",
+   "natoms": 19,
+   "count": 1
+  },
+  {
+   "elements": "Ge H Pt Se",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "H K Pt",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Ce H Pt",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "H Na Pt Sb",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "Dy H Mo Pt",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Sc",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Ce Fe H Pt",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Cd H Pt",
+   "natoms": 13,
+   "count": 1
+  },
+  {
+   "elements": "H Nd Pt",
+   "natoms": 17,
+   "count": 1
+  },
+  {
+   "elements": "H Pr Pt",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "H Mn Pt Rh",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "H In Pt Rh",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Bi H Pt Y",
+   "natoms": 17,
+   "count": 1
+  },
+  {
+   "elements": "H In Pt Sm",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Cu H Pt",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Cl H O Pt",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "H In Pt",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "H In Nd Pt",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "H Mn Pt",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Sm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Tb",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "H In La Pt",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "H Hf Pt",
+   "natoms": 19,
+   "count": 1
+  },
+  {
+   "elements": "Dy H Pt",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Zn",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "H La Pt",
+   "natoms": 19,
+   "count": 1
+  },
+  {
+   "elements": "Ge H Pt Sm",
+   "natoms": 4,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ce H Pt",
+   "natoms": 4,
+   "count": 1
+  },
+  {
+   "elements": "Ge H In Pt",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Te",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Tm",
+   "natoms": 17,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Sc Th",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Ce H Pt",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ba H Pt",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Fe H Pt",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "H Ho Pt Rh",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "H Mn Pt Rh",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "Co H Pt",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Sm Sn",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Se",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "H Mg Ni Pt",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "H P Pt Pu",
+   "natoms": 4,
+   "count": 1
+  },
+  {
+   "elements": "Ga H Nd Pt",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "Ba H Pt",
+   "natoms": 17,
+   "count": 1
+  },
+  {
+   "elements": "Dy H Pt",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "H Nb Pm Pt",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "H Ni Pt Ru Ti",
+   "natoms": 5,
+   "count": 1
+  },
+  {
+   "elements": "Ca H Pt",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "H I Pt",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "H Nd Pt Rh",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "H Nd Pt",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "H Ho Pt Tl",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Zn",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "H Li Pt",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Tl",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "H Nd Pt Sn",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ge H Pt Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Pu",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Cd H In Pt",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Sb Sr",
+   "natoms": 4,
+   "count": 1
+  },
+  {
+   "elements": "H Ho Pt",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "H La Pt",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "H Pr Pt Rh",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Co H Nd Pt",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Rh",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "Cu H Pt S",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Th",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "H La Pt",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Cd H Li Pt",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ag Co H Pt",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "H Mg Pt Rh",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "H Ni Pt Rh Ti",
+   "natoms": 5,
+   "count": 1
+  },
+  {
+   "elements": "H Pt Rh",
+   "natoms": 10,
+   "count": 1
+  }
+ ]
+}

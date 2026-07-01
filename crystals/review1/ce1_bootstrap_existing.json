@@ -1,0 +1,44 @@
+{
+  "density_carryover_r2": {
+    "point": 0.9917,
+    "ci95": [
+      0.9708,
+      0.9986
+    ],
+    "n_chemistries": 30,
+    "method": "bootstrap over chemistries (B=10000)"
+  },
+  "dpo_logprob": {
+    "base_mean": {
+      "point": -0.242,
+      "ci95": [
+        -0.256,
+        -0.229
+      ]
+    },
+    "dpo_mean": {
+      "point": -15.098,
+      "ci95": [
+        -15.202,
+        -14.993
+      ]
+    },
+    "base_minus_dpo_gap": {
+      "point": 14.855,
+      "ci95": [
+        14.751,
+        14.96
+      ]
+    },
+    "frac_dpo_below_uniform": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "uniform_baseline": -9.68,
+    "n_structures": 250,
+    "method": "bootstrap over structures (B=10000)"
+  }
+}

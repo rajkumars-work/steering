@@ -1,0 +1,7830 @@
+{
+  "config": {
+    "N_per_condition": 120,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "gap_thr": 3.0,
+    "eah_stable": 0.1,
+    "gap": "xgb composition DFT band-gap surrogate",
+    "stability": "single-MACE e_above_hull",
+    "tell_tags": "bg-vhigh hull-vlow"
+  },
+  "conditions": {
+    "telling_naive": {
+      "per_seed": [
+        {
+          "seed": 0,
+          "n": 94,
+          "hits": 4,
+          "joint_rate": 0.0426,
+          "wide_rate": 0.0638,
+          "stable_rate": 0.6277
+        },
+        {
+          "seed": 1,
+          "n": 101,
+          "hits": 4,
+          "joint_rate": 0.0396,
+          "wide_rate": 0.0594,
+          "stable_rate": 0.7228
+        },
+        {
+          "seed": 2,
+          "n": 102,
+          "hits": 3,
+          "joint_rate": 0.0294,
+          "wide_rate": 0.098,
+          "stable_rate": 0.6667
+        }
+      ],
+      "pooled_hits": 11,
+      "pooled_n": 297,
+      "joint_rate": 0.037,
+      "wilson_ci95": [
+        0.0208,
+        0.0651
+      ],
+      "seed_mean": 0.0372,
+      "seed_std": 0.0056,
+      "tags": "bg-vhigh hull-vlow",
+      "n_chemistries_in_pool": 186478,
+      "records": [
+        {
+          "seed": 0,
+          "els": "As Ce Np Th",
+          "nat": "16",
+          "gap": 0.419,
+          "eah": 0.0005,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Dy Rb S Y",
+          "nat": "16",
+          "gap": 1.919,
+          "eah": 0.0036,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "H Re Ta",
+          "nat": "8",
+          "gap": 2.446,
+          "eah": 1.5906,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Al Hf Mo O Rb",
+          "nat": "35",
+          "gap": 2.671,
+          "eah": 0.5379,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "B Ce Co Y",
+          "nat": "12",
+          "gap": 0.55,
+          "eah": 0.0001,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Dy Er N Tm",
+          "nat": "12",
+          "gap": 1.752,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ba Ca Si",
+          "nat": "12",
+          "gap": 0.425,
+          "eah": 0.0433,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Pd Si Th Y",
+          "nat": "9",
+          "gap": 0.362,
+          "eah": 0.0069,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "B Ca Y",
+          "nat": "28",
+          "gap": 0.809,
+          "eah": 0.0311,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Co Hf O",
+          "nat": "35",
+          "gap": 2.54,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Al Ni Np",
+          "nat": "28",
+          "gap": 0.354,
+          "eah": 0.1053,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Dy Sm Tl Y",
+          "nat": "8",
+          "gap": 0.552,
+          "eah": 0.0167,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Pb Pd Sr",
+          "nat": "6",
+          "gap": 0.401,
+          "eah": 0.0643,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Er Ge Pu Rh",
+          "nat": "10",
+          "gap": 0.381,
+          "eah": 0.0654,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ni P Sc Zr",
+          "nat": "36",
+          "gap": 0.568,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cd Cs H Rh",
+          "nat": "12",
+          "gap": 2.233,
+          "eah": 1.5355,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Rh Sb V",
+          "nat": "20",
+          "gap": 0.367,
+          "eah": 0.0313,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "B Ce Fe Pr",
+          "nat": "18",
+          "gap": 0.539,
+          "eah": 2.7353,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Bi Tb Th Y",
+          "nat": "8",
+          "gap": 0.316,
+          "eah": 1.5797,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Dy N Pa Tb",
+          "nat": "12",
+          "gap": 1.552,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Nd Sb Th Y",
+          "nat": "8",
+          "gap": 0.546,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "C Ca O P Rb",
+          "nat": "26",
+          "gap": 4.026,
+          "eah": 1.9225,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cd Ir Y",
+          "nat": "8",
+          "gap": 0.508,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ce Nd Pr Sb",
+          "nat": "12",
+          "gap": 0.623,
+          "eah": 0.0293,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Fe H Pt V",
+          "nat": "9",
+          "gap": 0.817,
+          "eah": 0.1085,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Mo Ni",
+          "nat": "6",
+          "gap": 0.412,
+          "eah": 0.9968,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Fe K O Pr",
+          "nat": "56",
+          "gap": 1.85,
+          "eah": 0.0664,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ba Cu Ga Sc",
+          "nat": "6",
+          "gap": 0.185,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Br Ca Co Er",
+          "nat": "20",
+          "gap": 0.75,
+          "eah": 0.0022,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ce La",
+          "nat": "12",
+          "gap": 0.654,
+          "eah": 0.6053,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "B Ce Co Y",
+          "nat": "12",
+          "gap": 0.55,
+          "eah": 0.1439,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "In Nd Rh Y",
+          "nat": "9",
+          "gap": 0.46,
+          "eah": 0.0072,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "K O P Pu Y",
+          "nat": "76",
+          "gap": 3.911,
+          "eah": 0.0511,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Hf K Mo O Tm",
+          "nat": "74",
+          "gap": 3.092,
+          "eah": 0.0958,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Dy Pm Pr Y",
+          "nat": "9",
+          "gap": 0.84,
+          "eah": 0.0142,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "C Cl H In N Si",
+          "nat": "80",
+          "gap": 4.513,
+          "eah": 2.9632,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cu H Rh Sm",
+          "nat": "12",
+          "gap": 1.604,
+          "eah": 4.7435,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Fe Si Tb Th",
+          "nat": "15",
+          "gap": 0.461,
+          "eah": 0.0268,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cr Pt",
+          "nat": "18",
+          "gap": 0.476,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Dy Pr Tm Y",
+          "nat": "9",
+          "gap": 0.934,
+          "eah": 0.009,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ir La Zn",
+          "nat": "6",
+          "gap": 0.718,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ca H Rh",
+          "nat": "18",
+          "gap": 1.946,
+          "eah": 0.8967,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "B Br Fe Ho K Se",
+          "nat": "64",
+          "gap": 1.226,
+          "eah": 0.0649,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cr Mn Pt",
+          "nat": "16",
+          "gap": 0.533,
+          "eah": 0.0158,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cd Pm Rh",
+          "nat": "22",
+          "gap": 0.398,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "In Sm Tb",
+          "nat": "20",
+          "gap": 0.384,
+          "eah": 0.0014,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Nd P S",
+          "nat": "16",
+          "gap": 1.037,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Co I Mg O",
+          "nat": "36",
+          "gap": 2.586,
+          "eah": 0.2208,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As C Hg Na O",
+          "nat": "26",
+          "gap": 2.86,
+          "eah": 0.4767,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Li Mo O Sc",
+          "nat": "12",
+          "gap": 1.637,
+          "eah": 0.3446,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Er Hf P Sm",
+          "nat": "16",
+          "gap": 0.603,
+          "eah": 0.0551,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Fe Ge O Y",
+          "nat": "38",
+          "gap": 2.106,
+          "eah": 0.0057,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "O Pm S U",
+          "nat": "6",
+          "gap": 2.726,
+          "eah": 3.5748,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ir Rh Tl Tm",
+          "nat": "8",
+          "gap": 0.5,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Nd Pr Tm Y",
+          "nat": "7",
+          "gap": 0.925,
+          "eah": 0.0127,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "P Pr S",
+          "nat": "16",
+          "gap": 1.054,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Co Ge Hf K O Sr",
+          "nat": "40",
+          "gap": 2.583,
+          "eah": 2.1245,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Er Mo O Rb",
+          "nat": "76",
+          "gap": 2.913,
+          "eah": 0.102,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Er Ho Rh Y",
+          "nat": "8",
+          "gap": 0.632,
+          "eah": 0.0132,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Au Cs P S V",
+          "nat": "28",
+          "gap": 1.424,
+          "eah": 2.7787,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ce H Li Ni",
+          "nat": "12",
+          "gap": 2.606,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Fe P Sc Th",
+          "nat": "20",
+          "gap": 0.607,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ni Pr Si",
+          "nat": "24",
+          "gap": 0.446,
+          "eah": 0.4208,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Dy Hg Tb Tm",
+          "nat": "8",
+          "gap": 0.789,
+          "eah": 0.0051,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Br K Nd Ta",
+          "nat": "52",
+          "gap": 1.246,
+          "eah": 0.0342,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Au Ba Br Mn O",
+          "nat": "23",
+          "gap": 1.637,
+          "eah": 0.0661,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ga Gd In",
+          "nat": "10",
+          "gap": 0.432,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Er Rh Sc Zr",
+          "nat": "12",
+          "gap": 0.615,
+          "eah": 0.0279,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cd K Sn Sr",
+          "nat": "7",
+          "gap": 0.294,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Eu F Rb",
+          "nat": "12",
+          "gap": 2.649,
+          "eah": 4.2901,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "O Tb Tm",
+          "nat": "80",
+          "gap": 3.03,
+          "eah": 0.0715,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Bi Ce Pm Th",
+          "nat": "12",
+          "gap": 0.405,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Co Cu H",
+          "nat": "9",
+          "gap": 2.245,
+          "eah": 0.2373,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Hf Ho O Ti",
+          "nat": "22",
+          "gap": 3.625,
+          "eah": 0.0279,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "As Fe Gd N",
+          "nat": "10",
+          "gap": 0.734,
+          "eah": 1.7829,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Au Ni Sc Zn",
+          "nat": "16",
+          "gap": 0.372,
+          "eah": 0.0329,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Nb Ti",
+          "nat": "20",
+          "gap": 0.539,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ge Hf Na O Sm",
+          "nat": "16",
+          "gap": 2.846,
+          "eah": 0.4374,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cl Na Nb O S",
+          "nat": "18",
+          "gap": 1.666,
+          "eah": 4.485,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Br Cl Zr",
+          "nat": "15",
+          "gap": 2.677,
+          "eah": 1.0696,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "H Mg Rh Si",
+          "nat": "7",
+          "gap": 0.767,
+          "eah": 1.6736,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Hf Nd Ru",
+          "nat": "8",
+          "gap": 0.668,
+          "eah": 1.7011,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ce Cu Ho Si",
+          "nat": "10",
+          "gap": 0.526,
+          "eah": 0.007,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cu Na O S",
+          "nat": "20",
+          "gap": 2.336,
+          "eah": 3.0283,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Co Dy P Pr",
+          "nat": "10",
+          "gap": 0.471,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ce Co H Ru",
+          "nat": "18",
+          "gap": 0.699,
+          "eah": 2.809,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ag Dy Er Tb",
+          "nat": "16",
+          "gap": 0.41,
+          "eah": 0.0019,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cs Nb Se",
+          "nat": "34",
+          "gap": 1.508,
+          "eah": 1.6279,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Au Hg Lu",
+          "nat": "8",
+          "gap": 0.829,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Fe Hg Pu",
+          "nat": "6",
+          "gap": 0.734,
+          "eah": 0.7308,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Al Ho Tb Y",
+          "nat": "12",
+          "gap": 0.648,
+          "eah": 0.0212,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Er Ga Sc",
+          "nat": "9",
+          "gap": 0.369,
+          "eah": 2.4183,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Au Cd Pb Th",
+          "nat": "8",
+          "gap": 0.656,
+          "eah": 0.0046,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ac Dy N P",
+          "nat": "18",
+          "gap": 2.621,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ce Sb Sm",
+          "nat": "16",
+          "gap": 0.6,
+          "eah": 0.0072,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Dy Er P Ru",
+          "nat": "20",
+          "gap": 0.487,
+          "eah": 0.0259,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cu Sm Zn",
+          "nat": "13",
+          "gap": 0.164,
+          "eah": 0.9498,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "B Ce Cl Cs Ga S",
+          "nat": "64",
+          "gap": 1.769,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "F In K Sc",
+          "nat": "18",
+          "gap": 2.301,
+          "eah": 0.0575,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Hf Pt Tl",
+          "nat": "8",
+          "gap": 0.531,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ag Dy Sm Tm",
+          "nat": "16",
+          "gap": 0.563,
+          "eah": 0.0207,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Br Tb Ti",
+          "nat": "48",
+          "gap": 1.269,
+          "eah": 0.0051,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Hg Ir Ru Tm",
+          "nat": "12",
+          "gap": 0.567,
+          "eah": 0.0036,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ce Er In Rh",
+          "nat": "9",
+          "gap": 0.497,
+          "eah": 0.0317,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Al Ge O Tb",
+          "nat": "23",
+          "gap": 3.517,
+          "eah": 0.0087,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Ga H K Mn O Si",
+          "nat": "22",
+          "gap": 3.192,
+          "eah": 0.0203,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "I K O Sn",
+          "nat": "27",
+          "gap": 2.645,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Hf Rh Y Zn",
+          "nat": "8",
+          "gap": 0.598,
+          "eah": 0.0103,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Hf Pa S",
+          "nat": "13",
+          "gap": 0.904,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Al Pu Ru",
+          "nat": "38",
+          "gap": 0.399,
+          "eah": 0.1128,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Fe P Ti U",
+          "nat": "36",
+          "gap": 0.519,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Co Sc Sn Ta",
+          "nat": "6",
+          "gap": 0.789,
+          "eah": 0.0212,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Hg Pt Sm",
+          "nat": "8",
+          "gap": 0.753,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "H Mn O P Sr",
+          "nat": "19",
+          "gap": 2.792,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "H Nb Rb",
+          "nat": "32",
+          "gap": 2.936,
+          "eah": 2.6728,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ac Ni Pt",
+          "nat": "4",
+          "gap": 0.462,
+          "eah": 2.7693,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Pd Sc Sm",
+          "nat": "18",
+          "gap": 0.319,
+          "eah": 2.0468,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ir Np Si U",
+          "nat": "10",
+          "gap": 0.677,
+          "eah": 0.0128,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "N Np Sm",
+          "nat": "16",
+          "gap": 1.415,
+          "eah": 0.0516,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Mg Pd Sc",
+          "nat": "20",
+          "gap": 0.388,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ca Hf O P",
+          "nat": "35",
+          "gap": 4.633,
+          "eah": 0.0329,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "As Dy Rh Zr",
+          "nat": "36",
+          "gap": 0.552,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Al B Ni Ru Zr",
+          "nat": "20",
+          "gap": 0.472,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "H O Rb Si Ti",
+          "nat": "72",
+          "gap": 3.722,
+          "eah": 1.8149,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Hf In Ru Sn",
+          "nat": "8",
+          "gap": 0.492,
+          "eah": 0.1028,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Au Mg Pm Tb",
+          "nat": "12",
+          "gap": 0.714,
+          "eah": 0.0112,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Dy Ge K O Sr Zn",
+          "nat": "40",
+          "gap": 2.741,
+          "eah": 0.019,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Eu Hg O Se",
+          "nat": "12",
+          "gap": 2.547,
+          "eah": 0.3927,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Sc Th Tl",
+          "nat": "20",
+          "gap": 0.502,
+          "eah": 0.0004,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "La Pr Sb Y",
+          "nat": "16",
+          "gap": 0.564,
+          "eah": 0.027,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba Bi Er O Pd",
+          "nat": "20",
+          "gap": 1.124,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ca Cu Ge La",
+          "nat": "10",
+          "gap": 0.464,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "F K Li Ni Rb",
+          "nat": "20",
+          "gap": 1.92,
+          "eah": 0.4406,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ag Ho In Y",
+          "nat": "8",
+          "gap": 0.415,
+          "eah": 0.0129,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Nd Tb Te",
+          "nat": "11",
+          "gap": 0.794,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "O P Ru W",
+          "nat": "34",
+          "gap": 2.221,
+          "eah": 0.0661,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Er Hf P Sc",
+          "nat": "12",
+          "gap": 0.726,
+          "eah": 0.046,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "In Ir La Sn",
+          "nat": "11",
+          "gap": 0.467,
+          "eah": 0.0056,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Al Be Ni",
+          "nat": "8",
+          "gap": 0.305,
+          "eah": 0.4106,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Dy Gd Hg",
+          "nat": "12",
+          "gap": 0.784,
+          "eah": 0.0523,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cr Fe Tc",
+          "nat": "8",
+          "gap": 0.224,
+          "eah": 0.1289,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Co K Mn Se",
+          "nat": "16",
+          "gap": 0.732,
+          "eah": 2.5428,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cl Np O Sm Ta",
+          "nat": "26",
+          "gap": 2.694,
+          "eah": 0.0547,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ca H Pb Zr",
+          "nat": "7",
+          "gap": 0.793,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Cs Nd O",
+          "nat": "44",
+          "gap": 2.47,
+          "eah": 2.4455,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cu Os Rh Sc",
+          "nat": "12",
+          "gap": 0.583,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ce Nd Te Tl",
+          "nat": "12",
+          "gap": 0.732,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ca Er Mn O",
+          "nat": "20",
+          "gap": 2.14,
+          "eah": 0.0136,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "O Pt Sr",
+          "nat": "27",
+          "gap": 0.751,
+          "eah": 0.4696,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Ba Ga K",
+          "nat": "22",
+          "gap": 0.532,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Br Cl Ge",
+          "nat": "9",
+          "gap": 1.798,
+          "eah": 2.3768,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cd Ho Tm Zr",
+          "nat": "4",
+          "gap": 0.623,
+          "eah": 1.4098,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Br Co Cs V",
+          "nat": "9",
+          "gap": 0.526,
+          "eah": 0.417,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "La N Ru",
+          "nat": "20",
+          "gap": 0.549,
+          "eah": 2.2853,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ge O Pr Sb Zn",
+          "nat": "23",
+          "gap": 2.427,
+          "eah": 0.0006,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Dy Rh Tb Tm",
+          "nat": "12",
+          "gap": 0.483,
+          "eah": 0.0054,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ho In O Sb Tm",
+          "nat": "22",
+          "gap": 2.069,
+          "eah": 0.1087,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "B C Er Ho Ni",
+          "nat": "24",
+          "gap": 0.993,
+          "eah": 0.0128,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Na S Ti",
+          "nat": "16",
+          "gap": 0.85,
+          "eah": 0.0704,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba Cu Fe O W",
+          "nat": "20",
+          "gap": 2.188,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "B Ru Sn Th",
+          "nat": "20",
+          "gap": 0.52,
+          "eah": 0.0185,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba Ca Ir O",
+          "nat": "33",
+          "gap": 1.8,
+          "eah": 0.5349,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Co H O Rb Se",
+          "nat": "19",
+          "gap": 2.118,
+          "eah": 1.1854,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Se Sr Tl U",
+          "nat": "11",
+          "gap": 1.218,
+          "eah": 0.614,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As C Mn Na O",
+          "nat": "50",
+          "gap": 2.657,
+          "eah": 3.9209,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Mg Ni Sm Tl",
+          "nat": "9",
+          "gap": 0.422,
+          "eah": 0.0169,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ce Co Ge Ta",
+          "nat": "10",
+          "gap": 0.669,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ni Np Pt",
+          "nat": "6",
+          "gap": 0.628,
+          "eah": 0.3533,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ce Hf Tc",
+          "nat": "12",
+          "gap": 0.595,
+          "eah": 0.4968,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Br H N Pb",
+          "nat": "11",
+          "gap": 2.767,
+          "eah": 1.2719,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba H O Si",
+          "nat": "33",
+          "gap": 3.88,
+          "eah": 1.1597,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "La Pt Si Tm",
+          "nat": "10",
+          "gap": 0.618,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "I K Ta U",
+          "nat": "52",
+          "gap": 1.188,
+          "eah": 0.0649,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "O Sb Sm Tm",
+          "nat": "22",
+          "gap": 2.644,
+          "eah": 0.0058,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cs S Tb Y",
+          "nat": "16",
+          "gap": 1.834,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Er Li Mo N",
+          "nat": "12",
+          "gap": 1.302,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Dy Rh Sc Y",
+          "nat": "7",
+          "gap": 0.472,
+          "eah": 0.0149,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Au La P Rb",
+          "nat": "6",
+          "gap": 0.932,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Nd Ni P Ta",
+          "nat": "36",
+          "gap": 0.898,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Co Nb Zr",
+          "nat": "12",
+          "gap": 0.526,
+          "eah": 0.0231,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Dy Pt Ta",
+          "nat": "20",
+          "gap": 0.632,
+          "eah": 0.0172,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cu In Ni Zr",
+          "nat": "9",
+          "gap": 0.437,
+          "eah": 0.0137,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Bi Ce Sm Tm",
+          "nat": "12",
+          "gap": 0.483,
+          "eah": 0.0332,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Bi K Pr Te",
+          "nat": "16",
+          "gap": 0.973,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "I La Pr Se Si",
+          "nat": "28",
+          "gap": 1.797,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ga Hg Tl",
+          "nat": "12",
+          "gap": 0.364,
+          "eah": 0.0571,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ca Dy Hf Nb O",
+          "nat": "24",
+          "gap": 2.822,
+          "eah": 1.9956,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Nb Pt Zn",
+          "nat": "20",
+          "gap": 0.637,
+          "eah": 0.0733,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Er In Mg Pb",
+          "nat": "9",
+          "gap": 0.644,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ir Mg P Si",
+          "nat": "8",
+          "gap": 0.817,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cd La Ni",
+          "nat": "6",
+          "gap": 0.349,
+          "eah": 0.0655,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba Dy Mn O Si Zr",
+          "nat": "41",
+          "gap": 2.948,
+          "eah": 0.0537,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ho I Os",
+          "nat": "49",
+          "gap": 1.056,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba Br O P Sr",
+          "nat": "42",
+          "gap": 3.729,
+          "eah": 0.0956,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Ac H Ru Tl",
+          "nat": "18",
+          "gap": 0.809,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Bi Ho Re Y",
+          "nat": "9",
+          "gap": 0.881,
+          "eah": 0.0299,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Dy Hg Rh Zn",
+          "nat": "8",
+          "gap": 0.517,
+          "eah": 0.0366,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Rb Se Tb",
+          "nat": "44",
+          "gap": 1.36,
+          "eah": 0.0096,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ge K P S",
+          "nat": "24",
+          "gap": 2.343,
+          "eah": 0.071,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ca H Li",
+          "nat": "9",
+          "gap": 3.056,
+          "eah": 0.2257,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Fe O Pr Si",
+          "nat": "86",
+          "gap": 2.058,
+          "eah": 0.3237,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cu F K Pr",
+          "nat": "12",
+          "gap": 2.386,
+          "eah": 0.6177,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ge Sc Y",
+          "nat": "16",
+          "gap": 0.435,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "In Ni Rh Zr",
+          "nat": "18",
+          "gap": 0.533,
+          "eah": 4.2847,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Hf O P Rb Tm",
+          "nat": "76",
+          "gap": 4.031,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Pr Pt Sm Zn",
+          "nat": "20",
+          "gap": 0.488,
+          "eah": 0.0267,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Er In Tb",
+          "nat": "20",
+          "gap": 0.358,
+          "eah": 0.0001,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "P Rb S Zr",
+          "nat": "28",
+          "gap": 1.546,
+          "eah": 0.469,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Nb Ti Zr",
+          "nat": "9",
+          "gap": 0.392,
+          "eah": 1.6505,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Bi S Sc Tm",
+          "nat": "10",
+          "gap": 1.418,
+          "eah": 3.2206,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As Cl Cs Mo O",
+          "nat": "18",
+          "gap": 2.578,
+          "eah": 0.0509,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "In K O P Ti",
+          "nat": "76",
+          "gap": 3.229,
+          "eah": 0.1381,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Pd Tb Tm",
+          "nat": "20",
+          "gap": 0.517,
+          "eah": 0.0008,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Gd P Pt",
+          "nat": "5",
+          "gap": 0.786,
+          "eah": 0.5694,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Eu Ni Np Sb",
+          "nat": "6",
+          "gap": 0.239,
+          "eah": 0.0329,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ga Ni Sr Ti",
+          "nat": "6",
+          "gap": 0.312,
+          "eah": 0.0225,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cr Dy H P",
+          "nat": "10",
+          "gap": 1.518,
+          "eah": 0.0821,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Li N Ti Zr",
+          "nat": "8",
+          "gap": 0.767,
+          "eah": 3.9523,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Al Ce Ho Ni",
+          "nat": "9",
+          "gap": 0.406,
+          "eah": 0.0248,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Mn N Nd Pu",
+          "nat": "9",
+          "gap": 0.81,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ho In Pt Tm",
+          "nat": "9",
+          "gap": 0.402,
+          "eah": 0.0062,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ag H K Mn",
+          "nat": "9",
+          "gap": 2.596,
+          "eah": 1.2217,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Al Os Ta Zr",
+          "nat": "8",
+          "gap": 0.727,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "K Pu Te U",
+          "nat": "12",
+          "gap": 1.045,
+          "eah": 1.6752,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As Co Cs Sr",
+          "nat": "20",
+          "gap": 0.563,
+          "eah": 0.8547,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "H Pd Pr",
+          "nat": "14",
+          "gap": 2.216,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "K S Se",
+          "nat": "9",
+          "gap": 1.867,
+          "eah": 0.0053,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Au Mg Sc Tb",
+          "nat": "12",
+          "gap": 0.731,
+          "eah": 0.0591,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ce Cu Dy",
+          "nat": "7",
+          "gap": 0.435,
+          "eah": 0.0769,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba Bi Se Si Sm",
+          "nat": "88",
+          "gap": 1.618,
+          "eah": 4.9681,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Mg Nd Ru",
+          "nat": "12",
+          "gap": 0.554,
+          "eah": 0.0585,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ac Al Th",
+          "nat": "8",
+          "gap": 0.618,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ho Pt Sb Sm",
+          "nat": "9",
+          "gap": 0.631,
+          "eah": 0.0014,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba Ho Rh",
+          "nat": "7",
+          "gap": 0.476,
+          "eah": 0.4417,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ag Hg Mg Pd",
+          "nat": "12",
+          "gap": 0.526,
+          "eah": 0.0188,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "H Ni O S Sr",
+          "nat": "49",
+          "gap": 3.525,
+          "eah": 0.0755,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Ac O Si Tm",
+          "nat": "7",
+          "gap": 1.046,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Au Cu Ge La",
+          "nat": "8",
+          "gap": 0.521,
+          "eah": 2.9727,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Er Ge Ho O",
+          "nat": "22",
+          "gap": 2.449,
+          "eah": 0.0254,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Na O Sb Tb Y",
+          "nat": "20",
+          "gap": 3.133,
+          "eah": 2.4229,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba Cs Np S",
+          "nat": "7",
+          "gap": 1.818,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cu Hf Sc Zn",
+          "nat": "6",
+          "gap": 0.346,
+          "eah": 0.0238,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ga Ir Ru Sc",
+          "nat": "9",
+          "gap": 0.448,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Bi Nd Sm Tb",
+          "nat": "12",
+          "gap": 0.483,
+          "eah": 0.001,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Fe Na O Rh",
+          "nat": "20",
+          "gap": 1.174,
+          "eah": 1.0232,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cd Hg Sr Th",
+          "nat": "6",
+          "gap": 0.802,
+          "eah": 0.007,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Dy S Sm Y",
+          "nat": "12",
+          "gap": 1.514,
+          "eah": 0.0153,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ga Ir Ni Tb",
+          "nat": "36",
+          "gap": 0.465,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Br Cs Na Nd Sc",
+          "nat": "40",
+          "gap": 2.816,
+          "eah": 0.0619,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba Ho Ni O Rh",
+          "nat": "66",
+          "gap": 1.268,
+          "eah": 0.0755,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Co S Tm",
+          "nat": "22",
+          "gap": 1.034,
+          "eah": 0.0788,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "In Os Pd Th",
+          "nat": "9",
+          "gap": 0.43,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "C Er F Na O",
+          "nat": "56",
+          "gap": 4.239,
+          "eah": 0.6696,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Al Ni Pr Tm",
+          "nat": "16",
+          "gap": 0.36,
+          "eah": 0.0523,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Be Fe V",
+          "nat": "12",
+          "gap": 0.808,
+          "eah": 0.033,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ca Ge La Mg Na O",
+          "nat": "100",
+          "gap": 3.736,
+          "eah": 1.7085,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Er Pu Se",
+          "nat": "16",
+          "gap": 0.926,
+          "eah": 0.0132,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Co Ni Pt U",
+          "nat": "20",
+          "gap": 0.478,
+          "eah": 0.0322,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Hg Ho Pm Sm",
+          "nat": "7",
+          "gap": 0.917,
+          "eah": 0.0698,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba Cd Cs Hg",
+          "nat": "7",
+          "gap": 1.106,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Be Ir Pa",
+          "nat": "12",
+          "gap": 0.553,
+          "eah": 1.527,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "In Nd U",
+          "nat": "12",
+          "gap": 0.323,
+          "eah": 0.0176,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ni Sm Te",
+          "nat": "12",
+          "gap": 0.649,
+          "eah": 0.0219,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ir Nd Rh Si",
+          "nat": "20",
+          "gap": 0.508,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Hf Nd O P Rb",
+          "nat": "76",
+          "gap": 4.187,
+          "eah": 0.0215,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Ca Hf N Tb",
+          "nat": "12",
+          "gap": 1.499,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Au Li Tl",
+          "nat": "13",
+          "gap": 0.526,
+          "eah": 1.7986,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cl F Sb",
+          "nat": "15",
+          "gap": 1.064,
+          "eah": 0.7414,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Bi Dy Nd Tm",
+          "nat": "16",
+          "gap": 0.485,
+          "eah": 0.0036,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cd Dy Er Tb",
+          "nat": "8",
+          "gap": 0.314,
+          "eah": 0.011,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Lu Ni Zn",
+          "nat": "6",
+          "gap": 0.419,
+          "eah": 0.0287,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ce Ni Os",
+          "nat": "15",
+          "gap": 0.527,
+          "eah": 1.4174,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Al B I K La S",
+          "nat": "64",
+          "gap": 1.856,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Dy Ge Ru Th",
+          "nat": "4",
+          "gap": 0.439,
+          "eah": 0.0209,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Dy O Pr Sb Y",
+          "nat": "22",
+          "gap": 3.056,
+          "eah": 1.1091,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Na Si Sm Zn",
+          "nat": "6",
+          "gap": 0.37,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba Cl Cu I O",
+          "nat": "12",
+          "gap": 1.636,
+          "eah": 1.296,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Fe N Nb Zr",
+          "nat": "15",
+          "gap": 0.8,
+          "eah": 0.1913,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Er Ho Nd Sm",
+          "nat": "12",
+          "gap": 0.812,
+          "eah": 0.0149,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "O Sc Th Tl",
+          "nat": "7",
+          "gap": 0.736,
+          "eah": 3.0199,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cs Na O",
+          "nat": "14",
+          "gap": 1.829,
+          "eah": 0.9901,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Er Tm Zn",
+          "nat": "6",
+          "gap": 0.524,
+          "eah": 0.0158,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "N Np Th U",
+          "nat": "12",
+          "gap": 0.758,
+          "eah": 0.1785,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ni P Sm Zn",
+          "nat": "13",
+          "gap": 0.42,
+          "eah": 0.0832,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ag Nd Pm Pr",
+          "nat": "16",
+          "gap": 0.539,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ca Ho O Pt Sr",
+          "nat": "20",
+          "gap": 0.941,
+          "eah": 0.2129,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "H P Rb",
+          "nat": "12",
+          "gap": 3.976,
+          "eah": 4.1522,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Co Dy Si",
+          "nat": "18",
+          "gap": 0.407,
+          "eah": 0.0583,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "C Ga Ti V",
+          "nat": "4",
+          "gap": 0.638,
+          "eah": 0.1295,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ca P Sm Zr",
+          "nat": "12",
+          "gap": 0.578,
+          "eah": 0.0606,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba Ho Mo O Sc",
+          "nat": "50",
+          "gap": 2.159,
+          "eah": 0.0421,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As Ba Eu O",
+          "nat": "7",
+          "gap": 1.055,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ca Fe Ga Ge O",
+          "nat": "80",
+          "gap": 2.328,
+          "eah": 0.0298,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ag Ca In Ni",
+          "nat": "9",
+          "gap": 0.229,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ce Ge Nd O",
+          "nat": "44",
+          "gap": 2.757,
+          "eah": 0.0927,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cl Er Fe Hf Rb",
+          "nat": "54",
+          "gap": 1.83,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ge In Na O Sc",
+          "nat": "40",
+          "gap": 2.817,
+          "eah": 0.9623,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        }
+      ]
+    },
+    "telling_strong": {
+      "per_seed": [
+        {
+          "seed": 0,
+          "n": 74,
+          "hits": 11,
+          "joint_rate": 0.1486,
+          "wide_rate": 0.2568,
+          "stable_rate": 0.527
+        },
+        {
+          "seed": 1,
+          "n": 73,
+          "hits": 13,
+          "joint_rate": 0.1781,
+          "wide_rate": 0.274,
+          "stable_rate": 0.6027
+        },
+        {
+          "seed": 2,
+          "n": 80,
+          "hits": 12,
+          "joint_rate": 0.15,
+          "wide_rate": 0.275,
+          "stable_rate": 0.45
+        }
+      ],
+      "pooled_hits": 36,
+      "pooled_n": 227,
+      "joint_rate": 0.1586,
+      "wilson_ci95": [
+        0.1168,
+        0.2117
+      ],
+      "seed_mean": 0.1589,
+      "seed_std": 0.0136,
+      "tags": "bg-vhigh hull-vlow",
+      "n_chemistries_in_pool": 47593,
+      "records": [
+        {
+          "seed": 0,
+          "els": "Hg Mo O Rb Ti",
+          "nat": "74",
+          "gap": 2.427,
+          "eah": 0.0982,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ca Dy Mg O Sb",
+          "nat": "10",
+          "gap": 2.865,
+          "eah": 0.3279,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Cs Hf K O",
+          "nat": "36",
+          "gap": 2.978,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Ga H K Mg O",
+          "nat": "50",
+          "gap": 3.442,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Ba Nb O Sr Tm",
+          "nat": "10",
+          "gap": 2.866,
+          "eah": 1.9071,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Co Ge K O Sm Sr",
+          "nat": "40",
+          "gap": 2.555,
+          "eah": 0.032,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "O Pr Sb",
+          "nat": "18",
+          "gap": 2.04,
+          "eah": 3.6595,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Mg Na O Th",
+          "nat": "60",
+          "gap": 2.545,
+          "eah": 0.1274,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cs In S Zn",
+          "nat": "22",
+          "gap": 1.75,
+          "eah": 0.0082,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Cs K O Zr",
+          "nat": "64",
+          "gap": 2.993,
+          "eah": 0.3486,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Bi F Pb Rb",
+          "nat": "12",
+          "gap": 4.077,
+          "eah": 0.1763,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "F In Li O P",
+          "nat": "16",
+          "gap": 3.914,
+          "eah": 0.2102,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ba Cr Ga O",
+          "nat": "64",
+          "gap": 2.194,
+          "eah": 0.0624,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Hf La Mo O Rb",
+          "nat": "74",
+          "gap": 2.96,
+          "eah": 0.3714,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cs H Nd Zn",
+          "nat": "12",
+          "gap": 2.901,
+          "eah": 2.1387,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cl Cs Ho Nb",
+          "nat": "26",
+          "gap": 1.531,
+          "eah": 0.0029,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "O Pa Rb Ti",
+          "nat": "14",
+          "gap": 2.984,
+          "eah": 1.3076,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ge K O Sc Sr Zn",
+          "nat": "20",
+          "gap": 3.368,
+          "eah": 0.0192,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "As Cs Li Nb O",
+          "nat": "36",
+          "gap": 2.628,
+          "eah": 0.0351,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ba F Ge Li O",
+          "nat": "18",
+          "gap": 1.959,
+          "eah": 4.0388,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "B Br Ca N",
+          "nat": "6",
+          "gap": 2.238,
+          "eah": 0.02,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ge Mg O Sr Zn",
+          "nat": "24",
+          "gap": 3.358,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Al B I K Nd Se",
+          "nat": "64",
+          "gap": 1.406,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Ga H K Mg O",
+          "nat": "50",
+          "gap": 3.442,
+          "eah": 0.0118,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "As O Rh Sr",
+          "nat": "90",
+          "gap": 1.876,
+          "eah": 0.3759,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "I Se Tm",
+          "nat": "9",
+          "gap": 1.349,
+          "eah": 0.5841,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ba O P Rb",
+          "nat": "92",
+          "gap": 3.649,
+          "eah": 4.2015,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ge O S",
+          "nat": "34",
+          "gap": 3.59,
+          "eah": 2.4731,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "K O Si Sm Zr",
+          "nat": "16",
+          "gap": 3.56,
+          "eah": 0.0408,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Cs Er P Se",
+          "nat": "52",
+          "gap": 1.261,
+          "eah": 0.0176,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Al Cs Ge O",
+          "nat": "26",
+          "gap": 2.932,
+          "eah": 0.1407,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Br Cs Sc Se",
+          "nat": "62",
+          "gap": 1.239,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Al Br Ga Ge Na O",
+          "nat": "46",
+          "gap": 3.381,
+          "eah": 0.4537,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Co Mg O",
+          "nat": "26",
+          "gap": 1.602,
+          "eah": 1.3115,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As K Mn Na O",
+          "nat": "24",
+          "gap": 1.989,
+          "eah": 0.1346,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Co Mn O",
+          "nat": "26",
+          "gap": 1.199,
+          "eah": 0.0786,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Pm Rb S Tl",
+          "nat": "8",
+          "gap": 1.665,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Li Lu O Te",
+          "nat": "20",
+          "gap": 1.248,
+          "eah": 2.0687,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Er H Mn",
+          "nat": "10",
+          "gap": 2.383,
+          "eah": 1.3005,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "F H Rb V",
+          "nat": "26",
+          "gap": 4.219,
+          "eah": 0.6095,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As K O Y Zr",
+          "nat": "76",
+          "gap": 3.332,
+          "eah": 0.0253,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "As Ge Hf Li O",
+          "nat": "36",
+          "gap": 2.852,
+          "eah": 1.6453,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Be Fe H",
+          "nat": "8",
+          "gap": 2.372,
+          "eah": 0.5423,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As K La Li",
+          "nat": "6",
+          "gap": 0.764,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cl Fe K Ti Y",
+          "nat": "54",
+          "gap": 0.944,
+          "eah": 0.0343,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Br Ca Tl",
+          "nat": "18",
+          "gap": 2.788,
+          "eah": 0.0147,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ge O P W",
+          "nat": "34",
+          "gap": 2.575,
+          "eah": 0.167,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ce O P",
+          "nat": "26",
+          "gap": 4.985,
+          "eah": 1.3422,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cl Cs Nb Nd",
+          "nat": "26",
+          "gap": 1.368,
+          "eah": 0.039,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "F In Na Zn",
+          "nat": "44",
+          "gap": 2.692,
+          "eah": 0.5252,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ba Mn Nb O",
+          "nat": "20",
+          "gap": 2.148,
+          "eah": 0.0148,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Br Dy H O",
+          "nat": "44",
+          "gap": 3.018,
+          "eah": 0.0097,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Ca Ge K O Ta Ti",
+          "nat": "80",
+          "gap": 2.088,
+          "eah": 1.3313,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "F Ge Mn O Pr",
+          "nat": "44",
+          "gap": 2.752,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Ba Br F O",
+          "nat": "84",
+          "gap": 1.662,
+          "eah": 0.605,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Br Cs Ho Na Tm",
+          "nat": "40",
+          "gap": 2.436,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "K O S Y",
+          "nat": "38",
+          "gap": 4.943,
+          "eah": 0.0262,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "As Co Cs O",
+          "nat": "48",
+          "gap": 1.966,
+          "eah": 0.092,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Ba H Ni O",
+          "nat": "36",
+          "gap": 2.382,
+          "eah": 0.4898,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Er Ge K O Rb",
+          "nat": "50",
+          "gap": 2.585,
+          "eah": 0.027,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ca O Si Sm",
+          "nat": "42",
+          "gap": 4.005,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Br Fe H Mg O",
+          "nat": "90",
+          "gap": 3.342,
+          "eah": 0.3281,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "I K Th",
+          "nat": "13",
+          "gap": 2.031,
+          "eah": 1.7898,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cl N Pm Zn",
+          "nat": "7",
+          "gap": 1.614,
+          "eah": 2.6843,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As O Pr Rb",
+          "nat": "72",
+          "gap": 2.87,
+          "eah": 0.0369,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ba Ca Nb O Ta",
+          "nat": "24",
+          "gap": 2.61,
+          "eah": 3.8188,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cr F Sc",
+          "nat": "16",
+          "gap": 2.935,
+          "eah": 0.0574,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Br Ta Th",
+          "nat": "25",
+          "gap": 1.348,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Co Mn O P",
+          "nat": "36",
+          "gap": 1.6,
+          "eah": 0.0019,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cl In Pb S",
+          "nat": "32",
+          "gap": 2.144,
+          "eah": 4.6573,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ba Ho Nb O Sr",
+          "nat": "20",
+          "gap": 3.02,
+          "eah": 0.0094,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Er N Se Si",
+          "nat": "54",
+          "gap": 1.03,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cl Er Sm",
+          "nat": "48",
+          "gap": 3.725,
+          "eah": 0.0502,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "F K V Zn",
+          "nat": "22",
+          "gap": 2.088,
+          "eah": 0.0729,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ho Na O Tm",
+          "nat": "16",
+          "gap": 3.317,
+          "eah": 0.0146,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "P Pr S Tl",
+          "nat": "48",
+          "gap": 1.655,
+          "eah": 0.0963,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Li O Rh Sb",
+          "nat": "56",
+          "gap": 1.638,
+          "eah": 0.6647,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Br P Pr S",
+          "nat": "48",
+          "gap": 2.207,
+          "eah": 0.2511,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "H K La O P",
+          "nat": "32",
+          "gap": 4.574,
+          "eah": 0.0197,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "As Fe In Na O",
+          "nat": "40",
+          "gap": 1.628,
+          "eah": 1.5576,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cs F Hg V",
+          "nat": "18",
+          "gap": 2.238,
+          "eah": 3.1289,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "F In Li Nd",
+          "nat": "12",
+          "gap": 4.571,
+          "eah": 1.9748,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Br Cs K Nd Y",
+          "nat": "40",
+          "gap": 3.018,
+          "eah": 0.0188,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "As Au K Pb S",
+          "nat": "20",
+          "gap": 1.537,
+          "eah": 1.6729,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Dy Fe La O",
+          "nat": "20",
+          "gap": 1.817,
+          "eah": 0.0282,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Al Br O Rb Si",
+          "nat": "46",
+          "gap": 4.182,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Al Ba K O Si Zn",
+          "nat": "24",
+          "gap": 3.431,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "As Ce Cs Ho O",
+          "nat": "76",
+          "gap": 2.894,
+          "eah": 0.0325,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cr O Pr",
+          "nat": "34",
+          "gap": 2.584,
+          "eah": 0.2028,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cs Er H O S",
+          "nat": "60",
+          "gap": 4.336,
+          "eah": 0.0578,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Gd K O Ti",
+          "nat": "20",
+          "gap": 2.322,
+          "eah": 0.0452,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Fe Ho O S Te",
+          "nat": "21",
+          "gap": 2.047,
+          "eah": 0.493,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Dy La O",
+          "nat": "24",
+          "gap": 2.68,
+          "eah": 0.0604,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba Mo Na O Tb",
+          "nat": "20",
+          "gap": 2.411,
+          "eah": 0.0614,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cs Pm Te Y",
+          "nat": "16",
+          "gap": 1.302,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Fe Nb Nd O Sr",
+          "nat": "20",
+          "gap": 1.553,
+          "eah": 0.0921,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cs H O P Se",
+          "nat": "29",
+          "gap": 3.543,
+          "eah": 0.179,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba Cs I Rb",
+          "nat": "12",
+          "gap": 3.623,
+          "eah": 0.0721,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Ba Nd O W Y",
+          "nat": "30",
+          "gap": 2.195,
+          "eah": 0.0753,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba Nb Ni O Ta",
+          "nat": "15",
+          "gap": 2.682,
+          "eah": 0.0917,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba C Fe Mg O",
+          "nat": "20",
+          "gap": 2.412,
+          "eah": 2.0995,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ge N Pr Se",
+          "nat": "54",
+          "gap": 1.226,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "H Ni O Rb Se",
+          "nat": "38",
+          "gap": 2.506,
+          "eah": 0.2569,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "H Na O Si Sn",
+          "nat": "30",
+          "gap": 3.443,
+          "eah": 3.5947,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ag Cs F Fe",
+          "nat": "10",
+          "gap": 2.637,
+          "eah": 0.0648,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Br Cs N Nb Sm",
+          "nat": "64",
+          "gap": 1.722,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cs Pm S Th",
+          "nat": "15",
+          "gap": 1.731,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "H K O P Sc",
+          "nat": "28",
+          "gap": 4.074,
+          "eah": 0.0773,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Cl Na O Pr Se",
+          "nat": "48",
+          "gap": 2.992,
+          "eah": 0.0257,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba Nb O Sm",
+          "nat": "90",
+          "gap": 2.303,
+          "eah": 0.787,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Br Cs Ho La Na",
+          "nat": "40",
+          "gap": 2.828,
+          "eah": 0.0217,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Er O Rb Y",
+          "nat": "16",
+          "gap": 3.324,
+          "eah": 0.0144,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Cd Na O Te",
+          "nat": "42",
+          "gap": 1.704,
+          "eah": 4.1609,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "K Pb Se Zr",
+          "nat": "11",
+          "gap": 1.405,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba Er Nd O W",
+          "nat": "50",
+          "gap": 2.779,
+          "eah": 0.0841,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ge K Se Sn",
+          "nat": "13",
+          "gap": 1.481,
+          "eah": 0.0768,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Cd Ga O",
+          "nat": "32",
+          "gap": 1.839,
+          "eah": 1.087,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Er Nd O Sr Zr",
+          "nat": "20",
+          "gap": 3.371,
+          "eah": 0.0285,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Ce K Mo O Zn",
+          "nat": "24",
+          "gap": 2.63,
+          "eah": 0.0651,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Li Nb O Zr",
+          "nat": "35",
+          "gap": 3.12,
+          "eah": 0.1408,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ho Li Na Se",
+          "nat": "12",
+          "gap": 1.647,
+          "eah": 0.2245,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ce K O P Pr",
+          "nat": "76",
+          "gap": 4.383,
+          "eah": 0.0549,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Ce N Na Zr",
+          "nat": "12",
+          "gap": 1.007,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cs La Nd O",
+          "nat": "16",
+          "gap": 2.899,
+          "eah": 0.0103,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cd Ge Na Ni O Sr",
+          "nat": "24",
+          "gap": 1.342,
+          "eah": 0.0649,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ge Nd Se Zn",
+          "nat": "23",
+          "gap": 1.176,
+          "eah": 0.0161,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Nb O P Sr",
+          "nat": "36",
+          "gap": 2.536,
+          "eah": 3.5986,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "H K Mo Ni O",
+          "nat": "18",
+          "gap": 2.261,
+          "eah": 1.8123,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "F H Rb",
+          "nat": "18",
+          "gap": 2.122,
+          "eah": 1.2541,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Bi Br In Mn",
+          "nat": "9",
+          "gap": 1.334,
+          "eah": 0.0246,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ac I N Zn",
+          "nat": "7",
+          "gap": 1.413,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cl Cs Er K Sc",
+          "nat": "40",
+          "gap": 3.75,
+          "eah": 0.0281,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Al Ba O Sc",
+          "nat": "27",
+          "gap": 2.664,
+          "eah": 0.8127,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "O Se Tb",
+          "nat": "34",
+          "gap": 2.808,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cd Ho Na O Si Sr",
+          "nat": "80",
+          "gap": 3.857,
+          "eah": 2.6555,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "H Na Pd Tm",
+          "nat": "12",
+          "gap": 2.574,
+          "eah": 0.496,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "C Er Na O",
+          "nat": "32",
+          "gap": 4.193,
+          "eah": 1.4014,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "O Sm Tb",
+          "nat": "80",
+          "gap": 3.198,
+          "eah": 0.0168,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Co F Na Tl",
+          "nat": "44",
+          "gap": 3.189,
+          "eah": 2.5838,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ho O Tb Ti",
+          "nat": "22",
+          "gap": 2.922,
+          "eah": 0.0138,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Ca F Na Nd O",
+          "nat": "84",
+          "gap": 2.392,
+          "eah": 1.1127,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Er K N U",
+          "nat": "12",
+          "gap": 2.068,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ga O Pr Tb",
+          "nat": "80",
+          "gap": 2.33,
+          "eah": 0.0025,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Nd O Sm",
+          "nat": "24",
+          "gap": 2.461,
+          "eah": 0.0271,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Bi Br O Se",
+          "nat": "22",
+          "gap": 1.394,
+          "eah": 3.7982,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Al Mg Pr S",
+          "nat": "24",
+          "gap": 1.885,
+          "eah": 0.1635,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ni O S Sc Se",
+          "nat": "21",
+          "gap": 2.266,
+          "eah": 2.3149,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba Cs Pa S",
+          "nat": "12",
+          "gap": 1.832,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cd O P Rb Sr",
+          "nat": "92",
+          "gap": 3.804,
+          "eah": 0.4937,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Br C Rb Tb Ti",
+          "nat": "54",
+          "gap": 1.417,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Br Ga H O Sr",
+          "nat": "22",
+          "gap": 3.715,
+          "eah": 0.1036,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba F Ga Ni Sr",
+          "nat": "40",
+          "gap": 4.307,
+          "eah": 0.0222,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Cl Cs Mg N O",
+          "nat": "48",
+          "gap": 4.291,
+          "eah": 0.3261,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ga Ni O P Rb",
+          "nat": "52",
+          "gap": 2.964,
+          "eah": 2.0538,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Hf La Na O Sb",
+          "nat": "44",
+          "gap": 1.865,
+          "eah": 1.0481,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Fe Na O P",
+          "nat": "52",
+          "gap": 2.589,
+          "eah": 3.77,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As Na O Sc Ta",
+          "nat": "36",
+          "gap": 2.925,
+          "eah": 0.1629,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "F K Mn Tl",
+          "nat": "15",
+          "gap": 2.344,
+          "eah": 0.0586,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Hg Na O Pd",
+          "nat": "56",
+          "gap": 1.03,
+          "eah": 0.0291,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cl Dy Fe Rb Ti",
+          "nat": "54",
+          "gap": 1.271,
+          "eah": 0.0316,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As Li O Rh",
+          "nat": "56",
+          "gap": 1.723,
+          "eah": 0.5198,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Co Hg O P",
+          "nat": "36",
+          "gap": 1.065,
+          "eah": 4.9432,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cs Cu H K",
+          "nat": "16",
+          "gap": 1.753,
+          "eah": 1.3296,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Mg O S Tb Te",
+          "nat": "21",
+          "gap": 2.963,
+          "eah": 0.0078,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "F K",
+          "nat": "18",
+          "gap": 2.318,
+          "eah": 3.9408,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Bi Rb Sc Te",
+          "nat": "16",
+          "gap": 1.072,
+          "eah": 0.2376,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ga Ge Nd O",
+          "nat": "16",
+          "gap": 2.472,
+          "eah": 3.7004,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "F Ge Hf Mg Na O Zr",
+          "nat": "60",
+          "gap": 2.321,
+          "eah": 1.2969,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Er Nb O",
+          "nat": "80",
+          "gap": 2.496,
+          "eah": 0.0969,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Dy Er In O Sb",
+          "nat": "22",
+          "gap": 2.024,
+          "eah": 0.6295,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "In Na O Si Tl",
+          "nat": "40",
+          "gap": 2.382,
+          "eah": 2.6765,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cd O Rb S",
+          "nat": "52",
+          "gap": 3.366,
+          "eah": 3.0,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cs F Ge O Tb",
+          "nat": "58",
+          "gap": 3.083,
+          "eah": 0.0103,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Ag F Ga Zn",
+          "nat": "22",
+          "gap": 2.357,
+          "eah": 0.0409,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ga H Mn",
+          "nat": "8",
+          "gap": 2.724,
+          "eah": 1.1245,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ni O Sr Ta",
+          "nat": "15",
+          "gap": 3.029,
+          "eah": 0.0299,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Ho O Sm",
+          "nat": "40",
+          "gap": 3.434,
+          "eah": 0.02,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "As Ba Co H O",
+          "nat": "25",
+          "gap": 2.338,
+          "eah": 0.1316,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cr Cs H O Se",
+          "nat": "30",
+          "gap": 2.394,
+          "eah": 0.252,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "F Hf O Si Sm",
+          "nat": "44",
+          "gap": 4.35,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Cl Co Ga H O",
+          "nat": "76",
+          "gap": 3.631,
+          "eah": 0.2768,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "K La Rb S",
+          "nat": "8",
+          "gap": 1.863,
+          "eah": 0.006,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ca Hf Nd Ni O",
+          "nat": "40",
+          "gap": 2.262,
+          "eah": 4.3496,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Li O P Sn Ta",
+          "nat": "35",
+          "gap": 2.669,
+          "eah": 0.1493,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ga La Mn O",
+          "nat": "20",
+          "gap": 2.008,
+          "eah": 0.0423,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Fe Hf K O P",
+          "nat": "76",
+          "gap": 2.549,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Al Cl Cu Sb Se",
+          "nat": "46",
+          "gap": 1.809,
+          "eah": 0.0744,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba K Se Sn",
+          "nat": "13",
+          "gap": 1.806,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Al Co Mn O",
+          "nat": "56",
+          "gap": 1.618,
+          "eah": 0.042,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba Ca O Ti",
+          "nat": "15",
+          "gap": 2.409,
+          "eah": 3.0065,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ag Cl In Ir",
+          "nat": "12",
+          "gap": 1.663,
+          "eah": 0.4519,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Co H K O S",
+          "nat": "72",
+          "gap": 2.307,
+          "eah": 4.4561,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ac Cu Se Si",
+          "nat": "24",
+          "gap": 1.096,
+          "eah": 0.1315,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "B Ba O Pr Y",
+          "nat": "32",
+          "gap": 3.763,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "As Fe In Li O",
+          "nat": "22",
+          "gap": 1.56,
+          "eah": 0.0293,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Br Cs Ho Na Sm",
+          "nat": "40",
+          "gap": 2.493,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cs H I O Zn",
+          "nat": "16",
+          "gap": 2.906,
+          "eah": 1.313,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "O Rb Si Tb",
+          "nat": "78",
+          "gap": 3.59,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Cl Na Nd O Se",
+          "nat": "48",
+          "gap": 2.698,
+          "eah": 0.0514,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "H K O Se Tm",
+          "nat": "60",
+          "gap": 2.667,
+          "eah": 0.0753,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cd O Si Sm",
+          "nat": "42",
+          "gap": 3.146,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Cl In K",
+          "nat": "16",
+          "gap": 2.493,
+          "eah": 0.0421,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Al Ge La O",
+          "nat": "23",
+          "gap": 3.437,
+          "eah": 0.0963,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Fe O Pr Rb W",
+          "nat": "20",
+          "gap": 2.384,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Bi Hf Na S",
+          "nat": "15",
+          "gap": 1.469,
+          "eah": 0.3575,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Er Ge Nd O",
+          "nat": "11",
+          "gap": 2.59,
+          "eah": 0.0252,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cl Li S",
+          "nat": "13",
+          "gap": 3.541,
+          "eah": 3.6404,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba Er O Pd Zn",
+          "nat": "102",
+          "gap": 1.149,
+          "eah": 1.6776,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Li O P Rb Zn",
+          "nat": "48",
+          "gap": 3.79,
+          "eah": 0.0958,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "As Ba Br F O",
+          "nat": "84",
+          "gap": 1.72,
+          "eah": 0.3877,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Gd K Nd S",
+          "nat": "12",
+          "gap": 1.751,
+          "eah": 0.0171,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ga H Tb",
+          "nat": "32",
+          "gap": 3.429,
+          "eah": 0.5716,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Br Ge In Li Na O",
+          "nat": "46",
+          "gap": 2.714,
+          "eah": 1.1747,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Nb O P Rh",
+          "nat": "20",
+          "gap": 1.884,
+          "eah": 0.853,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ca Ge Mn Na O Tm",
+          "nat": "40",
+          "gap": 2.257,
+          "eah": 0.3596,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As Hf O Rb Sc",
+          "nat": "76",
+          "gap": 3.085,
+          "eah": 0.0654,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "F Na Se Tl",
+          "nat": "18",
+          "gap": 3.726,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Co H O Pr Se",
+          "nat": "52",
+          "gap": 2.363,
+          "eah": 0.4541,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "F O Se Tb",
+          "nat": "40",
+          "gap": 2.805,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cd Fe Mo Na O",
+          "nat": "36",
+          "gap": 1.961,
+          "eah": 0.2531,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Er O Tm",
+          "nat": "40",
+          "gap": 3.306,
+          "eah": 0.7248,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ge La O P",
+          "nat": "56",
+          "gap": 3.18,
+          "eah": 0.6786,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cd H O Rb S",
+          "nat": "62",
+          "gap": 3.534,
+          "eah": 1.9812,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As Co Mn O Sr",
+          "nat": "26",
+          "gap": 1.914,
+          "eah": 1.073,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ag La O Ta",
+          "nat": "46",
+          "gap": 1.774,
+          "eah": 4.9881,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Br O Ti",
+          "nat": "28",
+          "gap": 2.09,
+          "eah": 0.1789,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Br Cl Er Nd",
+          "nat": "48",
+          "gap": 2.418,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        }
+      ]
+    },
+    "showing": {
+      "per_seed": [
+        {
+          "seed": 0,
+          "n": 78,
+          "hits": 13,
+          "joint_rate": 0.1667,
+          "wide_rate": 0.3205,
+          "stable_rate": 0.5769
+        },
+        {
+          "seed": 1,
+          "n": 85,
+          "hits": 13,
+          "joint_rate": 0.1529,
+          "wide_rate": 0.2706,
+          "stable_rate": 0.4941
+        },
+        {
+          "seed": 2,
+          "n": 82,
+          "hits": 9,
+          "joint_rate": 0.1098,
+          "wide_rate": 0.3049,
+          "stable_rate": 0.4756
+        }
+      ],
+      "pooled_hits": 35,
+      "pooled_n": 245,
+      "joint_rate": 0.1429,
+      "wilson_ci95": [
+        0.1045,
+        0.1922
+      ],
+      "seed_mean": 0.1431,
+      "seed_std": 0.0242,
+      "tags": "",
+      "n_chemistries_in_pool": 18506,
+      "records": [
+        {
+          "seed": 0,
+          "els": "Br H P Zn",
+          "nat": "30",
+          "gap": 2.88,
+          "eah": 2.7418,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "O P Rb Sc Ti",
+          "nat": "76",
+          "gap": 3.637,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "H Mg Na O P",
+          "nat": "86",
+          "gap": 3.459,
+          "eah": 1.7099,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "F O Si Tb Te",
+          "nat": "68",
+          "gap": 3.454,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "F Hf In",
+          "nat": "38",
+          "gap": 4.641,
+          "eah": 0.046,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Ge O Rb Zr",
+          "nat": "24",
+          "gap": 3.533,
+          "eah": 0.6792,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Co La O Se",
+          "nat": "21",
+          "gap": 2.118,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "F Li Rb Zr",
+          "nat": "58",
+          "gap": 5.518,
+          "eah": 0.0191,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Br O Se Tb",
+          "nat": "56",
+          "gap": 2.826,
+          "eah": 0.0052,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Bi F Pt",
+          "nat": "36",
+          "gap": 2.246,
+          "eah": 3.8263,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ac H Mg Re",
+          "nat": "12",
+          "gap": 2.531,
+          "eah": 0.0008,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Br C Cs Zr",
+          "nat": "29",
+          "gap": 1.3,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Bi Cs Hf S",
+          "nat": "11",
+          "gap": 1.621,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cl Cs Zr",
+          "nat": "24",
+          "gap": 2.696,
+          "eah": 1.1813,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As F K La O",
+          "nat": "16",
+          "gap": 3.324,
+          "eah": 2.2072,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Al B Cl K S Sm",
+          "nat": "64",
+          "gap": 2.507,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Cs O Sn Ti",
+          "nat": "64",
+          "gap": 2.43,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cs Se Tb",
+          "nat": "44",
+          "gap": 1.457,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cl Cs La O Ta",
+          "nat": "54",
+          "gap": 2.044,
+          "eah": 0.0167,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Br O Tb Te",
+          "nat": "76",
+          "gap": 2.196,
+          "eah": 0.0145,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Er F Fe Na O Si",
+          "nat": "46",
+          "gap": 2.928,
+          "eah": 0.3321,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Br Mn Rb Th Zr",
+          "nat": "54",
+          "gap": 1.233,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "F Ge Hf O Y",
+          "nat": "44",
+          "gap": 3.743,
+          "eah": 0.0065,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "K Mg O Pt",
+          "nat": "14",
+          "gap": 1.283,
+          "eah": 0.5212,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "B Br Ga Pr Rb Se",
+          "nat": "64",
+          "gap": 1.363,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ge Nd O Tm",
+          "nat": "11",
+          "gap": 2.597,
+          "eah": 0.0148,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Ba In O",
+          "nat": "90",
+          "gap": 2.267,
+          "eah": 0.3958,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Hf P Rb S",
+          "nat": "84",
+          "gap": 2.304,
+          "eah": 0.1121,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As K Ni O",
+          "nat": "100",
+          "gap": 1.464,
+          "eah": 2.3585,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ge O Rb Zr",
+          "nat": "24",
+          "gap": 3.533,
+          "eah": 0.0251,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "La O P Rb Sr",
+          "nat": "39",
+          "gap": 4.459,
+          "eah": 0.0046,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Cl K La Nb O",
+          "nat": "54",
+          "gap": 1.453,
+          "eah": 0.0299,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cs Se Tb",
+          "nat": "36",
+          "gap": 1.326,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ca Na O Ta Zr",
+          "nat": "20",
+          "gap": 2.85,
+          "eah": 0.0334,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "O Pt Rb Si",
+          "nat": "17",
+          "gap": 1.634,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cs Hf Se Zn",
+          "nat": "16",
+          "gap": 1.544,
+          "eah": 0.0169,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As Bi O Zr",
+          "nat": "25",
+          "gap": 2.199,
+          "eah": 4.8472,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "In Mn Mo Na O",
+          "nat": "36",
+          "gap": 1.603,
+          "eah": 0.0323,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "B Ba Cr O Tm",
+          "nat": "32",
+          "gap": 3.795,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Dy O Si Ti Tm",
+          "nat": "56",
+          "gap": 3.088,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Cd Cs O Te",
+          "nat": "42",
+          "gap": 1.619,
+          "eah": 2.0589,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Al As O Ta",
+          "nat": "34",
+          "gap": 2.722,
+          "eah": 0.0617,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "K Pr Se Tl",
+          "nat": "12",
+          "gap": 1.452,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Br O Pr",
+          "nat": "52",
+          "gap": 3.374,
+          "eah": 0.1429,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Hf Mn O P",
+          "nat": "70",
+          "gap": 3.135,
+          "eah": 1.8637,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Er Mg Na O W",
+          "nat": "20",
+          "gap": 3.102,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "Cs Hg In S",
+          "nat": "22",
+          "gap": 1.758,
+          "eah": 1.4267,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "B Cl Ga Rb Se Tm",
+          "nat": "64",
+          "gap": 1.379,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cd F Ni Rb",
+          "nat": "20",
+          "gap": 3.383,
+          "eah": 0.03,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "B Ba Cl La O",
+          "nat": "24",
+          "gap": 4.123,
+          "eah": 0.7112,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Fe Na O Pr W",
+          "nat": "20",
+          "gap": 2.378,
+          "eah": 0.0016,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "K O Pr S",
+          "nat": "76",
+          "gap": 4.64,
+          "eah": 4.1073,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Au La S Sn",
+          "nat": "24",
+          "gap": 1.408,
+          "eah": 0.0103,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "O Rb Si Zr",
+          "nat": "30",
+          "gap": 3.951,
+          "eah": 0.0048,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 0,
+          "els": "As Be Cs O",
+          "nat": "32",
+          "gap": 2.53,
+          "eah": 1.6774,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cl O Y",
+          "nat": "52",
+          "gap": 4.976,
+          "eah": 0.1008,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Li O P Sc Ti",
+          "nat": "76",
+          "gap": 3.039,
+          "eah": 2.2148,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cd Dy O Sb Ti",
+          "nat": "44",
+          "gap": 2.329,
+          "eah": 1.2972,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Al Ca Hf Nd O",
+          "nat": "80",
+          "gap": 3.87,
+          "eah": 0.5207,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "F Ge O Rb Sc",
+          "nat": "36",
+          "gap": 2.375,
+          "eah": 0.8807,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "As K Sr Zr",
+          "nat": "22",
+          "gap": 0.848,
+          "eah": 1.1469,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ba Ge K O Tm",
+          "nat": "24",
+          "gap": 2.621,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "P Rb S",
+          "nat": "30",
+          "gap": 1.9,
+          "eah": 2.369,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Co Cs O P",
+          "nat": "46",
+          "gap": 2.004,
+          "eah": 0.9289,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ga Ge H K Mn O",
+          "nat": "22",
+          "gap": 2.419,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Br Dy O Rb Se",
+          "nat": "32",
+          "gap": 2.336,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cs F O Re",
+          "nat": "32",
+          "gap": 2.278,
+          "eah": 3.9342,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "La Na Pb Te",
+          "nat": "8",
+          "gap": 1.013,
+          "eah": 0.001,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "B Cl Cs Tm",
+          "nat": "44",
+          "gap": 3.15,
+          "eah": 0.8553,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cl O P Sr",
+          "nat": "32",
+          "gap": 5.479,
+          "eah": 3.9678,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "C Cl Cs Hf Ho",
+          "nat": "54",
+          "gap": 2.863,
+          "eah": 0.0028,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Cs Ge Sb Se",
+          "nat": "40",
+          "gap": 1.515,
+          "eah": 2.8728,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Al La Se Si",
+          "nat": "68",
+          "gap": 1.319,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "Ba Sb Se Si Sm",
+          "nat": "88",
+          "gap": 1.575,
+          "eah": 1.846,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "B Rb S Zn",
+          "nat": "42",
+          "gap": 1.781,
+          "eah": 0.0157,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "F K Se Sn",
+          "nat": "7",
+          "gap": 2.41,
+          "eah": 0.2846,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "P Rb Se Tm",
+          "nat": "52",
+          "gap": 1.244,
+          "eah": 0.0212,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 0,
+          "els": "K O P Ti",
+          "nat": "13",
+          "gap": 3.371,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "H K Mg O Se",
+          "nat": "33",
+          "gap": 3.917,
+          "eah": 0.0236,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Cs Na O Pd Si",
+          "nat": "34",
+          "gap": 1.446,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "B Br Cs Ho In S",
+          "nat": "64",
+          "gap": 1.785,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Hg K Se Si",
+          "nat": "56",
+          "gap": 1.585,
+          "eah": 3.794,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "H N Rb Sm",
+          "nat": "28",
+          "gap": 3.933,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "O Se Tb Te",
+          "nat": "60",
+          "gap": 2.365,
+          "eah": 0.0164,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Na O P Rh",
+          "nat": "44",
+          "gap": 2.658,
+          "eah": 3.1637,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "B Nd O Se",
+          "nat": "68",
+          "gap": 3.424,
+          "eah": 0.0652,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Nd P Rb S",
+          "nat": "76",
+          "gap": 2.141,
+          "eah": 3.7089,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Er Fe O Tb",
+          "nat": "20",
+          "gap": 2.038,
+          "eah": 0.2683,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Mn Mo Na O Sm",
+          "nat": "20",
+          "gap": 1.761,
+          "eah": 0.0207,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "B Ba Fe H O",
+          "nat": "38",
+          "gap": 2.081,
+          "eah": 4.7275,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "B Br Dy Ga K S",
+          "nat": "64",
+          "gap": 1.718,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Ca Cl O",
+          "nat": "40",
+          "gap": 3.148,
+          "eah": 1.212,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Hf Na O Y",
+          "nat": "20",
+          "gap": 3.433,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Ca H Re",
+          "nat": "22",
+          "gap": 2.076,
+          "eah": 0.9122,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Mn Na O Si",
+          "nat": "34",
+          "gap": 2.751,
+          "eah": 0.5652,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cd O P Tl",
+          "nat": "56",
+          "gap": 2.56,
+          "eah": 0.7528,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Nb O P Rb",
+          "nat": "52",
+          "gap": 1.976,
+          "eah": 2.952,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Co F Fe Ga Ge K O",
+          "nat": "20",
+          "gap": 2.309,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "I K N Y",
+          "nat": "56",
+          "gap": 1.878,
+          "eah": 1.4346,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cs Hg S Si",
+          "nat": "56",
+          "gap": 1.994,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "F H In Ni O",
+          "nat": "56",
+          "gap": 3.985,
+          "eah": 3.0811,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "F Ge Na Nd O",
+          "nat": "32",
+          "gap": 2.234,
+          "eah": 0.3269,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Al B Cl Dy K Se",
+          "nat": "64",
+          "gap": 1.47,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cs Dy Ge H O",
+          "nat": "76",
+          "gap": 1.782,
+          "eah": 0.0284,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cu Dy Rb Se Sr",
+          "nat": "20",
+          "gap": 1.118,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cs Er O Se",
+          "nat": "20",
+          "gap": 2.204,
+          "eah": 0.7792,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "O Pd Rb Te",
+          "nat": "18",
+          "gap": 1.159,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ag Ge Mg S Sr",
+          "nat": "58",
+          "gap": 1.592,
+          "eah": 0.1896,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "B Ba O Rb Tm",
+          "nat": "11",
+          "gap": 3.686,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "As Hf O Rb Sc",
+          "nat": "76",
+          "gap": 3.085,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "In K O Pd",
+          "nat": "11",
+          "gap": 1.165,
+          "eah": 2.8049,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Hf I O Rb",
+          "nat": "27",
+          "gap": 2.626,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "C Cl Rb Sm Ti",
+          "nat": "54",
+          "gap": 1.713,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba Cd O Ta Zr",
+          "nat": "40",
+          "gap": 2.919,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cs H Nb O P",
+          "nat": "72",
+          "gap": 2.196,
+          "eah": 3.1659,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Cs Fe O",
+          "nat": "80",
+          "gap": 1.053,
+          "eah": 3.218,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cl Ga Sm",
+          "nat": "48",
+          "gap": 2.758,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Br Fe H N",
+          "nat": "64",
+          "gap": 2.211,
+          "eah": 1.7013,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "H Mg Na O Se",
+          "nat": "38",
+          "gap": 3.692,
+          "eah": 4.0582,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Hf K O Sc",
+          "nat": "76",
+          "gap": 3.07,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Ba Ge K O Y",
+          "nat": "60",
+          "gap": 3.474,
+          "eah": 0.03,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Co Ho O S Se",
+          "nat": "21",
+          "gap": 2.174,
+          "eah": 0.6227,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cl Cs Na O S",
+          "nat": "48",
+          "gap": 4.977,
+          "eah": 0.0865,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "S Sb",
+          "nat": "20",
+          "gap": 2.379,
+          "eah": 1.2557,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "K Te Tl Y",
+          "nat": "12",
+          "gap": 0.893,
+          "eah": 0.4194,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Ba Co O Te",
+          "nat": "23",
+          "gap": 1.532,
+          "eah": 1.2992,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "F H Hf Ni O Rb",
+          "nat": "70",
+          "gap": 3.375,
+          "eah": 0.2323,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Dy O Tb",
+          "nat": "40",
+          "gap": 3.109,
+          "eah": 1.2318,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Br C Co H N O",
+          "nat": "120",
+          "gap": 6.23,
+          "eah": 1.6906,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Mn O Rb Zr",
+          "nat": "76",
+          "gap": 2.115,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cl Co H O Rb",
+          "nat": "44",
+          "gap": 2.384,
+          "eah": 0.6212,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ce O Pr",
+          "nat": "19",
+          "gap": 2.948,
+          "eah": 2.9435,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cd O P Rb Zr",
+          "nat": "76",
+          "gap": 3.238,
+          "eah": 3.7055,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Br Cs Dy Fe Ti",
+          "nat": "54",
+          "gap": 0.998,
+          "eah": 0.0209,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As K O Pm",
+          "nat": "12",
+          "gap": 2.686,
+          "eah": 0.0133,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Br Nd Ni O Te",
+          "nat": "44",
+          "gap": 2.105,
+          "eah": 0.5047,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As K Na Sc",
+          "nat": "12",
+          "gap": 0.767,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Al O Pr Sc",
+          "nat": "20",
+          "gap": 4.135,
+          "eah": 0.028,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "N P Sm Ta",
+          "nat": "20",
+          "gap": 2.929,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba Cd Ge O S",
+          "nat": "24",
+          "gap": 1.912,
+          "eah": 0.0226,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "K Nb O P",
+          "nat": "38",
+          "gap": 2.023,
+          "eah": 1.879,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Lu O Se",
+          "nat": "34",
+          "gap": 2.592,
+          "eah": 0.5505,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "N P Tb Th",
+          "nat": "14",
+          "gap": 1.918,
+          "eah": 2.9615,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "N Nb P Pr",
+          "nat": "20",
+          "gap": 2.139,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Cr Dy O Sb Tm",
+          "nat": "22",
+          "gap": 2.148,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Br Cr O Sr",
+          "nat": "32",
+          "gap": 2.83,
+          "eah": 2.512,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ba Mn O Ta",
+          "nat": "14",
+          "gap": 1.885,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "B Br In K Se Tb",
+          "nat": "64",
+          "gap": 1.418,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Cr Cs O Ta",
+          "nat": "64",
+          "gap": 2.613,
+          "eah": 0.2503,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "B Ni O Sm",
+          "nat": "68",
+          "gap": 3.845,
+          "eah": 0.1025,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ca Hf Na Sb",
+          "nat": "22",
+          "gap": 0.804,
+          "eah": 0.0341,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ni O Sr Ta",
+          "nat": "15",
+          "gap": 3.029,
+          "eah": 0.0669,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "As O Rb U",
+          "nat": "34",
+          "gap": 2.831,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "I O Te Th",
+          "nat": "56",
+          "gap": 2.433,
+          "eah": 0.0552,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Cl O Y",
+          "nat": "48",
+          "gap": 3.601,
+          "eah": 0.2547,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Ca Nd O Sb Zr",
+          "nat": "22",
+          "gap": 3.123,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Al Be Cs F",
+          "nat": "12",
+          "gap": 7.391,
+          "eah": 3.1959,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Cl Ge",
+          "nat": "22",
+          "gap": 2.668,
+          "eah": 1.1806,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "F O Si Tb Ti",
+          "nat": "44",
+          "gap": 3.784,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 1,
+          "els": "Ge Mn O Rb",
+          "nat": "68",
+          "gap": 2.055,
+          "eah": 3.3356,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Er Ge Na S",
+          "nat": "26",
+          "gap": 2.093,
+          "eah": 0.0072,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "As Ba Fe H O",
+          "nat": "25",
+          "gap": 2.338,
+          "eah": 0.2228,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 1,
+          "els": "Au Ca O Se",
+          "nat": "23",
+          "gap": 1.818,
+          "eah": 0.6336,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "O Se Tb W",
+          "nat": "36",
+          "gap": 2.586,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "F S Ta",
+          "nat": "44",
+          "gap": 4.523,
+          "eah": 3.1116,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "K S Tl Y",
+          "nat": "12",
+          "gap": 1.65,
+          "eah": 0.0042,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "N P Pr Ta",
+          "nat": "20",
+          "gap": 2.928,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "B Cl In K S Tm",
+          "nat": "64",
+          "gap": 1.61,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Br Nd O Te",
+          "nat": "20",
+          "gap": 2.353,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cu Nb S Te",
+          "nat": "8",
+          "gap": 1.276,
+          "eah": 0.023,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "H O Se",
+          "nat": "62",
+          "gap": 2.693,
+          "eah": 1.472,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Br N Pr Zn",
+          "nat": "7",
+          "gap": 1.631,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Er Ge O Rb",
+          "nat": "64",
+          "gap": 2.628,
+          "eah": 4.8,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cl Se Ta",
+          "nat": "22",
+          "gap": 1.532,
+          "eah": 1.1519,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "F H Hf K O Zn",
+          "nat": "70",
+          "gap": 3.678,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "B Mo O Tb",
+          "nat": "10",
+          "gap": 2.469,
+          "eah": 0.2235,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As Ba O Sn",
+          "nat": "35",
+          "gap": 2.559,
+          "eah": 0.0615,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "H La N O",
+          "nat": "5",
+          "gap": 1.517,
+          "eah": 0.7895,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba Co O Tm",
+          "nat": "38",
+          "gap": 1.684,
+          "eah": 0.1138,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As H Hf Mg O",
+          "nat": "48",
+          "gap": 3.102,
+          "eah": 0.0281,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Ba Cs O Si Tb",
+          "nat": "60",
+          "gap": 3.984,
+          "eah": 0.0285,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Cs Er O S",
+          "nat": "38",
+          "gap": 4.502,
+          "eah": 0.0552,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "B Cl Cs Ga La Se",
+          "nat": "64",
+          "gap": 1.4,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ga K O Pr Si",
+          "nat": "80",
+          "gap": 3.182,
+          "eah": 0.2735,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As I O Pr",
+          "nat": "56",
+          "gap": 2.245,
+          "eah": 0.049,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cr O Tm",
+          "nat": "34",
+          "gap": 2.68,
+          "eah": 0.1732,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ho S Tl Zr",
+          "nat": "15",
+          "gap": 1.464,
+          "eah": 0.8062,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Br Mn O Sb",
+          "nat": "26",
+          "gap": 1.297,
+          "eah": 0.3007,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cl Fe Hf Rb",
+          "nat": "29",
+          "gap": 1.378,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ce Cs Mo Ni O",
+          "nat": "24",
+          "gap": 2.192,
+          "eah": 0.1742,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "B Ba Cr O",
+          "nat": "32",
+          "gap": 3.767,
+          "eah": 3.3977,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cl Ni O Te Tm",
+          "nat": "44",
+          "gap": 1.997,
+          "eah": 0.1322,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Fe K O Pr W",
+          "nat": "20",
+          "gap": 2.353,
+          "eah": 0.0471,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cr Ge La O",
+          "nat": "32",
+          "gap": 2.783,
+          "eah": 0.1486,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "O Sb Sm Zn",
+          "nat": "22",
+          "gap": 2.052,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As C In O Rb",
+          "nat": "24",
+          "gap": 3.164,
+          "eah": 0.2432,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Br Cs Se Th",
+          "nat": "20",
+          "gap": 2.236,
+          "eah": 1.6361,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As Br Ge Hg",
+          "nat": "68",
+          "gap": 1.464,
+          "eah": 0.1382,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cs Ho O Si",
+          "nat": "112",
+          "gap": 3.458,
+          "eah": 1.9999,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ac Be H Rb",
+          "nat": "12",
+          "gap": 3.495,
+          "eah": 0.5697,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ca Cr I O",
+          "nat": "18",
+          "gap": 2.211,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba K O Pr Si",
+          "nat": "66",
+          "gap": 4.172,
+          "eah": 0.0532,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Ca F Ga Pb",
+          "nat": "26",
+          "gap": 4.295,
+          "eah": 1.4764,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cs Ge K Na O",
+          "nat": "36",
+          "gap": 3.079,
+          "eah": 0.0188,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Cl Mn Rb Zr",
+          "nat": "62",
+          "gap": 0.802,
+          "eah": 0.0322,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cs I S Tc",
+          "nat": "40",
+          "gap": 1.07,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Al Cs O Si Tb",
+          "nat": "80",
+          "gap": 3.904,
+          "eah": 0.2361,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Co H In Na O S",
+          "nat": "92",
+          "gap": 3.742,
+          "eah": 4.3803,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cs P Ru S",
+          "nat": "38",
+          "gap": 1.683,
+          "eah": 0.062,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "B I In K La Se",
+          "nat": "64",
+          "gap": 1.348,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cs Tb Te Th",
+          "nat": "11",
+          "gap": 1.194,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Au Cl O Rb",
+          "nat": "20",
+          "gap": 1.6,
+          "eah": 0.8518,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As H O Rb Zn",
+          "nat": "36",
+          "gap": 3.387,
+          "eah": 0.9332,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "O Rb Sc Si",
+          "nat": "64",
+          "gap": 3.811,
+          "eah": 0.0,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "F Hg Tc",
+          "nat": "15",
+          "gap": 1.623,
+          "eah": 1.4832,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Hf Mg Mo O Rb",
+          "nat": "24",
+          "gap": 2.991,
+          "eah": 0.1818,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Hf K S",
+          "nat": "18",
+          "gap": 1.158,
+          "eah": 2.0156,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "K Pb Se Zr",
+          "nat": "11",
+          "gap": 1.127,
+          "eah": 0.0377,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "O Pr S Te Zn",
+          "nat": "21",
+          "gap": 2.939,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As H In K O",
+          "nat": "24",
+          "gap": 2.999,
+          "eah": 0.8745,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ba Mg O P Te",
+          "nat": "23",
+          "gap": 3.627,
+          "eah": 0.0983,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "B Cs I In S Tm",
+          "nat": "64",
+          "gap": 1.763,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "F Tb V",
+          "nat": "18",
+          "gap": 2.415,
+          "eah": 0.5207,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Co F Na Tl",
+          "nat": "44",
+          "gap": 2.981,
+          "eah": 0.6775,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Mg O S Se Tm",
+          "nat": "21",
+          "gap": 2.757,
+          "eah": 0.0476,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Cl Ho N Zn",
+          "nat": "7",
+          "gap": 1.39,
+          "eah": 0.0613,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "B Co K O P",
+          "nat": "52",
+          "gap": 2.8,
+          "eah": 0.117,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Al C H O Rb",
+          "nat": "20",
+          "gap": 4.874,
+          "eah": 0.4658,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "O Rb Se Tl",
+          "nat": "26",
+          "gap": 2.074,
+          "eah": 2.1832,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "K O P Sr",
+          "nat": "56",
+          "gap": 5.404,
+          "eah": 2.0058,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Er H Li O Se",
+          "nat": "104",
+          "gap": 3.672,
+          "eah": 1.4325,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Hg Nd O Sb Zr",
+          "nat": "44",
+          "gap": 2.223,
+          "eah": 0.1846,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "K P Se Y",
+          "nat": "52",
+          "gap": 1.51,
+          "eah": 0.9768,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Fe Nb O Pr Sr",
+          "nat": "20",
+          "gap": 1.708,
+          "eah": 0.0753,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ge H N O Rb",
+          "nat": "44",
+          "gap": 3.089,
+          "eah": 1.7402,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As Be F O Sr",
+          "nat": "32",
+          "gap": 3.824,
+          "eah": 1.1679,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Br Cs N Pr Ta",
+          "nat": "64",
+          "gap": 1.905,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "As Br Cd P",
+          "nat": "72",
+          "gap": 1.389,
+          "eah": 1.5245,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "O P Rb Sc Th",
+          "nat": "76",
+          "gap": 3.943,
+          "eah": 0.0111,
+          "wide": true,
+          "stable": true,
+          "joint": true
+        },
+        {
+          "seed": 2,
+          "els": "Dy O Rb Se",
+          "nat": "38",
+          "gap": 2.207,
+          "eah": 0.0389,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "B Fe Na O Rb",
+          "nat": "76",
+          "gap": 2.83,
+          "eah": 0.1714,
+          "wide": false,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "H Mg O Si Sr",
+          "nat": "41",
+          "gap": 5.157,
+          "eah": 0.7557,
+          "wide": true,
+          "stable": false,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "B Br Cs Dy In Se",
+          "nat": "64",
+          "gap": 1.479,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Li Mg O Pd",
+          "nat": "56",
+          "gap": 1.42,
+          "eah": 0.0,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        },
+        {
+          "seed": 2,
+          "els": "Ce F Fe",
+          "nat": "36",
+          "gap": 2.95,
+          "eah": 0.017,
+          "wide": false,
+          "stable": true,
+          "joint": false
+        }
+      ]
+    }
+  }
+}

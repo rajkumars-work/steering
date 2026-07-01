@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or the ideas in it, please cite the paper."
+title: "The Steering Budget: Examples beat Knobs"
+authors:
+  - family-names: Rajendran
+    given-names: Raj Kumar
+repository-code: "https://github.com/rajkumars-work/steering"
+abstract: >-
+  How far a generative model can be steered on a labeled property is fixed,
+  before training, by a budget read off the training data. The budget splits
+  into a within-category part a knob can reach and a between-category part it
+  cannot; composing examples ("showing") reaches the second part, which a knob
+  ("telling") structurally cannot. Verified in image and crystal-structure
+  generation.
+keywords:
+  - generative models
+  - steering
+  - diffusion models
+  - crystal structure generation
+  - law of total variance
+license: MIT
+# TODO(preprint): add arXiv doi + preferred-citation once posted.

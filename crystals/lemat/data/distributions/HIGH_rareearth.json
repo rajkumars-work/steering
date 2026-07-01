@@ -1,0 +1,4329 @@
+{
+ "description": "Highest-Combined pool within an_lh: rare-earth chemistry; validated Combined=0.824 (n=120, SUN 0.118 + MSUN 0.706). Union of scan pools 8,18,32,38,46,55.",
+ "source_scan_pools": [
+  8,
+  18,
+  32,
+  38,
+  46,
+  55
+ ],
+ "n_en_tuples": 863,
+ "tuples": [
+  {
+   "elements": "Hg Ho Sc Tb",
+   "natoms": 8,
+   "count": 4
+  },
+  {
+   "elements": "Ho In Tb Y",
+   "natoms": 8,
+   "count": 3
+  },
+  {
+   "elements": "In Nd Tb Y",
+   "natoms": 8,
+   "count": 3
+  },
+  {
+   "elements": "Lu Nd Tb",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Bi Tb Th Y",
+   "natoms": 8,
+   "count": 2
+  },
+  {
+   "elements": "Ho In Tb Y",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Ce N Tb Y",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "C La Sn Tb",
+   "natoms": 7,
+   "count": 2
+  },
+  {
+   "elements": "Bi Nd Tb Y",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "La Tb",
+   "natoms": 11,
+   "count": 2
+  },
+  {
+   "elements": "In Pr Tb Y",
+   "natoms": 8,
+   "count": 2
+  },
+  {
+   "elements": "Ce Hg Tb Y",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Nd Se Tb Y",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Cu Ho In Tb",
+   "natoms": 9,
+   "count": 2
+  },
+  {
+   "elements": "F Na Tb Y",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "In Nd Tb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Co Pm Tb",
+   "natoms": 19,
+   "count": 1
+  },
+  {
+   "elements": "Nd Rh Tb Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "F Ho Na Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ca In Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ni Pb Tb Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "As Nd Pa Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Co Fe In Ru Tb",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Nd Sb Tb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "C Gd Sn Tb",
+   "natoms": 5,
+   "count": 1
+  },
+  {
+   "elements": "Gd Pm Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Pr Sn Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ca Cd Ho Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "In Sc Tb Tc",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Br Re Tb",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "Cd Ho Pr Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Hg Nd Sr Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "La Tb",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Fe La P Tb",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Hg Sc Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "O Tb Y",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Ho Rh Sn Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ba In Tb Zn",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "In Tb",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "Ho Pb Tb",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Pu Tb Te Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Al Ho Tb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Nd P Tb U",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Np P Tb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Nd Tb Zn",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Eu Mg Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Co Fe Ho Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Cu S Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "In Sc Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ba Li Pb Tb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Eu Pb Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ac Fe Tb",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Ho Nd Sb Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Pm Sb Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Nd Ni Pb Tb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ca Se Tb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ag Cu Os Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Hg Nd Tb Tl",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ag Tb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "C Gd In Tb",
+   "natoms": 5,
+   "count": 1
+  },
+  {
+   "elements": "Ho In Pr Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho Tb",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Ho La Tb Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Ho Ir Tb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "As Pr Tb Th",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Hg In Sc Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "In La Tb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Au In Sc Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Co Tb Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ba Mg Tb Tl",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ho Rh Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "In Tb U",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ga In Tb",
+   "natoms": 17,
+   "count": 1
+  },
+  {
+   "elements": "Mg Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Pm Tb Zn",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho Sb Sc Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ho Mn Tb",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Ho In La Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "As Sr Tb U",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho La Pm Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "F Tb U",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Ag In Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Mg Pr Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ho Mg Se Tb",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "P Tb Th Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ag Nd Tb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Bi Tb Th Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Fe Pr Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ag Cu Os Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ho Pm Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Mg Nd Tb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ir Nd Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ho In Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "F Ho Tb",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Co P Sr Tb",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "In Pm Tb Zn",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Hg Nd Tb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "In Sn Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho Tb Te Tl",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ba Pm Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Li Tb Te",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Hg Nd Tb Zn",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "In Tb",
+   "natoms": 13,
+   "count": 1
+  },
+  {
+   "elements": "Co P Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "In Pr Tb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Cs Mn Tb Te",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Gd In O Tb",
+   "natoms": 5,
+   "count": 1
+  },
+  {
+   "elements": "Hf Ho Rh Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Au Co P Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "H Tb Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "In Pd Tb Zn",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "In Rh Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ag Ho Sc Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho P Tb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "In La Sc Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "O P Tb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho S Tb",
+   "natoms": 17,
+   "count": 1
+  },
+  {
+   "elements": "Ge I In Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ac Tb Tc",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Bi Nd Tb Tc",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Nd Tb Y Zn",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Ho Pb Pd Tb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "As Bi Nd Tb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Nd P Ru Tb",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Be Rh Tb Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Pb Tb Tc Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ge In Tb",
+   "natoms": 17,
+   "count": 1
+  },
+  {
+   "elements": "Se Tb Y",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Ho In Tb Th",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Nd O Tb V",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ho Re Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "In Ni Tb Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ho Tb Te",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "C Pr Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Mg Pb Tb",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Ho Mg Pm Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho Tb Tl Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho La Tb",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Fe Ho P Tb",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Ag Os Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho Se Tb Y",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "As P Sc Tb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "In Ir Pu Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "As Pa Pr Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "F La Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Os Ta Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Be Fe Tb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Fe P Sr Tb",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Li Pb Pr Tb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "C La Pb Tb",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "C Nd Pb Tb",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Hg Pr Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Fe La Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Bi La Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Cs S Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho Tb Zn",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "B Co Ho Tb",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Nd P Tb Th",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho Tb Y Zn",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "La Mg Tb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "C Sb Tb",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Pr Tb Tl Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "C Sb Sr Tb",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "In La Sc Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "C Sn Tb Th",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Ag Nd Tb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ho P Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Gd Pb Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Cd Nd Tb Th",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Hg In Li Tb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Pm Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "In Ir Sn Tb",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Ca Ho S Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Hg Pm Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Nd Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "As Pa Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Sb Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "As Pr Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho O P Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Fe Ho Si Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Rh Tb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "In Li Tb Th",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Bi Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "As Gd Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Nd Tb",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Ho Tb",
+   "natoms": 13,
+   "count": 1
+  },
+  {
+   "elements": "Ho Mg Tb Th",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "F Sb Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Cd In Tb Zn",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Au Ho Tb Tc",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Co In Nd Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "As La Pm Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Gd La Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Tb Y Zn",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Cu Mg P Tb",
+   "natoms": 5,
+   "count": 1
+  },
+  {
+   "elements": "Cl Tb Y",
+   "natoms": 17,
+   "count": 1
+  },
+  {
+   "elements": "Ho Sb Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Cl Pr Tb",
+   "natoms": 17,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ho Tb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Co Ru Tb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Tb",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "La P Tb Th",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Co Tb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Tb Th Tl",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Co In Pt Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Na Tb Te Y",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "S Tb Y",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "La Li Pb Tb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "As Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "F Li Pr Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Nd Pu Tb Te",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "As Ho La Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Nd Tb Tl",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ba Tb Tl",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Co Ho Sb Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Nd Tb Tl",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Hg Sc Tb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Rh Tb Y Zr",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Co La Tb",
+   "natoms": 13,
+   "count": 1
+  },
+  {
+   "elements": "C Nd Tb",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Co Hg Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Cl Nd Tb",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Ho Ni Tb",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "As Nd Tb Th",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "B Co La Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Li Tb Te",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho In Nd Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Fe Tb Te",
+   "natoms": 5,
+   "count": 1
+  },
+  {
+   "elements": "Ag Ho Pm Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Hg In Ni Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ag Os Tb Tl",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Lu Tb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Rh Tm Y",
+   "natoms": 8,
+   "count": 2
+  },
+  {
+   "elements": "Er Ho Tm Y",
+   "natoms": 9,
+   "count": 2
+  },
+  {
+   "elements": "Si Tm Y",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "S Tm Y",
+   "natoms": 10,
+   "count": 2
+  },
+  {
+   "elements": "Nd Sm Tm Y",
+   "natoms": 7,
+   "count": 2
+  },
+  {
+   "elements": "Hg Ho Sm Y",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Nd Sb Tm Y",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Ho In Sm Y",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Ni Tm Y",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Ho Mg Sm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "As Ho Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ca Hg Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ho Nd Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Si Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho Tm",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Ho In Sm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Rh Sc Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Hg Ho Nd Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "In Sm Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ho Sb Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ho Nd Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Cd Rh Tm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Sm Tm Y Zn",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Ho Tm",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Ho Th Tm Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Tc Tm Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ag Ho Tm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho Sb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Bi Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ge O Tm Y",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Hg Ho Sm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ag Hg Ho Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho Mg Pr Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Rh Tc Tm Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "In Te Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Mg Sm Tm Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Al Ga Ho Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Na Tl Tm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "In Pr Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho Sn Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho P Y Zr",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "As Ho Pa Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ge Mn Tm Y",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Ag Ho In Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho Se Sm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho P Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Fe Ho P Y",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "La Tm Y Zn",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "In Te Tm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho Rh Y Zr",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Hg Ho Sc Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho Si Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Cd Ho Nd Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Hf P Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "N Tm Y Zr",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho La Sm Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ho S Y",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Rh Tm Y Zr",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho S Y",
+   "natoms": 17,
+   "count": 1
+  },
+  {
+   "elements": "Bi Pd Tm Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Al Ho Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Tm Y",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Ce Rh Tm Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Ho O P Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ho N Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "As Lu Tm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho Pd Y Zn",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ho Rh Y Zr",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho La Sb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Tm Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ho Mg Nd Tm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ac Ho Tm",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Ho Pu Se Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho In Nd Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Si Tm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho In Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho Pu S Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho Sb Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "As Hf Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Hf Rh Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Pt Tc Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ho In Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho N Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho O Rb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ag Ho Nd Tm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho Pr Y Zn",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Ag Ho Sm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Hg Nd Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho Tl Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Au Ho Mg Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ge Ho Pd Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ag Ho Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ca S Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ac Ho Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "As Ho U Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Mn U Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "As Ho Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho Ru U Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho N P Y",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ho Th Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Au Mg Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Tm Y Zn",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Ge Ho Ni Y",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Ag In Tm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ca Ho In Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Rh Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "C Ho Y",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Ho Li Te Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho Pd S Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Ho In Ir Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ho P Pt Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Sb Tc Tm Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Hg La Tm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ca Ho Se Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Co Fe Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Sm Tl Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Co Sb Tm Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ho La Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ho Pr Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "N Tm Y Zr",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho P Pa Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "In Nd Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ge Ho Y",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "As Ho Sb Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ho La Y Zn",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ho La Sb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "As Bi Tm Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Hg In Tm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Au Tm Y Zn",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ge Ho Mn Y",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Ho Ru Sb Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ho Nd Se Y",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Ho Nd O Y",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Eu Ho Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho In Pr Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "As P Tm Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Hg Ho Sm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Hg Ho Nd Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ce Hg Ho Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Co Tm Y",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Hg Sm Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "F Ho Tm",
+   "natoms": 17,
+   "count": 1
+  },
+  {
+   "elements": "Ho Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ca Tm Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Cu Ho S Y",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "As Sm Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Se Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ag Ho Pr Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Mg Pr Tm Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Ho Lu Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Sb Sm Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Rh Sm Tm Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Hg Sm Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Nd P Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Cd Ho S Y",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "Hg Nd Tm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Rh Sm Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Pd Sm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ru Tm Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "In Nd Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Nd Th Tm Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Ho Se Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho P Sb Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ho Pb Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "As Gd Ho Tm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "H Ho Y",
+   "natoms": 13,
+   "count": 1
+  },
+  {
+   "elements": "Pb Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Dy Sb Tm",
+   "natoms": 16,
+   "count": 3
+  },
+  {
+   "elements": "Ce Dy Sb Y",
+   "natoms": 16,
+   "count": 3
+  },
+  {
+   "elements": "Ce Sb Th Tm",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Ce Pm Sb Sm",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Ce Sb Sm",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Ce Dy Pm Sb",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Ce La Sb Tb",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Ca Ce Nd Sb",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Ce Sb Th Y",
+   "natoms": 8,
+   "count": 2
+  },
+  {
+   "elements": "Ce Ho Sb Th",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Ce Er Pm Sb",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Ce Er Pr Sb",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Ca Ce Sb Sm",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Ce Sb Sm Tb",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Ce Nd Pm Sb",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Ce Er Sb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ce Nd Sb Th",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Er Pr Sb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Dy Pm Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ho Sb Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ba Ce Pa Sb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Cd Ce H Sb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ca Ce Sb Th",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb Sm Th",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Dy Er Sb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ce Sb Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ce Er Pm Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Dy Sb Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ho Sb Sm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pr Sb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pd Sb Ti",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb Sm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ho Pr Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Cs Li Sb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pr Sb Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce K Sb Te",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Ce La Pm Sb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pt Sb Tm",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ce La Pm Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ce Er Sb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb Tb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Nd Sb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce La Sb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Dy Nd Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce H Sb Tc",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ho Sb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ho Sb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pu Sb Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Fe La Sb",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb Zn",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pu Sb Sm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Nd Sb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Er Sb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Au Ce Sb",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Ce Dy Pr Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Nd Sb Sm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Dy La Sb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pr Sb Sm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb Tb Th",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Rh Sb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb Sc Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ru Sb Zr",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "As Ce Np Sb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ho Pr Sb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce La Sb Th",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Er Sb Sm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Mn Ru Sb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ce P Sb Sm",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb Sn",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ag Ce H Sb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pm Sb Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ce Pr Sb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ce Li Pt Sb",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ho Pm Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb Sm Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce P Pu Sb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ce Er Sb Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce H Sb Se",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ho Pu Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ca Ce Sb Th",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce La Nd Sb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb Tb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb Te",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pm Pr Sb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ni Pr Sb",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ce Nd Sb Th",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb Tm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pm Sb Sc",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pm Sb Sm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pr Sb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ho Sb Th",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Dy Sb Sm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Nd Sb Sm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb Sr Th",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Nd Pr Sb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce H Mg Sb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ce Ho La Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce La Nd Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pr Sb Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ac Ce Nd Sb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Mg Sb",
+   "natoms": 17,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pr Sb Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce La Pr Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Er Pu Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ce H Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Nd Sb Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Lu Sb",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Ce Sb Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Pm Sb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ca Ce Er Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Nd Sm Tm",
+   "natoms": 7,
+   "count": 2
+  },
+  {
+   "elements": "Er Ho Pm Tm",
+   "natoms": 9,
+   "count": 2
+  },
+  {
+   "elements": "Dy Er Hg Tm",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Er Hf P Tm",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "As Er Pa Tm",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Er Ho Sm Tm",
+   "natoms": 9,
+   "count": 2
+  },
+  {
+   "elements": "Er N Tm Zr",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Dy Er Pr Tm",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Er Pr Tm",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Er Pu Se Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er In Pm Tm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er Ho N Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Hg Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er La Tm",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Ho Tm",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Se Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Ho Tm Zn",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "As Er Ho Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ca Er In Tm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er Sb Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Ho Pd Tm",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Er Ru Th Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Tm Zn",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Er Hg Ho Tm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er In Rh Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Fe Tm",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "B C Er Ni Tm",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Er Rh Tc Tm",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "B Er O Tm",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Er P Sm Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er P Pm Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Ho N Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Hg Ho Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er La Se Tm",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "As Er Nd Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Li Te Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Pu S Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er La Sm Tm",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Al Er Pm Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "As Er Pu Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Pr Sm Tm",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Er Ho Tm Zn",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er In Ir Tm",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Er Rh Sb Tm",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Er Ho Nd Tm",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Er Hg Sc Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ag Er Sm Tm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er Sb Sc Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Al Er Pr Tm",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "As Dy Er Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Pt Tm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er Nd Pr Tm",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Er Hf N Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Au Er Mg Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Pr Sb Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Cd Er Tm",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Er Ge Mn Tm",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Er Ge O Tm",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Er Ni Tm",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Er Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Er P Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Co Er Tm",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Er Ru Tm U",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er Rh Tm Zr",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Sm Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "C Er Tm",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er N Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er N P Tm",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Cu Dy Er Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Hg Pm Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Pd Tm",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ca Er Tl Tm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Mg Tm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ca Er Rh Tm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Co Er Ge Tm",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Cu Er Sm Tm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Be Er Pt Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "B Co Er Tm",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er P Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Hg Ho Y",
+   "natoms": 8,
+   "count": 3
+  },
+  {
+   "elements": "Ag Dy Er Ho",
+   "natoms": 8,
+   "count": 3
+  },
+  {
+   "elements": "Ag Dy Ho Y",
+   "natoms": 8,
+   "count": 3
+  },
+  {
+   "elements": "Dy Ho N Tb",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Dy Ho",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Dy Ho Pd Tb",
+   "natoms": 7,
+   "count": 2
+  },
+  {
+   "elements": "Dy Ho Pm Sb",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Dy Ho Sb",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Dy Ho P Tm",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Dy Ho N Y",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "As Dy Er Ho",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Dy Ho Mn Si",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Ag Dy Ho Pm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Hf Ho P",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Sn",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Rh Sm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Cd Dy Er Ho",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "As Dy Ho Pm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ge Ho Ni",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "C Ho Sn",
+   "natoms": 17,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho In Sm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho P Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho N Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "C Ho Tl",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Bi Dy Ho",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Dy Ho P",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Bi Dy Ho Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ag Dy Ho Pm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ce Dy Hg Ho",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Bi Dy Ho Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Hg Ho Tm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho In Pr",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Sn U",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho Mg Tl",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Ag Dy Ho Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ag Dy Ho Sm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Cd Dy Ho Sm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Hg Ho Na",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Hg Ho Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Rh Sm",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Pt",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "C Ho Th",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho La Nd",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "As Dy Hf Ho",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Ho Zn",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Mn",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho La",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho La Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Hf Ho Rh",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho",
+   "natoms": 13,
+   "count": 1
+  },
+  {
+   "elements": "As Ho Sr U",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ca Dy Ho In",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ge Ho Ni",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Ho Sm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ac Gd Ho",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Nd Sb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Ho Pm",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Ag Dy Hg Ho",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Cd Dy Ho Sm",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Zn",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Pd Si",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Tb Zn",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Zn",
+   "natoms": 19,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Ho N",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho Pb Sr",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Se Sm",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Sb Th",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho N Pa",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Ho Zn",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Ho Mo Tc",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ge Ho",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Co Cu Dy Ho",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Np P",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "As Dy Ho La",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ho Li Mg",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho P Tb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "C Ho Ta",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho P Sm",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ag Dy Ho Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ag Dy Ho S",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Br C Ho",
+   "natoms": 19,
+   "count": 1
+  },
+  {
+   "elements": "Dy Hg Ho Sc",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Co Dy Ge Ho",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Ho Np Th",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Dy F Ho",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Ho Te",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Sm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "As Dy Hf Ho",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Cd Dy Ho Mg",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Hg Ho Nd",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Ho N",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "As Ho Np Pa",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Nd Sb",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ce Dy Ho N",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ho Na Te",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho P Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Li Te",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Bi Dy Ho Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Ho P",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ag Dy Ho",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "As Ca Dy Ho Pa",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Os",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Tl Tm",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho La Pm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Au Dy Ho In",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "As Bi Dy Ho",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Ag Dy Ho Pr",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Sb Tc",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Hg Ho",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Br Ho Tc",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Rh Zr",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Ho Tb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Hf Ho N",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Pu S",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Y Zn",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho In Pm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Rh Zr",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Co Dy Ho Sb",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Nd Se",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Cu Dy Er Ho",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho N",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Mg Tb",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Bi Ce Dy Ho",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Sb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Sb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho La Tm",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Rh Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Ag Dy Ho Nd",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Nd Pr",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Nd Tm",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Pm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Nd Rh",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Hg Ho",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Tl Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Rh Tm",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Cd Dy Ho Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Co Dy Fe Ho",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "As Eu Hf Ho",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho P Th",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Eu Ho Pb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho",
+   "natoms": 11,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Sm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Rh Tb",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Se",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Dy Ho Pu S",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er N Tb Y",
+   "natoms": 12,
+   "count": 3
+  },
+  {
+   "elements": "Bi Ce Er Y",
+   "natoms": 16,
+   "count": 3
+  },
+  {
+   "elements": "Dy Er Hg Y",
+   "natoms": 8,
+   "count": 2
+  },
+  {
+   "elements": "Er Ho Rh Y",
+   "natoms": 8,
+   "count": 2
+  },
+  {
+   "elements": "Er Hg Pr Y",
+   "natoms": 8,
+   "count": 2
+  },
+  {
+   "elements": "Er In Tb Y",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Er Ho N Y",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Er Nd Sm Y",
+   "natoms": 7,
+   "count": 2
+  },
+  {
+   "elements": "Er In Nd Y",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Ag Er Tm Y",
+   "natoms": 8,
+   "count": 2
+  },
+  {
+   "elements": "Er N Tm Y",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Er Rh Y Zr",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Er Ho N Y",
+   "natoms": 16,
+   "count": 2
+  },
+  {
+   "elements": "Er Ho Pr Y",
+   "natoms": 9,
+   "count": 2
+  },
+  {
+   "elements": "Er Sb Sm Y",
+   "natoms": 8,
+   "count": 2
+  },
+  {
+   "elements": "Er P Pa Y",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Dy Er P Y",
+   "natoms": 12,
+   "count": 2
+  },
+  {
+   "elements": "Er Sm Y Zn",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er Tl Y",
+   "natoms": 13,
+   "count": 1
+  },
+  {
+   "elements": "Er P Pm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Sb Sm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Ir Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Tl Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "B Er Ru Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Pm Tb Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er In Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ca Er Pd Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "As Er Lu Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Nd Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Er Mg Tm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er Pu Te Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Ho Rh Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Au Er Y Zn",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Er Mg Te Y",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "Bi Er Ho Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er In Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Si Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er Sn Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Hg Ho Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ag Ca Er Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Co Er Ge Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Tl Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Bi Er Tb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Al Er Pr Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Er Hg Ho Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Hg Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Pd Si Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Cd Er Nd Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Er N Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Bi Er Pm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Ho P Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er In La Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Bi Dy Er Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er S Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "As Er Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Bi Er Th Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er Hg Tb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er Ge Y",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Ag Er Tb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Co Er Si Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er La S Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "B C Er Ni Y",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Au Er Ga Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Er Tb Tl Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Os Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Re Sb Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Sm Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Er Pu S Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Rh Sm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er Y",
+   "natoms": 18,
+   "count": 1
+  },
+  {
+   "elements": "Er Sm Tm Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Er Pr Tm Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "As Ce Er Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Al Dy Er Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Se Sm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Mn N Y",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "Er Pm Sb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Ho Nd Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Er Mg Pr Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er Rh Si Y",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Er Ho Rh Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Er Ho Se Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er P Sm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Rh Y",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Er Nd Sb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "As Er Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Ni Rh Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Er Hg Sm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Sb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "As Bi Er Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Er La Pr Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Er Rh Tm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Rh Tb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Pd Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Ce Er In Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Ni Ru Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er P Tm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Fe Si Y",
+   "natoms": 15,
+   "count": 1
+  },
+  {
+   "elements": "Ce Er Tm Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Bi Er Nd Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Mg Se Y",
+   "natoms": 14,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Pr Y",
+   "natoms": 9,
+   "count": 1
+  },
+  {
+   "elements": "Er Hf Rh Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Se Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Ni P Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Bi Er Pr Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Sb Th Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Ag Er Sm Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Y",
+   "natoms": 7,
+   "count": 1
+  },
+  {
+   "elements": "Er In Sm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Tb Tl Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Bi Er Pr Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "B Er Fe Y",
+   "natoms": 10,
+   "count": 1
+  },
+  {
+   "elements": "Cd Er Pr Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Bi Dy Er Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er Y Zn",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Er In Pm Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Er Gd Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er Ho Sb Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "As Er Pr Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er Sb Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "Er In Tb Y",
+   "natoms": 8,
+   "count": 1
+  },
+  {
+   "elements": "Ag Er Y",
+   "natoms": 6,
+   "count": 1
+  },
+  {
+   "elements": "Dy Er N Y",
+   "natoms": 12,
+   "count": 1
+  },
+  {
+   "elements": "As Er Pm Y",
+   "natoms": 16,
+   "count": 1
+  },
+  {
+   "elements": "Er Rb S Y",
+   "natoms": 16,
+   "count": 1
+  }
+ ]
+}

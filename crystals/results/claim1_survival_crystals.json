@@ -1,0 +1,213 @@
+{
+  "ckpt": "/opt/dlami/nvme/recast/train/mix_ep120_ckpt",
+  "k_bins_used": 23,
+  "M_data": 10,
+  "M_gen": 12,
+  "eah_max_filter": 5.0,
+  "n_data_kept": 230,
+  "n_gen_kept": 235,
+  "target": "e_above_hull",
+  "scorer": "single-MACE (same for both sides)",
+  "data": {
+    "T": 9.341086029880567e-05,
+    "E": 0.0002712290551233954,
+    "V": 0.00036463991542220103
+  },
+  "model": {
+    "T": 0.39530593692740856,
+    "E": 0.9099310402223926,
+    "E_naive": 0.9428732016330099,
+    "V": 1.3052369771498011
+  },
+  "ratio": {
+    "T_model_over_data": 4231.905537138736,
+    "E_model_over_data": 3354.843528133151
+  },
+  "per_bin_mean_r2": 0.30337387572350377,
+  "bins": [
+    {
+      "elements": "Er N Tb Y",
+      "natoms": "12",
+      "n_data": 10,
+      "n_gen": 12,
+      "data_mean": 0.00980014382960217,
+      "model_mean": 0.010907492534885025
+    },
+    {
+      "elements": "As C Co Na O",
+      "natoms": "50",
+      "n_data": 10,
+      "n_gen": 3,
+      "data_mean": 0.00641837170488282,
+      "model_mean": 3.015109925346122
+    },
+    {
+      "elements": "Nb Ta",
+      "natoms": "11",
+      "n_data": 10,
+      "n_gen": 10,
+      "data_mean": 0.028318242346040457,
+      "model_mean": 0.4877869468240018
+    },
+    {
+      "elements": "Ce Er Pu S",
+      "natoms": "12",
+      "n_data": 10,
+      "n_gen": 12,
+      "data_mean": 0.008517345573524793,
+      "model_mean": 0.005831015382315711
+    },
+    {
+      "elements": "La Nd Pr Sb",
+      "natoms": "12",
+      "n_data": 10,
+      "n_gen": 12,
+      "data_mean": 0.015314821735314777,
+      "model_mean": 0.01373900035133698
+    },
+    {
+      "elements": "Dy Ho P Y",
+      "natoms": "12",
+      "n_data": 10,
+      "n_gen": 12,
+      "data_mean": 0.007792586426127013,
+      "model_mean": 0.009067218531595644
+    },
+    {
+      "elements": "Ca O Sr Ti",
+      "natoms": "25",
+      "n_data": 10,
+      "n_gen": 7,
+      "data_mean": 0.025826205263226855,
+      "model_mean": 1.6496440207768928
+    },
+    {
+      "elements": "Ho O Sm",
+      "natoms": "40",
+      "n_data": 10,
+      "n_gen": 9,
+      "data_mean": 0.011249895021199307,
+      "model_mean": 0.23499647015095468
+    },
+    {
+      "elements": "Er Ho P Tm",
+      "natoms": "12",
+      "n_data": 10,
+      "n_gen": 12,
+      "data_mean": 0.007778692486207462,
+      "model_mean": 0.010351946178535002
+    },
+    {
+      "elements": "Ce Er Nd Sb",
+      "natoms": "12",
+      "n_data": 10,
+      "n_gen": 12,
+      "data_mean": 0.011096827639576557,
+      "model_mean": 0.015018336680488428
+    },
+    {
+      "elements": "Pd Pt",
+      "natoms": "11",
+      "n_data": 10,
+      "n_gen": 6,
+      "data_mean": 0.009403157484192981,
+      "model_mean": 0.2003056320896152
+    },
+    {
+      "elements": "H P Rb",
+      "natoms": "12",
+      "n_data": 10,
+      "n_gen": 8,
+      "data_mean": 0.07715125602282553,
+      "model_mean": 2.289086162926123
+    },
+    {
+      "elements": "Nd O Sm",
+      "natoms": "40",
+      "n_data": 10,
+      "n_gen": 7,
+      "data_mean": 0.003005540465006007,
+      "model_mean": 0.3879394794506889
+    },
+    {
+      "elements": "Er Ho Pr Sm",
+      "natoms": "7",
+      "n_data": 10,
+      "n_gen": 12,
+      "data_mean": 0.020564720138165172,
+      "model_mean": 0.015355977971634646
+    },
+    {
+      "elements": "Bi Ce La Th",
+      "natoms": "12",
+      "n_data": 10,
+      "n_gen": 12,
+      "data_mean": 0.007298324395954836,
+      "model_mean": 0.008761903644694646
+    },
+    {
+      "elements": "Dy Er N Y",
+      "natoms": "12",
+      "n_data": 10,
+      "n_gen": 12,
+      "data_mean": 0.002388858743234934,
+      "model_mean": 0.0036241123784643095
+    },
+    {
+      "elements": "Ce Ho Nd Sb",
+      "natoms": "12",
+      "n_data": 10,
+      "n_gen": 12,
+      "data_mean": 0.011490955287642369,
+      "model_mean": 0.024845444768613206
+    },
+    {
+      "elements": "La Nd Pm Sb",
+      "natoms": "12",
+      "n_data": 10,
+      "n_gen": 12,
+      "data_mean": 0.0,
+      "model_mean": 0.0
+    },
+    {
+      "elements": "Er Ho O",
+      "natoms": "40",
+      "n_data": 10,
+      "n_gen": 10,
+      "data_mean": 0.002426135227501014,
+      "model_mean": 0.3429742161645814
+    },
+    {
+      "elements": "La Nd",
+      "natoms": "13",
+      "n_data": 10,
+      "n_gen": 12,
+      "data_mean": 0.0014273775052862981,
+      "model_mean": 1.3273659237042013
+    },
+    {
+      "elements": "La Tb",
+      "natoms": "12",
+      "n_data": 10,
+      "n_gen": 10,
+      "data_mean": 0.0069541386060772755,
+      "model_mean": 0.1587713784069913
+    },
+    {
+      "elements": "Ce Pr Sb Tb",
+      "natoms": "12",
+      "n_data": 10,
+      "n_gen": 12,
+      "data_mean": 0.017652108514364873,
+      "model_mean": 0.03287740579571463
+    },
+    {
+      "elements": "La P Ru",
+      "natoms": "20",
+      "n_data": 10,
+      "n_gen": 9,
+      "data_mean": 0.042093961329943405,
+      "model_mean": 3.173371521820533
+    }
+  ]
+}

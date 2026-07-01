@@ -1,0 +1,46 @@
+{
+  "metric": "metastable rate (e_above_hull <= 0.1)",
+  "N": 80,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "E_over_EplusT": 0.573,
+  "n_per_side": {
+    "bin_hi": 213,
+    "bin_lo": 204,
+    "knob_hi": 227,
+    "knob_lo": 226
+  },
+  "rates": {
+    "bin_hi": 0.831,
+    "bin_lo": 0.4461,
+    "knob_hi": 0.8722,
+    "knob_lo": 0.8628
+  },
+  "sanity_gate": {
+    "bin_hi_metastable_rate": 0.831,
+    "threshold": 0.5,
+    "passed": true
+  },
+  "bin_shift": 0.3849,
+  "bin_ci95": [
+    0.2964,
+    0.4676
+  ],
+  "knob_shift": 0.0094,
+  "knob_ci95": [
+    -0.0524,
+    0.0712
+  ],
+  "bin_over_knob": 40.88,
+  "ratio_ci95": [
+    -99.68,
+    699.0
+  ],
+  "within_dist_reference": {
+    "push_HIGH_meta": "101/120 (0.842)",
+    "push_LOW_meta": "2/120 (0.017)"
+  }
+}

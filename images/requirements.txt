@@ -1,0 +1,13 @@
+# Tier 1 (shadow-only verify_dataside.py) needs ONLY numpy.
+numpy>=1.26
+# Tier 2 (full regen) — install torch/torchvision from the cu128 index:
+#   pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu128
+torch==2.7.0
+torchvision==0.22.0
+diffusers==0.38.0
+transformers==5.12.1
+accelerate
+safetensors
+datasets>=5.0
+scipy
+pillow

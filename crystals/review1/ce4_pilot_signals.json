@@ -1,0 +1,59 @@
+{
+  "chosen": [
+    [
+      "La P Ru",
+      "20"
+    ],
+    [
+      "Er Ho P Tm",
+      "12"
+    ],
+    [
+      "La Nd",
+      "11"
+    ],
+    [
+      "Er O Y",
+      "40"
+    ],
+    [
+      "Ce Pr Sb Tb",
+      "12"
+    ],
+    [
+      "Ce Er Sb Sm",
+      "12"
+    ],
+    [
+      "Ho O Tm",
+      "40"
+    ],
+    [
+      "La N Ru",
+      "20"
+    ]
+  ],
+  "signals": {
+    "density": {
+      "rho_spread_ratio": 1.432,
+      "drift_norm": 0.25,
+      "support_overlap": 0.938,
+      "n_data": 96,
+      "n_model": 96
+    },
+    "bvs_gii": {
+      "rho_spread_ratio": 2.591,
+      "drift_norm": 0.321,
+      "support_overlap": 0.843,
+      "n_data": 60,
+      "n_model": 51
+    },
+    "e_above_hull": {
+      "rho_spread_ratio": 58.361,
+      "drift_norm": 63.309,
+      "support_overlap": 0.623,
+      "n_data": 96,
+      "n_model": 77
+    }
+  }
+}

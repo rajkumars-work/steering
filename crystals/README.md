@@ -48,6 +48,11 @@ scripts put it on `sys.path` automatically.
 
 This single-MACE scorer is what produced every steering number in the paper.
 
+> **Benign warnings.** On first run `score.py` may print that `EquiformerV2Similarity`
+> (fairchem) is unavailable and that `cuequivariance` acceleration is disabled. Both are
+> **optional** — a similarity feature and a speedup we don't use — and neither is on the
+> SUN/Combined path. Ignore them; the Combined score is unaffected.
+
 ## Accuracy / how close targets are hit (measured)
 Mixture-ladder calibration, n=100/point, single-MACE, anchors HIGH≈0.85 / broad-LOW≈0.14:
 

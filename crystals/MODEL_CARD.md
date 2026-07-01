@@ -1,3 +1,13 @@
+---
+license: mit
+tags:
+- materials
+- crystal-structure-generation
+- generative-model
+- chemistry
+- condensed-matter-physics
+---
+
 # CUES crystal generator — model card
 
 The crystal-domain model behind the steering paper's cross-domain claims. Written to parity with

@@ -1,0 +1,9 @@
+{
+  "best_class": 715,
+  "shadow_vb": 0.08496742040525618,
+  "empirical_var_best_cfg1": 0.26506450760354944,
+  "cfg_strong_delta": 0.2059766041735811,
+  "cfg_strong_chi2": 0.3784542258045445,
+  "ceil_empirical_within": 0.3167250905965047,
+  "delta_le_empirical_within": true
+}

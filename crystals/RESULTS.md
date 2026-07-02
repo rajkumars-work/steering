@@ -69,6 +69,21 @@ Notes:
 | **C-E12** frontier coverage | `review1/ce12_coverage.py` | `CUES_TRAIN_CSV=… python review1/ce12_coverage.py` | GPU (gen only, **no MACE**); gap+ε₀ = composition surrogates in `data/` |
 | **C-E12** figures | `review1/ce12_figure.py` | `python review1/ce12_figure.py` | CPU; reads `results/ce12_coverage.json` |
 
+## Reproducing the round-6 experiments
+Tier-1 = data-side / re-analysis (CPU, no checkpoint); tier-2 = needs GPU + checkpoint.
+| exp | script | run command | needs |
+|---|---|---|---|
+| **C-E16** strongest (best-of-N) knob | `review1/ce16_strongest_knob.py` | `bash review1/run_ce16_super.sh` (detached supervisor) | **tier-2**: GPU, ckpt, `CUES_TRAIN_CSV`, MP key (single-MACE); reads `review1/ce14_panel.json` |
+| **C-E17** stability ratio bound | `review1/ce17_stability_bound.py` | `python review1/ce17_stability_bound.py` | **tier-1 CPU**; reads `results/ce14_panel.json` |
+| **C-E17** verify | `review1/verify_ce17.py` | `python review1/verify_ce17.py` | CPU; checks the ≥24× floor + discount self-consistency |
+| **C-E18** key-selection diagnostic | `review1/ce18_key_selection.py` | `python review1/ce18_key_selection.py` | **tier-1 CPU**; reads `results/ce8_keys.json` + `results/ce14_panel.json` → `figures/fig_ce18_key_selection.png` |
+| **C-E18** verify | `review1/verify_ce18.py` | `python review1/verify_ce18.py` | CPU; checks E/(E+T)→ratio monotonicity + recipe argmax |
+
+Notes:
+- **C-E17/C-E18 are pure re-analysis** of C-E8/C-E14 — they ship in the data-light repo with no GPU.
+- **C-E16** re-uses the C-E14 showing side (`bin_shift`); its supervisor retries on contended-GPU
+  windows (exit 75) and mirrors the C-E14 stability harness.
+
 ## Status (round 1 + 2 — all complete)
 R1: C-E7 ✅ · C-E2 ✅ · C-E4 ✅ (vindicated) · C-E1 ✅ (density/ladder/DPO/joint/Combined-sweep;
 Claim-1 split blocked, data off-box) · C-E3 ✅.
@@ -76,3 +91,7 @@ R4: C-E12 ✅ (frontier coverage — showing 0.40 ≫ conditioning≈telling≈0
 R2: C-E8 ✅ (ordering stable across keys) · C-E9 ✅ (ensemble r²=0.42 ≈ single 0.49 → stability
 genuinely doesn't carry; **Claim 1 strengthens**) · C-E4-artifact ✅ · scorer hygiene ✅ · C-E3
 +seeds ✅ (6-seed tie measured). Live CI tables: the coordination write-up.
+R6: C-E16 ✅ (best-of-12 steel-man: chemistry still wins 26×/14×/4.75× gap/density/stability; budget
+ceiling holds at every real k; pre-registered) · C-E17 ✅ (stability floor ≥24× under weakest carry-over)
+· C-E18 ✅ (E/(E+T) predicts realized ratio, Spearman=1; key-selection recipe). Verify scripts:
+`verify_ce16/17/18.py`.

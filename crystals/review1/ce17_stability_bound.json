@@ -1,0 +1,94 @@
+{
+  "inputs": {
+    "bin_shift": 0.3849,
+    "bin_ci95": [
+      0.2964,
+      0.4676
+    ],
+    "knob_shift": 0.0094,
+    "knob_ci95": [
+      -0.0524,
+      0.0712
+    ],
+    "ratio_observed": 40.88,
+    "carryover": {
+      "single_mace_ce2": {
+        "r2": 0.488,
+        "ci95": [
+          0.172,
+          0.706
+        ]
+      },
+      "ensemble_ce9": {
+        "r2": 0.42,
+        "ci95": [
+          0.23,
+          0.66
+        ]
+      }
+    },
+    "note": "ratio_observed uses the point tag-knob (0.0094); the tag-knob CI includes 0 (no reliable knob effect), so the ratio's upper CI is unstable -- the robust inference is bin_ci95 excludes 0 while knob_ci95 includes 0. C-E17 discounts the SHOWING side for carry-over; knob uncertainty is handled separately below."
+  },
+  "bounds": {
+    "single_mace_ce2": {
+      "r2_point": 0.488,
+      "r2_lower": 0.172,
+      "models": {
+        "attenuation_sqrtR2": {
+          "discount_factor": 0.5937,
+          "discounted_bin_shift": 0.2285,
+          "ratio_vs_point_knob": 24.3,
+          "ratio_floor_worstcase_knob": 2.5
+        },
+        "variance_R2": {
+          "discount_factor": 0.3525,
+          "discounted_bin_shift": 0.1357,
+          "ratio_vs_point_knob": 14.4,
+          "ratio_floor_worstcase_knob": 1.5
+        },
+        "raw_R2lower": {
+          "discount_factor": 0.172,
+          "discounted_bin_shift": 0.0662,
+          "ratio_vs_point_knob": 7.0,
+          "ratio_floor_worstcase_knob": 0.7
+        }
+      }
+    },
+    "ensemble_ce9": {
+      "r2_point": 0.42,
+      "r2_lower": 0.23,
+      "models": {
+        "attenuation_sqrtR2": {
+          "discount_factor": 0.74,
+          "discounted_bin_shift": 0.2848,
+          "ratio_vs_point_knob": 30.3,
+          "ratio_floor_worstcase_knob": 3.1
+        },
+        "variance_R2": {
+          "discount_factor": 0.5476,
+          "discounted_bin_shift": 0.2108,
+          "ratio_vs_point_knob": 22.4,
+          "ratio_floor_worstcase_knob": 2.3
+        },
+        "raw_R2lower": {
+          "discount_factor": 0.23,
+          "discounted_bin_shift": 0.0885,
+          "ratio_vs_point_knob": 9.4,
+          "ratio_floor_worstcase_knob": 1.0
+        }
+      }
+    }
+  },
+  "headline": {
+    "floor_ratio": 24.3,
+    "model": "sqrt(R^2) contrast attenuation (matches showing-reach ~ sqrt(chi^2*E))",
+    "carryover_source": "single-MACE C-E2, CI-lower R^2=0.172 vs point 0.488",
+    "sensitivity": {
+      "variance_R2_model": 14.4,
+      "raw_R2lower_model": 7.0,
+      "ensemble_label_ce9_primary": 30.3
+    },
+    "worstcase_knob_ratio_raw_model": 0.7,
+    "sentence": "Even crediting only the CI-lower carry-over (single-MACE R^2=0.172 vs the 0.488 point estimate), stability's chemistry-selection advantage is >= 24x the measured within-chemistry tag-knob (sensitivity: 14x under a variance-discount, 7x under the most punishing raw-R^2 discount); under the cleaner C-E9 ensemble label the floor is 30x. All these compare against the tag-knob's point effect (0.0094); the only way the ratio falls below 1x is to also credit the tag-knob its full upper-CI (0.071) -- but that knob CI includes 0, i.e. telling has no statistically reliable within-chemistry effect, so that is not a genuine telling win. Contrast with gap (800x) and density (91x), whose carry-over is near-perfect (R^2>=0.98) so they need essentially no discount: the headline should trust gap/density and caveat stability as >= 24x."
+  }
+}

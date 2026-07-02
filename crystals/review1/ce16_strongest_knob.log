@@ -1,0 +1,17 @@
+[02:25:27] eligible chems 1576; audit pool 500; seeds [0, 1, 2] x 30 chems x M=12
+[02:25:27] loading model, then single-MACE ...
+Loaded ed_ckpt_final.pt (238.0M params)
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+[02:26:04] preflight scorer: NaCl e_above_hull=0.001283117675022094
+[02:26:22] preflight generator: 6/6 atoms
+[03:12:43]   seed0: pooled candidates gap=360 dens=360 stab=329
+[04:06:37]   seed1: pooled candidates gap=708 dens=708 stab=659
+[04:58:28]   seed2: pooled candidates gap=1054 dens=1054 stab=978
+[04:58:28]   == gap: E/(E+T)=0.979 sqrt(E/T)=6.78 | strong-knob Delta(k=12)=0.1031 chi2=5.2609 bin/STRONG=26.28 | ceiling holds=False
+[04:58:28]   == density: E/(E+T)=0.912 sqrt(E/T)=3.23 | strong-knob Delta(k=12)=0.6165 chi2=5.2609 bin/STRONG=13.63 | ceiling holds=False
+[04:58:29]   == stability: E/(E+T)=0.534 sqrt(E/T)=1.07 | strong-knob Delta(k=12)=0.0811 chi2=5.2609 bin/STRONG=4.75 | ceiling holds=False
+[04:58:29] === C-E16 summary: strongest within-chem knob vs chemistry selection ===
+[04:58:29]   gap        E/(E+T)=0.979  sqrt(E/T)=6.78  tag-knob=0.0034  strong-knob Delta=0.1031  bin/STRONG=26.28  ceiling_holds=False
+[04:58:29]   density    E/(E+T)=0.912  sqrt(E/T)=3.23  tag-knob=0.0919  strong-knob Delta=0.6165  bin/STRONG=13.63  ceiling_holds=False
+[04:58:29]   stability  E/(E+T)=0.534  sqrt(E/T)=1.07  tag-knob=0.0094  strong-knob Delta=0.0811  bin/STRONG=4.75  ceiling_holds=False
+CE16-DONE

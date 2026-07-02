@@ -11,3 +11,4 @@ safetensors
 datasets>=5.0
 scipy
 pillow
+matplotlib     # tier-2 figures only (E12/E14/E15); scripts skip the plot if absent

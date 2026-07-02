@@ -191,6 +191,8 @@ All scripts run **repo-relative** from `steering/images/` — no hardcoded paths
 |---|---|---|
 | `verify_dataside.py` | Claim 1 split + spectrum + coarsening, and Claim 2 data-side bounds, from the 132 KB shadow only | `python src/verify_dataside.py` |
 | `e8_key_ablation.py` (E8) | key-sensitivity: T/E and E/(E+T) under 1000-class, k-means, and random keys (law of total variance) | `python src/e8_key_ablation.py` |
+| `e14_verify.py` | re-checks E14's pre-registered claims from `distributions/e14_strong_knob.json` (χ² caps, reach ceilings, ratio signs); prints the honest FAIL (aesthetic flip) | `python src/e14_verify.py` |
+| `e15_verify.py` | re-checks E15's claims from `distributions/e15_key_selection.json` (pooled Spearman>0, random-key floor) | `python src/e15_verify.py` |
 
 **Tier 2 — generation-side, needs the DiT stack + one GPU** (A10G ok; runs are minutes–~30 min
 each, serialized on one GPU). First fetch models once:
@@ -212,8 +214,13 @@ bash scripts/download_models.sh          # → ./models + HF cache (or set $MODE
 | E11 | `e11_nscale_coverage.py` (+`compose.py`) | N-property coverage; axes via argv | `python src/e11_nscale_coverage.py sim_vehicle sim_food brightness` | ~4k gen-equiv, ~35 min |
 | E11′ | `e11_corners_metric.py` | #-corners-covered metric (post-processing of E10b/E11b scores) | `python src/e11_corners_metric.py` | <1 s, no GPU |
 | E12 | `e12_panel.py` | bins-vs-knobs ratio over the 7-target panel vs E/(E+T) | `python src/e12_panel.py` | ~9k gen, ~2 hr |
+| E14 | `e14_strong_knob.py` (+`soft_prompt.py`) | bins vs the strongest knob: audit-CFG + **learned soft-prompt** (1+1)-ES per target; χ²/reach/stay + ratio | `python src/e14_strong_knob.py` | ~9k gen, ~2.4 hr |
+| E15 | `e15_key_selection.py` | key-selection diagnostic: data-side E/(E+T) vs realized bin/knob ratio across 4 keys (knob shift reused from E14) | `python src/e15_key_selection.py` | ~2.5k gen, ~15 min |
 
-(Legacy generation-side scripts `claims234.py`, `claim2_chi2.py`, `claim3_images.py`,
+(E14/E15 write `distributions/e14_strong_knob.json` / `e15_key_selection.json` + figures
+`figures/fig_e14_ratio_vs_efrac.png` / `fig_e15_efrac_vs_ratio.png`; then run the tier-1
+`e14_verify.py` / `e15_verify.py`. `soft_prompt.py` is the DiT soft-prompt mechanism, no I/O.
+Figures need `matplotlib`. Legacy generation-side scripts `claims234.py`, `claim2_chi2.py`, `claim3_images.py`,
 `claim1_survives*.py` are tier-2 and follow the same `python src/<name>.py` pattern.)
 
 ## round 2 (review.2/review.3) — CIs on every headline number
@@ -277,3 +284,27 @@ sensitivity). Methods: telling (1 bin), compositional (Composable Diffusion), sh
   guidance-coupling is a second axis. Claim scope: "bins beat knobs except for low-level,
   guidance-coupled pixel stats." Low-E end has one clean point (brightness); densifying it needs a
   fresh audit (gated ImageNet stream blocked it here).
+
+## round 6 (review.1/review.2 ICLR-2027) — strongest knob + key selection
+
+`src/{soft_prompt,e14_strong_knob,e15_key_selection,e14_verify,e15_verify}.py`; JSONs/figures as
+above. Full writeup: `paper/image_experiments.results.md`. Pre-registered commit `5bafc8b`.
+
+- **E14 — bins vs the *strongest* knob.** Against a **learned soft-prompt** (textual-inversion-style
+  per-block DiT conditioning, (1+1)-ES optimized directly on each scorer) plus audit-calibrated CFG,
+  the bin/knob ratio becomes **cleanly monotone in E/(E+T)** (0.29, 0.41, 2.97, 2.93 across
+  E/(E+T) 0.17→0.72) — **resolving E12's weak Spearman (0.43→clean)**: equalizing knob strength
+  removes the guidance-coupling axis. Bins still beat the strongest knob **~3×** on high-E semantic
+  targets. **⚠️ aesthetic flips to a knob-win** (E12 4.55×→0.41×); with brightness (0.29×) the learned
+  knob wins the two lowest-E/(E+T) smooth scalars. Revised scope: **bins beat every knob on high-E
+  semantic structure; a learned knob wins low-E smooth scalars** — crossover set by E/(E+T). Theory
+  intact: every arm respects Δ≤√(χ²·V_total); the winning knobs win only by *leaving the bin*
+  (stay=0.00), and the in-bin bound Δ≤√(χ²·T) holds once T is empirical (shadow `v_b` underestimated
+  3×: aesthetic empirical within-var 0.265 vs 0.085 → ceiling 0.317 ≥ Δ 0.206). χ² asymmetry stands
+  (knobs O(1–19) vs showing O(100)). `e14_verify.py` reports **FAIL by design** — the C3/C2 failures
+  are exactly the pre-registered aesthetic flip + the `v_b`-proxy breach, surfaced honestly.
+- **E15 — key selection from data alone.** Data-side E/(E+T) predicts the realized bin/knob ratio
+  across candidate keys (imagenet_1000 / kmeans_100 / kmeans_50 / random_50), **pooled Spearman
+  0.881**, random-partition control at the floor for all three targets. Recipe: audit candidate keys
+  shadow-only, pick max E/(E+T); a low max ⇒ the target is intrinsically knob-shaped. E14 (vary
+  target) and E15 (vary key) are two orthogonal sweeps of the same E/(E+T) law. `e15_verify.py`: PASS.

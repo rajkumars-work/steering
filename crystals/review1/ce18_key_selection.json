@@ -1,0 +1,115 @@
+{
+  "validation": {
+    "per_property": {
+      "gap": {
+        "efrac": 0.979,
+        "ratio": 801.43,
+        "carryover_r2": null
+      },
+      "density": {
+        "efrac": 0.955,
+        "ratio": 91.44,
+        "carryover_r2": 0.993
+      },
+      "stability": {
+        "efrac": 0.573,
+        "ratio": 40.88,
+        "carryover_r2": 0.526
+      }
+    },
+    "order_by_efrac": [
+      "stability",
+      "density",
+      "gap"
+    ],
+    "monotone_efrac_predicts_ratio": true,
+    "spearman_n3": 1.0,
+    "note": "n=3 properties under the operative els_nat key; illustrative + mechanistic (budget law)."
+  },
+  "selection": {
+    "key_quality_def": "between_frac * carryover_r2 (usable showing-budget fraction)",
+    "table": {
+      "density": {
+        "els_nat": {
+          "between_frac": 0.955,
+          "carryover_r2": 0.993,
+          "key_quality": 0.9483
+        },
+        "els_only": {
+          "between_frac": 0.938,
+          "carryover_r2": 0.991,
+          "key_quality": 0.9296
+        },
+        "anion": {
+          "between_frac": 0.282,
+          "carryover_r2": 0.999,
+          "key_quality": 0.2817
+        }
+      },
+      "bvs_gii": {
+        "els_nat": {
+          "between_frac": 0.777,
+          "carryover_r2": 0.709,
+          "key_quality": 0.5509
+        },
+        "els_only": {
+          "between_frac": 0.81,
+          "carryover_r2": 0.84,
+          "key_quality": 0.6804
+        },
+        "anion": {
+          "between_frac": 0.646,
+          "carryover_r2": 0.807,
+          "key_quality": 0.5213
+        }
+      },
+      "e_above_hull": {
+        "els_nat": {
+          "between_frac": 0.571,
+          "carryover_r2": 0.526,
+          "key_quality": 0.3003
+        },
+        "els_only": {
+          "between_frac": 0.517,
+          "carryover_r2": 0.31,
+          "key_quality": 0.1603
+        },
+        "anion": {
+          "between_frac": 0.309,
+          "carryover_r2": 0.569,
+          "key_quality": 0.1758
+        }
+      }
+    },
+    "recipe": {
+      "density": {
+        "best_key": "els_nat",
+        "key_quality": 0.9483,
+        "ranking": [
+          "els_nat",
+          "els_only",
+          "anion"
+        ]
+      },
+      "bvs_gii": {
+        "best_key": "els_only",
+        "key_quality": 0.6804,
+        "ranking": [
+          "els_only",
+          "els_nat",
+          "anion"
+        ]
+      },
+      "e_above_hull": {
+        "best_key": "els_nat",
+        "key_quality": 0.3003,
+        "ranking": [
+          "els_nat",
+          "anion",
+          "els_only"
+        ]
+      }
+    }
+  },
+  "recipe_text": "Choosing the key (crystal pi-selection): enumerate cheap chemical partitions (element-set, element-set+atom-count, anion family), and for the target property pick the key maximizing key_quality = between_frac x carry-over R^2 (the fraction of property variance that is both between-chemistry AND survives generation). On the C-E8 keys this recommends: density->els_nat (q=0.9483); bvs_gii->els_only (q=0.6804); e_above_hull->els_nat (q=0.3003). This validates the operative element-set+atom-count key for density and stability, and flags that the coarse anion key collapses density steerability (between_frac 0.955->0.282). The predictor is the same data-side E/(E+T) that (validation) tracks the realized C-14 ratio across properties (gap>density>stability). Caveat: this assumes a cheap chemical label exists; unsupervised key discovery is future work."
+}

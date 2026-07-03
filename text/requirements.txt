@@ -1,0 +1,17 @@
+# Tier 1 (shadow-only verify_dataside.py) needs ONLY numpy.
+numpy>=1.26
+
+# Tier 2 (full Stage-A regen: re-pull the corpus + rescore) — no GPU needed.
+pandas>=2.0
+pyarrow
+datasets>=5.0
+nltk>=3.9        # nltk.sentiment.vader — download the vader_lexicon on first use
+textstat         # Flesch-Kincaid grade level
+
+# Tier 3 (Stage B: steered generation) — NOT executed in this run; the Stage-A
+# gate failed (see RESULTS.md), so Stage B was never launched and these were
+# never installed/exercised. Listed for completeness / to resume Stage B later
+# under a different key/target choice.
+# torch==2.7.0 --index-url https://download.pytorch.org/whl/cu128
+# transformers>=4.45
+# accelerate

@@ -69,8 +69,6 @@ The **data-side** image claims need only the shipped 132 KB shadow (`numpy`, run
   measured and reconciled in `images/RESULTS.md`. Data-side claims reproduce exactly.
 - `crystals/` — the CUES steering verification (checkpoint + scripts).
 
-For the maintainer steps to publish this repo (HF upload, GitHub, arXiv links), see **[`PUBLISH.md`](PUBLISH.md)**.
-
 ## Citation
 
 ```bibtex

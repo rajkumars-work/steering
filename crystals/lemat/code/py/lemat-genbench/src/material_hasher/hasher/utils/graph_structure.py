@@ -23,7 +23,7 @@ def get_structure_graph(
     Returns:
         Graph: networkx Graph object
     """
-    structure_graph = StructureGraph.with_local_env_strategy(
+    structure_graph = StructureGraph.from_local_env_strategy(
         structure=structure,
         strategy=bonding_algorithm(**bonding_kwargs),
     )

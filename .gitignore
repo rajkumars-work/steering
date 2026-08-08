@@ -4,3 +4,13 @@ __pycache__/
 *.pyc
 hf_cache/
 models/
+# Exception: lemat_genbench's own models/ subpackage (ORB/MACE/UMA/Equiformer
+# calculator classes + registry.py) is real source, not a weights-cache dir.
+# The blanket models/ rule above is intentional -- it's meant to keep
+# downloaded model *weight* files out of git (users get those from HF at
+# runtime) -- but it happened to share a name with this Python source
+# subpackage, so the rule accidentally swept that up too, and this package
+# was never actually committed. Without it, score_3mlip.py/verify_combined.py
+# fail with ModuleNotFoundError on lemat_genbench.models.registry.
+!crystals/lemat/code/py/lemat-genbench/src/lemat_genbench/models/
+!crystals/lemat/code/py/lemat-genbench/src/lemat_genbench/models/**

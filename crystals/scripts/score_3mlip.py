@@ -7,7 +7,7 @@ ats=read(sys.argv[1],index=":")
 structs=[AseAtomsAdaptor.get_structure(a) for a in ats]
 pre=create_multi_mlip_preprocessor(
     mlip_names=["orb","mace","uma"], relax_structures=False, n_jobs=1, extract_embeddings=False,
-    mlip_configs={"orb":{"model_type":"orb_v3_conservative_inf_omat","device":"cuda"},
+    mlip_configs={"orb":{"model_type":"orb_v3_conservative_inf_mpa","device":"cuda"},  # _mpa, not _omat -- see README "orb calibration"
                   "mace":{"model_type":"mp","device":"cuda"},
                   "uma":{"model_name":"uma-s-1p1","task":"omat","device":"cuda"}})
 res=pre.run(structs); sun=SUNMetric()

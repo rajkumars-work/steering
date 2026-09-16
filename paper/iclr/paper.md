@@ -16,24 +16,28 @@
 Generative models are steered with *knobs* — prompts, guidance scales,
 property tags — but turning a knob past some point stops moving the property
 you care about. We show this ceiling is not a model limitation but a budget
-fixed by the training data before the model is trained. A cheap key sorts a
-model's outputs into bins, splitting a target property's variance into a
-within-bin part (T) and a between-bin part (E). Turning a knob (*telling*)
-only reweights within one bin, so its reach is bounded by T; composing
-examples of what you want more of (*showing*) reweights across bins, so its
-reach is bounded by E. Both bounds are computed directly from the training
-data, before the model exists, and transfer to a trained model whenever it
-reproduces the property faithfully — a condition we make checkable with two
-simple diagnostics. We verify the framework in two unrelated domains,
-class-conditional image generation and crystal-structure generation.
-Choosing examples over knobs out-reaches even the strongest knob-based
-baselines we could build, by 4.8–26× on crystal properties and about 3× on the
-image targets where examples matter most. Where a property's between-bin
-share is small, a strong knob wins instead; a simple ratio of the two parts
-predicts this crossover in advance. A property's curvature also determines
-which recipe works best: concentrating on a single bin for an average, or
-spreading across bins for coverage. The audit needs no generative model, no
-fine-tuning, and no GPU.
+fixed by the training data before the model is trained. Turning a knob
+(*telling*) reaches only an arbitrary slice of this budget, fixed by the
+value named, not by what the budget allows. We introduce *showing*, which
+targets any chosen range in the full budget instead. A knob is confined to
+whichever value it names, so we group outputs by that same kind of
+attribute — an image's class, a crystal's chemistry — into bins. A target
+property's variance splits exactly into a within-bin
+part (telling's reach) and a between-bin part, reachable only by showing —
+a batch drawn from several bins at once. Both are computed from the data
+before the model exists — no generative model, no GPU — and predict whether
+they transfer to a trained model before it is audited: on crystals, this
+correctly forecast the carry-over order of three properties. We verify the framework in two
+unrelated domains, image and crystal-structure generation: showing
+out-reaches the strongest knob baselines we could build by 4.8–26× on
+crystal properties and 3× on image targets. Reaching a chosen point with
+showing needs no fine-tuning of the model — only a different choice of
+which examples it draws from. On occasion telling is the correct choice
+instead, and the same two quantities determine when. A property's curvature further
+sets which shape of showing wins: concentrate on one bin for an average,
+spread across bins for coverage. Showing also buys expressiveness: since the specification
+lives in the examples, it can steer toward a target you can only recognize,
+not name — a curator's preferred set, with no explicit criterion behind it.
 
 ## 1 Introduction
 
@@ -51,15 +55,18 @@ conjunctive: a label specification intersects constraints, and can only
 narrow. *Showing* — handing over a set of examples and asking for more like
 them — is disjunctive: the set composes by union, and the disjunction lives in
 its spread, never having to be named. Our central result makes this
-quantitative. A cheap key $P=\pi(D)$ sorts outputs into bins; for a target
-$L=\psi(D)$, the law of total variance splits $\mathrm{Var}(L)$ into a
-within-bin budget $T$ and a between-bin budget $E$. Telling reweights within
-one bin and reaches $\sqrt{T}$; showing reweights across bins and reaches
-$\sqrt{\chi^2 E}$. Both are fixed by the data before the model exists, so one
-can predict, in advance, which targets a knob cannot reach — and, where a
-knob falls short, which *shape* of exemplar recipe closes the gap.
+quantitative. A generative model produces outputs $D$ (an image, a crystal
+structure). A cheap key $P=\pi(D)$ sorts each output into a bin — an image's
+class, say; for a target property $L=\psi(D)$ — an image's aesthetic score, a
+crystal's band gap — the law of total variance splits $\mathrm{Var}(L)$ into a
+within-bin budget $T$ and a between-bin budget $E$. Telling reweights the
+outputs *within* one named bin and reaches $\sqrt{T}$; showing hands over a
+set of examples, which reweights the mix *across* bins, and reaches
+$\sqrt{\chi^2 E}$. Both budgets are fixed by the data before the model exists,
+so one can predict, in advance, which targets a knob cannot reach — and,
+where a knob falls short, which *shape* of exemplar recipe closes the gap.
 
-Showing buys a second thing besides reach: **expressiveness**. Because the
+Showing additionally adds something a knob cannot: **expressiveness**. Because the
 specification lives in the examples, you can steer toward a target you can only
 point to — the curator who keeps ten images of a hundred, the materials
 scientist who flags a promising structure, for reasons they cannot fully state
@@ -72,12 +79,13 @@ scientist who flags a promising structure, for reasons they cannot fully state
    (about $\sqrt{T}$ in practice) and a *showing* reach $\sqrt{\chi^2 E}$,
    both read from training data before the model exists — law of total
    variance for the split, Cauchy–Schwarz for the reaches. §3.
-2. **A model-free audit with a pre-registrable carry-over test.** The budget
-   is three numbers per bin; whether it transfers to a trained model is
-   decided by two diagnostics — bin-mean drift $\delta$ and within-bin spread
-   ratio $\rho$. On crystals we *predicted the carry-over ordering of three
-   targets before auditing*, from these signals alone, and the audit
-   confirmed it. §3, §4.
+2. **A model-free audit with a pre-registrable carry-over test.** An *audit*
+   reads three numbers per bin — its share, mean, and variance — straight
+   from data, no model needed; whether those numbers transfer to a trained
+   model is decided by two diagnostics — bin-mean drift $\delta$ and
+   within-bin spread ratio $\rho$. On crystals we *predicted the carry-over
+   ordering of three targets before auditing*, from these signals alone, and
+   the audit confirmed it. §3, §4.
 3. **Examples beat knobs, measured — and the budget says when.** Pitted head
    to head against the strongest knob each domain allows (best-of-twelve; a
    learned soft-prompt optimised on the scorer), choosing bins moves the batch
@@ -95,8 +103,8 @@ scientist who flags a promising structure, for reasons they cannot fully state
 The same predictions hold in domains that share no model, no data, and no
 code, which argues they are properties of the framework rather than of one
 setup. The two one-line proofs, the carry-over diagnostics, the lift, and the
-crystal-model spec are in the Appendix; an extended version carries the full
-derivations and additional results.
+crystal-model spec are in the Appendix, which carries the full derivations
+and additional results.
 
 ## 2 Related Work
 
@@ -124,11 +132,14 @@ posture but the *budget* that bounds what it can reach.
 generation (Lewis et al. 2020) and in-context / few-shot prompting (Brown et al.
 2020) are *showing* in our exact sense — a set of retrieved or in-context
 examples reshapes the output distribution without a target being named — in a
-domain (text) we do not test here. The budget applies unchanged (any cheap key
-$\pi$ bins the outputs; $L$ splits into $T+E$ as usual), and predicts that such
-examples move a target only to the extent its variance is *between*-bin; we
-leave the text-domain measurement to future work. This also scopes our claim:
-we test image and crystal generation, not language.
+domain (text) we do not test here. As above, our contribution is not this
+posture but the budget that predicts, before generation, how far it will
+reach: the split applies unchanged (any cheap key $\pi$ bins the outputs;
+$L$ splits into $T+E$ as usual), and predicts that such examples move a
+target only to the extent its variance is *between*-bin. We verify this
+prediction head-to-head against the strongest knob available, in two domains
+neither RAG nor in-context prompting addresses — image and crystal
+generation — and leave the text-domain measurement to future work.
 
 **Diversity and mode collapse** (Goodfellow et al. 2014; Salimans et al.
 2016) and fidelity/diversity metrics (Sajjadi et al. 2018; Kynkäänniemi et
@@ -145,12 +156,15 @@ applied to the bin distribution; the split is the law of total variance
 
 A generator $\mathrm{G}$ produces outputs $D$. A **cheap key** $\pi$ assigns each a
 label $P=\pi(D)$ (an image's class, a crystal's chemistry), which sorts
-outputs into $B$ **bins**. An **expensive target** $L=\psi(D)$ is the
-property to steer (aesthetic, band gap). An **audit** of a distribution
+outputs into $B$ **bins**. An **expensive target** $L=\psi(D)$ — we call
+$\psi$ the **scorer** — is the property to steer (aesthetic, band gap). An
+**audit** — run on any distribution over outputs, e.g. the training
+distribution $\mathcal{J}$, or a model's own samples once one exists —
 records, per bin $b$: its share $w_b$, mean $g_b=\mathbb{E}[L\mid P_b]$, and
 within-bin variance $v_b$. ($\pi$ is cheap, so $w_b$ is exact over all
 outputs; $\psi$ is expensive, so $g_b, v_b$ are estimated from a modest scored
-sample per bin.) The data-side audit uses the training distribution $\mathcal{J}$.
+sample per bin.) Unless noted otherwise, "the audit" means the data-side
+audit, on $\mathcal{J}$.
 
 | symbol | meaning |
 |---|---|
@@ -196,30 +210,35 @@ $\sqrt{T}=0.67$, showing's is $\sqrt{E}=2.03$: the property lives mostly *betwee
 bins, so a knob confined to one column can move its mean only about a third as
 far as choosing columns.
 
-**The two reaches.** Both operations move the mean the same way — by
-reweighting — and obey one law: departing from a set's own proportions shifts
-its mean by at most $\sqrt{\chi^2\cdot\sigma^2}$, where $\sigma^2$ is the
-variance of the set reweighted and the Pearson $\chi^2$-divergence measures
-the size of the departure (Cauchy–Schwarz). They differ in *which* set they
-may reweight.
+**The two reaches.** Telling and showing are two ways to *reweight* the same
+distribution — to change which outputs the batch draws more of — and they
+differ only in *which* set each is allowed to reweight; both obey one law:
+departing from a set's own proportions shifts its mean by at most
+$\sqrt{\chi^2\cdot\sigma^2}$, where $\sigma^2$ is the variance of the set
+reweighted and the Pearson $\chi^2$-divergence measures the size of the
+departure (Cauchy–Schwarz).
 
 *Telling* stays inside the named bin: a prompt or guidance knob shifts weight
-among the outputs *within* a bin but cannot change which bin, so it draws on
-$T$,
+among the outputs *within* a bin (a "golden retriever" prompt still gives you
+retrievers, just brighter or more textbook ones) but cannot change which bin,
+so it draws on $T$,
 $$|\Delta\mathbb{E}[L]|\le\sqrt{\chi^2_{\text{tell}}\,T}.$$
 In practice the controls push gently — even maximum guidance realizes
 $\chi^2_{\text{tell}}\approx 1$ (§4) — so telling's working reach is about
 $\sqrt{T}$.
 
-*Showing* changes the bin mix with a recipe $\mu_P$, a distribution over bins.
-The shift is $\Delta\mathbb{E}[L]=\sum_b(\mu_P(b)-\mathcal{J}_P(b))\,g_b$, and by
+*Showing* changes the bin mix instead: handing over an exemplar set is
+steered not by any one example but by the **recipe** $\mu_P$ it implies — a
+designed distribution over bins (e.g. "70% high-band-gap chemistries, 30%
+low"; Notation, §3.1). The shift is $\Delta\mathbb{E}[L]=\sum_b(\mu_P(b)-\mathcal{J}_P(b))\,g_b$, and by
 Cauchy–Schwarz
 $$|\Delta\mathbb{E}[L]| \;\le\; \sqrt{\chi^2(\mu_P\|\mathcal{J}_P)\cdot E},\qquad \chi^2(\mu_P\|\mathcal{J}_P)=\sum_b\frac{(\mu_P(b)-\mathcal{J}_P(b))^2}{\mathcal{J}_P(b)}.$$
 The reaches have the same form; the asymmetry is (i) **structural** — telling
 is locked to $T$ and cannot reach $E$ *at all*, since it cannot cross bins —
 and (ii) **empirical** — a recipe departs far harder from the data mix than a
-prompt does, so showing realizes $\chi^2$ of order 100 against telling's ≈1
-(§4). Both are **ceilings**: Cauchy–Schwarz is tight only when weight
+prompt does (a recipe rewrites the whole bin mixture; a prompt only nudges
+within one bin), so showing realizes $\chi^2$ of order 100 against telling's
+≈1 (§4). Both are **ceilings**: Cauchy–Schwarz is tight only when weight
 concentrates on the extreme-mean bins, so realized shifts land below and the
 gap grows with $\chi^2$; the min-$\chi^2$ recipe (§3.4) attains the ceiling.
 
@@ -234,6 +253,10 @@ showing's effort is out-shifted by that much. Where the between-bin share is
 small ($E<T$), $\sqrt{E/T}<1$ and the knob wins — the brightness case, called in
 advance.
 
+**In short:** telling can only ever draw on $T$; showing can only ever draw
+on $E$; whichever budget is larger, that posture wins — and which is larger
+is fixed by the data, before you steer.
+
 ### 3.3 Which operation, and which shape of recipe
 
 Two questions, in order. **Telling or showing?** — a shift you can find
@@ -241,12 +264,12 @@ Two questions, in order. **Telling or showing?** — a shift you can find
 of any bin's reach, so you must show. **If showing, concentrate or spread?**
 — set by the goal's **curvature**. A writable goal is a function $F(\mu_P)$ of
 the recipe, maximized over the simplex of bin distributions. If $F$ is convex
-(linear included) its maximum is at a vertex — *concentrate* $\mu_P$ on one
-bin: batch averages, rates, and conjunctions ("$A$ and $B$",
-$F=\sum_b\mu_P(b)\,c_b$) are the type case, and the winning bin is the one the
-*audit* finds — not the bin telling starts in — so concentrating on it is
-still showing, reaching $E$. If $F$ is strictly concave its maximum is
-interior — *spread* $\mu_P$ across bins: coverage of two opposed properties is
+(linear included), its maximum sits at a vertex: *concentrate* $\mu_P$ on one
+bin. Batch averages, rates, and conjunctions ("$A$ and $B$",
+$F=\sum_b\mu_P(b)\,c_b$) are the type case — and the winning bin is the one
+the *audit* finds, not the bin telling starts in. If $F$ is strictly concave
+its maximum is interior — *spread* $\mu_P$ across bins: coverage of two
+opposed properties is
 the type case, since no single bin holds both corners. Both shapes are
 showing; *naming* the goal (telling) reaches neither.
 
@@ -256,20 +279,24 @@ To hit a target mean $g^*$: **pool-mixing** blends a low and a high pool with
 a dial $\alpha$; **min-$\chi^2$** is the gentlest recipe reaching $g^*$, in
 closed form
 $\mu_P(P_b)=\mathcal{J}_P(P_b)\,[1+(g^*-\bar g)(g_b-\bar g)/\mathrm{Var}_{\mathcal{J}}(g_b)]$,
-which is the Cauchy–Schwarz-tight direction. When no scorer for $L$ is
+which is the Cauchy–Schwarz-tight direction. When no scorer $\psi$ for $L$ is
 available (*tacit* steering), $\mu_P$ is the bin histogram of an exemplar set,
 and each bin's **lift** $=\mu_P(b)/\mathcal{J}_P(b)$ estimates the fraction of that
 bin clearing the target — with no scorer (Appendix).
 
 ### 3.5 Predictions
 
-Four falsifiable claims, tested in §4: (1) the split is exact, moves with the
-key, and *carries to the model* for faithfully reproduced targets; (2) telling
-and showing reach orthogonal parts of the budget, and we measure how much
-further showing reaches than a knob; (3) a goal's curvature sets the shape of
-the showing recipe — concentrate for an average, spread for coverage, while
-naming reaches neither; (4) standard fine-tuning changes the budget
-predictably (recompute on the reshaped data).
+Four falsifiable claims, tested in §4:
+
+1. **Split is exact and carries.** The split is exact, moves with the key,
+   and *carries to the model* for faithfully reproduced targets.
+2. **Reaches are orthogonal.** Telling and showing reach orthogonal parts of
+   the budget; we measure how much further showing reaches than a knob.
+3. **Curvature sets the shape.** A goal's curvature sets the shape of the
+   showing recipe — concentrate for an average, spread for coverage — while
+   naming (telling) reaches neither.
+4. **Fine-tuning reshapes the budget.** Standard fine-tuning changes the
+   budget predictably (recompute on the reshaped data).
 
 ## 4 Experiments
 
@@ -527,17 +554,42 @@ was reviewed and verified by the authors.
 
 ## References
 
-*(Full verified list in the extended version; abbreviated here.)* Casella &
-Berger 2002; Owen 2013; Peebles & Xie 2023; Deng et al. 2009; He et al. 2016;
-Radford et al. 2021; Schuhmann et al. 2022; Xie et al. 2022; Zeni et al. 2025;
-Schmidt et al. 2023; Batatia et al. 2022; Dathathri et al. 2020; Krause et al.
-2021; Li & Liang 2021; Lester et al. 2021; Jahanian et al. 2020; Shen et al.
-2020; Dhariwal & Nichol 2021; Ho & Salimans 2022; Ziegler et al. 2019; Ouyang
-et al. 2022; Korbak et al. 2022; Rafailov et al. 2023; Gal et al. 2023; Ruiz
-et al. 2023; Ye et al. 2023; Blattmann et al. 2022; Goodfellow et al. 2014;
-Salimans et al. 2016; Sajjadi et al. 2018; Kynkäänniemi et al. 2019; Naeem et
-al. 2020; Emmerich, Deutz & Klinkenberg 2006; Lewis et al. 2020; Brown et al.
-2020; Polanyi 1966.
+- Batatia, Kovács, Simm, Ortner, Csányi. "MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields." NeurIPS 2022.
+- Blattmann, Rombach, Oktay, Müller, Ommer. "Retrieval-Augmented Diffusion Models." NeurIPS 2022.
+- Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal, et al. "Language Models are Few-Shot Learners." NeurIPS 2020.
+- Casella, Berger. *Statistical Inference*, 2nd ed. Duxbury, 2002.
+- Dathathri, Madotto, Lan, Hung, Frank, Molino, Yosinski, Liu. "Plug and Play Language Models: A Simple Approach to Controlled Text Generation." ICLR 2020.
+- Deng, Dong, Socher, Li, Li, Fei-Fei. "ImageNet: A Large-Scale Hierarchical Image Database." CVPR 2009.
+- Dhariwal, Nichol. "Diffusion Models Beat GANs on Image Synthesis." NeurIPS 2021.
+- Emmerich, Deutz, Klinkenberg. "The Computation of the Expected Improvement in Dominated Hypervolume of Pareto Front Approximations." Technical Report, Leiden University, 2006.
+- Gal, Alaluf, Atzmon, Patashnik, Bermano, Chechik, Cohen-Or. "An Image is Worth One Word: Personalizing Text-to-Image Generation using Textual Inversion." ICLR 2023.
+- Goodfellow, Pouget-Abadie, Mirza, Xu, Warde-Farley, Ozair, Courville, Bengio. "Generative Adversarial Nets." NeurIPS 2014.
+- He, Zhang, Ren, Sun. "Deep Residual Learning for Image Recognition." CVPR 2016.
+- Ho, Salimans. "Classifier-Free Diffusion Guidance." arXiv:2207.12598, 2022.
+- Jahanian, Chai, Isola. "On the 'Steerability' of Generative Adversarial Networks." ICLR 2020.
+- Korbak, Perez, Buckley. "RL with KL Penalties is Better Viewed as Bayesian Inference." Findings of EMNLP 2022.
+- Krause, Gotmare, McCann, Keskar, Joty, Socher, Rajani. "GeDi: Generative Discriminator Guided Sequence Generation." Findings of EMNLP 2021.
+- Kynkäänniemi, Karras, Laine, Lehtinen, Aila. "Improved Precision and Recall Metric for Assessing Generative Models." NeurIPS 2019.
+- Lester, Al-Rfou, Constant. "The Power of Scale for Parameter-Efficient Prompt Tuning." EMNLP 2021.
+- Lewis, Perez, Piktus, Petroni, Karpukhin, Goyal, et al. "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks." NeurIPS 2020.
+- Li, Liang. "Prefix-Tuning: Optimizing Continuous Prompts for Generation." ACL-IJCNLP 2021.
+- Naeem, Oh, Uh, Choi, Yoo. "Reliable Fidelity and Diversity Metrics for Generative Models." ICML 2020.
+- Ouyang, Wu, Jiang, Almeida, Wainwright, et al. "Training Language Models to Follow Instructions with Human Feedback." NeurIPS 2022.
+- Owen. *Monte Carlo Theory, Methods and Examples.* 2013.
+- Peebles, Xie. "Scalable Diffusion Models with Transformers." ICCV 2023.
+- Polanyi. *The Tacit Dimension.* Doubleday, 1966.
+- Radford, Kim, Hallacy, Ramesh, Goh, Agarwal, et al. "Learning Transferable Visual Models From Natural Language Supervision." ICML 2021.
+- Rafailov, Sharma, Mitchell, Ermon, Manning, Finn. "Direct Preference Optimization: Your Language Model is Secretly a Reward Model." NeurIPS 2023.
+- Ruiz, Li, Jampani, Pritch, Rubinstein, Aberman. "DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation." CVPR 2023.
+- Sajjadi, Bachem, Lucic, Bousquet, Gelly. "Assessing Generative Models via Precision and Recall." NeurIPS 2018.
+- Salimans, Goodfellow, Zaremba, Cheung, Radford, Chen. "Improved Techniques for Training GANs." NeurIPS 2016.
+- Schmidt, Hoffmann, Wang, Borlido, Carriço, Cerqueira, Botti, Marques. "Machine-Learning-Assisted Determination of the Global Zero-Temperature Phase Diagram of Materials." *Advanced Materials* 35(22):2210788, 2023.
+- Schuhmann, Beaumont, Vencu, Gordon, Wightman, et al. "LAION-5B: An Open Large-Scale Dataset for Training Next Generation Image-Text Models." NeurIPS 2022 Datasets and Benchmarks Track.
+- Shen, Gu, Tang, Zhou. "Interpreting the Latent Space of GANs for Semantic Face Editing." CVPR 2020.
+- Xie, Fu, Ganea, Barzilay, Jaakkola. "Crystal Diffusion Variational Autoencoder for Periodic Material Generation." ICLR 2022.
+- Ye, Zhang, Liu, Han, Yang. "IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models." arXiv:2308.06721, 2023.
+- Zeni, Pinsler, Zügner, Fowler, Horton, Fu, et al. "A Generative Model for Inorganic Materials Design" (MatterGen). *Nature* 639:624–632, 2025.
+- Ziegler, Stiennon, Wu, Brown, Radford, Amodei, Christiano, Irving. "Fine-Tuning Language Models from Human Preferences." arXiv:1909.08593, 2019.
 
 ## Appendix
 

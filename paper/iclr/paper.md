@@ -13,31 +13,33 @@
 
 ## Abstract
 
-Generative models are steered with *knobs* — prompts, guidance scales,
-property tags — but turning a knob past some point stops moving the property
-you care about. We show this ceiling is not a model limitation but a budget
-fixed by the training data before the model is trained. Turning a knob
-(*telling*) reaches only an arbitrary slice of this budget, fixed by the
-value named, not by what the budget allows. We introduce *showing*, which
-targets any chosen range in the full budget instead. A knob is confined to
-whichever value it names, so we group outputs by that same kind of
-attribute — an image's class, a crystal's chemistry — into bins. A target
-property's variance splits exactly into a within-bin
-part (telling's reach) and a between-bin part, reachable only by showing —
-a batch drawn from several bins at once. Both are computed from the data
-before the model exists — no generative model, no GPU — and predict whether
-they transfer to a trained model before it is audited: on crystals, this
-correctly forecast the carry-over order of three properties. We verify the framework in two
-unrelated domains, image and crystal-structure generation: showing
-out-reaches the strongest knob baselines we could build by 4.8–26× on
-crystal properties and 3× on image targets. Reaching a chosen point with
-showing needs no fine-tuning of the model — only a different choice of
-which examples it draws from. On occasion telling is the correct choice
-instead, and the same two quantities determine when. A property's curvature further
-sets which shape of showing wins: concentrate on one bin for an average,
-spread across bins for coverage. Showing also buys expressiveness: since the specification
-lives in the examples, it can steer toward a target you can only recognize,
-not name — a curator's preferred set, with no explicit criterion behind it.
+Generative models are steered by turning knobs — prompts, guidance scales,
+tags — but every knob saturates: push it far enough and it stops moving
+the property you care about. This ceiling has two sources: a budget fixed
+by the training data before the model exists, and the subset of outputs a
+knob is confined to — the class, chemistry, or other value an input
+property names. Turning a knob — changing some other input — only ever
+moves the property within that subset's slice of the budget, never past
+it. We introduce *showing*, which exposes the whole budget and reaches
+any value within it, not just one subset's share, by binning outputs on
+an easy-to-calculate property, auditing each bin, and choosing which bins
+to draw from.
+
+This audit makes the split exact: a target property's variance divides
+into a within-bin part (telling's reach) and a between-bin part (showing's
+reach), both computable from data alone, before a model exists. These two
+numbers predict, in advance, whether they transfer to a trained model: on
+crystals, they correctly forecast the carry-over order of three properties
+before the model was ever audited. Across two unrelated domains — image
+and crystal-structure generation — showing out-reaches the strongest knob
+baselines we could build by 4.8–26× on crystal properties and 3× on image
+targets, with no fine-tuning: only a different choice of examples. The
+same two numbers also say, in advance, the occasions when telling remains
+the better choice. Given showing wins, a property's curvature determines
+the shape of the fix: concentrate on one bin for an average goal, spread
+across bins for coverage. Showing further buys expressiveness a knob
+cannot: because the specification lives in the examples, it can steer
+toward a target recognized but never named.
 
 ## 1 Introduction
 

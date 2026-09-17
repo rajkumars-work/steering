@@ -22,23 +22,29 @@ something to silently let happen.
    *Why:* turns an empirical annoyance into something knowable in advance;
    this is what makes it a framework, not a trick. (§1, §3.1)
 
-3. **Two ways to tell.** *Tagging* names a value of an attribute — a class,
-   a chemistry — and restricts the output space to that subset. *Turning a
-   knob* adjusts a continuous or discrete input, hoping to bias the output
-   toward a property, without picking any subset itself.
-   *Why:* the paper uses both under one posture, "telling"; defining each
-   plainly, before saying anything about a shared limit, stops the reader
-   from assuming one is being reduced to the other. (§1, "a prompt, a
-   guidance scale, a property tag")
+3. **Two ways to tell.** *Tagging* specifies an input property — an
+   image's class, a crystal's element-set — and thereby fixes the subset of
+   outputs we draw from. *Turning a knob* changes some *other* input
+   (continuous or discrete), hoping to bias the desired property, without
+   itself picking a subset.
+   *Why:* keeps "which properties define the subset" (tagging) distinct
+   from "which properties we fiddle with hoping to move the target"
+   (knob-turning) — telling can do either or both, but they play different
+   roles, and the abstract must not blur a knob into also being the thing
+   that names the subset. (§1, "a prompt, a guidance scale, a property
+   tag")
 
-4. **Telling's limit.** Telling — tag or knob — only nudges the average
-   property value within whatever subset it's confined to. Without an
-   audit, you don't know what that average is or what else is reachable —
-   telling operates in the dark.
-   *Why:* the ceiling isn't just a restriction, it's a blind one; that
-   blindness, not the restriction alone, is what beat 6's audit fixes.
-   (§3.2, "shifts weight among the outputs ... but cannot change which
-   bin")
+4. **Telling's limit.** Two things cap telling: the **budget** — how far
+   the target property can move at all, fixed by the training data (beat
+   5) — and whatever subset tagging has already confined outputs to. A
+   knob, changing some other input, only moves the average within
+   whichever slice of the budget that subset contains.
+   *Why:* names both limiting factors explicitly rather than treating
+   "confined to a subset" as the only cap: a knob can't escape the tag's
+   subset, and even inside it, can't exceed what the data-fixed budget
+   allows. (Blindness — not knowing either number without an audit — is
+   implicit here, not a separate claim needing its own beat.) (§3.2,
+   "shifts weight among the outputs ... but cannot change which bin")
 
 5. **The budget.** The actual range of property values achievable across
    *all* outputs, not just one subset, is the **budget**. Telling only
@@ -50,10 +56,11 @@ something to silently let happen.
    untagged" escape explicitly. (§3.2, $T=\sum_b w_b v_b$)
 
 6. **Bins and showing.** Binning — partitioning outputs by an
-   easy-to-calculate property, then auditing each partition's average —
-   is what turns the dark of beat 4 into a map of what's achievable where.
-   *Showing* then targets any value that map covers, by combining bins in
-   a chosen recipe rather than nudging just one.
+   easy-to-calculate property, then auditing each partition's share, mean,
+   and variance — is what makes beat 4's two numbers (the budget, and any
+   subset's slice of it) visible in the first place. *Showing* then
+   targets any value the audit reveals, by combining bins in a chosen
+   recipe rather than nudging just one.
    *Why:* binning's payoff is the audit itself; showing is only possible
    because binning made the budget legible. (§3.1, key $\pi$; §3.2,
    $E=\sum_b w_b(g_b-\bar g)^2$)

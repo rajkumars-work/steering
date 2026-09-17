@@ -167,7 +167,7 @@ sample per bin.) Unless noted otherwise, "the audit" means the data-side
 audit, on $\mathcal{J}$.
 
 | symbol | meaning |
-|---|---|
+|----------------|----------------------------------------|
 | $\pi,\ P=\pi(D)$ | cheap **key**; the label it assigns (sorts outputs into **bins**) |
 | $\psi,\ L=\psi(D)$ | expensive scorer; the **target** property to steer |
 | $b,\ B$ | a bin; the number of bins |
@@ -253,9 +253,8 @@ showing's effort is out-shifted by that much. Where the between-bin share is
 small ($E<T$), $\sqrt{E/T}<1$ and the knob wins — the brightness case, called in
 advance.
 
-**In short:** telling can only ever draw on $T$; showing can only ever draw
-on $E$; whichever budget is larger, that posture wins — and which is larger
-is fixed by the data, before you steer.
+Telling draws only on $T$, showing only on $E$: whichever the data makes
+larger, wins.
 
 ### 3.3 Which operation, and which shape of recipe
 
@@ -302,17 +301,22 @@ Four falsifiable claims, tested in §4:
 
 ### 4.1 Setup
 
-**Images (legible).** Pretrained DiT-XL/2-256, used as-is; key = ResNet-50
-class (1000 bins). Targets: brightness, a learned aesthetic score,
-file-size/MP, and four CLIP content scores (animal/vehicle/food/nature).
-**Crystals (consequential).** A pretrained encoder–decoder (Appendix gives
-the full spec) trained on Alexandria-derived data; key = chemistry (elements +
-atom count). Targets: band gap, energy-above-hull, density, dielectric
-constant, and a collection score *Combined* (fraction novel, unique, and
-≥metastable). **Uncertainty:** every headline number carries a 95% CI from
-bootstrap over bins/structures and/or ≥3 generation seeds. **Cost:** the
-data-side claims need only the audit *shadow* (per-bin share, mean, variance
-— 132 KB) and reproduce with `numpy` in under a second, no model and no GPU.
+Two domains that share no model, data, or code: **images**, where you can
+inspect a bin's contents directly by eye, and **crystals**, where the targets
+are real materials-discovery quantities (would this structure be worth
+synthesizing?) that no eyeballing can check.
+
+| | **Images** (inspect by eye) | **Crystals** (real materials-discovery stakes) |
+|--------|----------------------------------|----------------------------------|
+| generator | pretrained DiT-XL/2-256, used as-is | pretrained encoder–decoder (Appendix: full spec) |
+| training data | ImageNet | Alexandria-derived data |
+| key $\pi$ | ResNet-50 class (1000 bins) | chemistry: elements + atom count |
+| targets $L$ | brightness; a learned aesthetic score; file-size/MP; four CLIP content scores (animal/vehicle/food/nature) | band gap; energy-above-hull; density; dielectric constant; *Combined* — the fraction of generated structures that are novel, unique, and at least metastable, a proxy for viable new-material yield |
+
+**Uncertainty:** every headline number carries a 95% CI from bootstrap over
+bins/structures and/or ≥3 generation seeds. **Cost:** the data-side claims
+need only the audit *shadow* (per-bin share, mean, variance — 132 KB) and
+reproduce with `numpy` in under a second, no model and no GPU.
 
 ### 4.2 Results
 
@@ -347,7 +351,7 @@ is a claim *about* the model, not something knowable before it exists.) On image
 reproduces $0.96$–$1.14\times$ the data's within-bin spread ($\rho\approx1$),
 and class-aligned per-bin means track the data at $r^2\,0.85$–$0.94$.
 
-![Carry-over by target (crystal), 95% CIs: density 0.99, bonding 0.88, stability 0.49.](figures/fig_claim1_survival_ladder.png){width=55%}
+![Carry-over by target (crystal), 95% CIs: density 0.99, bonding 0.88, stability 0.49.](figures/fig_claim1_survival_ladder.png){width=60%}
 
 **Claim 2 — telling and showing reach orthogonal budgets, and how much
 further.** Telling stays within one bin; showing ranges across them. We first
@@ -363,13 +367,13 @@ becomes a *forecast*: at a small target shift the realized move ($0.0162$)
 lands on the predicted ceiling ($0.0195$, inside CI $[0.0114, 0.0209]$), while
 blunt top-$k$ at the same $\chi^2$ reaches only a fraction of it.
 
-![Showing's realized shift vs the ceiling $\sqrt{\chi^2E}$ as the recipe concentrates.](figures/fig_chi2_reach.png){width=75%}
+![Showing's realized shift vs the ceiling $\sqrt{\chi^2E}$ as the recipe concentrates.](figures/fig_chi2_reach.png){width=60%}
 
 *How much further: bins vs knobs, property by property.* Pitting the strongest
 available knob against bin selection on the *same* property:
 
 | domain / target | $E/(E{+}T)$ | $\sqrt{E/T}$ (equal-effort) | bin / knob (realized) |
-|---|:-:|:-:|:-:|
+|------------------------------------------|:------------:|:------------:|:----------------:|
 | crystal band gap | 0.98 | 7.0 | **≈800×** |
 | crystal density | 0.96 | 4.9 | **≈91×** |
 | crystal stability (metastable rate) | 0.57 | 1.15 | **≈41×** |
@@ -416,7 +420,11 @@ knob estimate) as the trustworthy equal-effort comparison. The honest statement
 for these targets is "knob shift indistinguishable from zero; showing shift
 $\Delta$ = 2.71 / 8.40 / 0.385 [CI], a $\sqrt{E/T}$ = 7.0 / 4.9 / 1.15× floor."
 
-**Claim 3 — curvature sets the recipe.** *An averaging goal (concentrate).*
+**Claim 3 — curvature sets the recipe.** Curvature sets the shape:
+*concentrate* for an averaging goal, *spread* for a coverage goal; naming
+(telling) reaches neither.
+
+*An averaging goal (concentrate).*
 Ask for images that are *both* animal and natural — a fraction of the batch
 clearing both bars, an average, so the theory says *concentrate*. No class is
 "animal in nature," so naming fails; the audit points to bins already both
@@ -424,7 +432,7 @@ clearing both bars, an average, so the theory says *concentrate*. No class is
 richest (128 images/seed × 10 seeds):
 
 | how we steered | strongly both | 95% CI |
-|---|:-:|:-:|
+|------------------------------------------------|:------------:|:----------:|
 | ask for animals (naming) | 14.5% | [12, 17] |
 | ask for nature (naming) | 12.8% | [11, 15] |
 | compose both — Composable Diffusion | 13.5% | [12, 15] |
@@ -439,7 +447,7 @@ of showing, not telling: the bin is the one the audit *chose*, whereas a knob
 held inside any one bin reaches only $\sqrt{T}$. Which bins pay off is itself
 forecast by the scorer-free **lift** (rank correlation 0.94 to realized rates).
 
-![Averaging goal (images): naming the property stays near one in seven; concentrating the batch on audit-chosen bins climbs, peaking at the single richest bin.](figures/fig_joint_target_bars.png){width=68%}
+![Averaging goal (images): naming the property stays near one in seven; concentrating the batch on audit-chosen bins climbs, peaking at the single richest bin.](figures/fig_joint_target_bars.png){width=60%}
 
 The *same averaging goal on crystals* — wide-gap *and* stable — adds a
 wrinkle. Mixing chemistries (13.2%, [10.5, 16.5]) beats a *naive* request
@@ -451,7 +459,7 @@ wide-gap structures of any recipe, but stability sits near one in two for
 every recipe, and stability is the property Claim 1 found does not carry over
 — so it caps the joint, and the two recipes converge on it.
 
-![Crystals (averaging goal): showing beats a naive request ~4× but ties a strong one — stability, which does not carry over (Claim 1), caps both.](figures/fig_crystal_joint_bars.png){width=52%}
+![Crystals (averaging goal): showing beats a naive request ~4× but ties a strong one — stability, which does not carry over (Claim 1), caps both.](figures/fig_crystal_joint_bars.png){width=60%}
 
 *A spread goal (spread).* Now a batch that must **cover both corners** of two
 properties that pull apart; score coverage as the smaller corner-fraction, so
@@ -459,7 +467,7 @@ a recipe scores only if the batch holds *both*. Predictions committed before
 running.
 
 | coverage (min corner-fraction) | images | crystals |
-|---|:-:|:-:|
+|------------------------------------------------|:------------:|:------------:|
 | ask for one (telling, one bin) | 0.00 | 0.00 |
 | compose / condition on both | 0.00 | 0.02 |
 | **mix a corner-$A$ and a corner-$B$ bin (showing)** | **0.30** | **0.40** |
@@ -473,31 +481,47 @@ widens with the number of corners:** counting corners covered with real,
 CI-separated mass, telling covers exactly one, composing one, and showing all
 $N$ — two of two at $N=2$, three of three at $N=3$ (clean $N=3$ on images) —
 so the gap is $N-1$, the disjunctive structure of showing made quantitative.
+Curvature called both shapes correctly in both domains.
 
-**Claim 4 — training changes the budget predictably.** Under plain
-pretraining, model per-bin means match the data's (on the diagonal: 0.99 on
-crystal density, 0.85–0.94 on image content targets, tightening with sample
-size). Filtering: predicted vs observed per-bin means agree to 0.03 (crystal)
-/ 0.002 (image) of a bin width. Guidance sweep (1,3,7,12): monotone drift
-(animal 0.18→0.20, brightness 0.52→0.57). The boundary: a fine-tune aggressive
-enough to leave the training distribution (held-out structures scored
-−15.1/token, CI [−15.2, −15.0], vs −9.7 random — every structure below) cannot
-be predicted from the data; sample and audit the model directly.
+**Claim 4 — training changes the budget predictably.** Standard training
+moves reshape $\mathcal{J}$ into a new $\mathcal{J}'$ in closed form
+(Appendix B), so the new budget is computable without retraining — up to a
+point. Under plain pretraining, model per-bin means match the data's (on the
+diagonal: 0.99 on crystal density, 0.85–0.94 on image content targets,
+tightening with sample size) — training reproduces $\mathcal{J}$ unchanged, so
+the budget is the data's budget. **Filtering** — keeping only the
+reward-best fraction of the training set, the reweighting
+$\mathcal{J}'(D)\propto\mathcal{J}(D)e^{R(D)/\beta}$ of §2 and Appendix B —
+moves the per-bin means measurably, and the moved values match what that
+closed-form rewrite predicts to 0.03 (crystal) / 0.002 (image) of a bin
+width. Guidance sweep (1,3,7,12): monotone drift (animal 0.18→0.20,
+brightness 0.52→0.57), the same rewrite applied at increasing strength. The
+boundary: a fine-tune aggressive enough to leave the training distribution
+(held-out structures scored −15.1/token, CI [−15.2, −15.0], vs −9.7 random —
+every structure below) cannot be predicted from the data — past that point,
+sample and audit the model directly.
 
 ### 4.3 One mechanism behind familiar failures (interpretation)
 
-The split also reads mode collapse, the alignment tax, reward hacking, and
-compositional-generalization failure as one cause: a per-output objective
-(a likelihood, a per-sample reward) reaches only the within-bin budget, so the
-collection-level spread it needs — variety, coverage, a joint — is beyond it.
-Reaching that spread takes a move across bins, which is what showing names.
-This is an interpretation the framework invites, not one of the tested claims.
+Four familiar training failures — mode collapse, the alignment tax, reward
+hacking, and compositional-generalization failure — read, in this framework,
+as one cause wearing four names. Each is produced by a per-output objective
+(a likelihood, a per-sample reward): such an objective can only push each
+output it sees toward "better," so it can only ever draw on the within-bin
+budget $T$. But what these failures actually cost is collection-level spread
+— variety, coverage, a joint of two properties — and that spread lives in
+$E$, reachable only by a move across bins, which is what showing does. So a
+per-output objective structurally cannot recover the spread it destroys; only
+acting on the mixture (showing) can. This is an interpretation the framework
+invites, not one of the tested claims.
 
 ## 5 Limitations
 
-The reaches bound the *mean shift* by *selection*, not the literal extremes,
-and only where the model matches the data on the bins in play (off-support,
-$\chi^2\!\to\!\infty$ flags it). They are second-moment ceilings: heavy-tailed
+The bounds in §3 apply to one specific move — shifting a batch's *mean* by
+*reweighting* which existing outputs it draws from (selection), not by
+inventing new ones — and only where the model matches the data on the bins
+in play; a model pushed off that support ($\chi^2\!\to\!\infty$) is flagged,
+not bounded. They are second-moment ceilings: heavy-tailed
 bin means make them loose. Set-level targets (coverage, diversity) are a
 different object than a mean — the framework says *which* operation reaches
 them (a mixture, showing) but not how large the metric gets. The carry-over

@@ -52,11 +52,15 @@ the training data before the model is trained, and that a different move —
 *showing* the model examples instead of turning a knob — reaches a part of the
 budget the knob structurally cannot.
 
-The two postures differ structurally. *Telling* — turning a knob — is
-conjunctive: a label specification intersects constraints, and can only
-narrow. *Showing* — handing over a set of examples and asking for more like
-them — is disjunctive: the set composes by union, and the disjunction lives in
-its spread, never having to be named. Our central result makes this
+*Tagging* specifies an input property — an image's class, a crystal's
+element-set — and thereby fixes the subset of outputs you draw from.
+*Turning a knob* changes some other input, continuous or discrete, hoping
+to bias the property, without itself picking a subset. Both are *telling*:
+whichever subset a tag has fixed, or the whole space if untagged, a knob
+can only reweight the outputs *within* it, never past that subset's own
+share of the budget. *Showing* — handing over a set of examples and asking
+for more like them — reweights the mix *across* bins instead, reaching
+values no single subset contains. Our central result makes this
 quantitative. A generative model produces outputs $D$ (an image, a crystal
 structure). A cheap key $P=\pi(D)$ sorts each output into a bin — an image's
 class, say; for a target property $L=\psi(D)$ — an image's aesthetic score, a
@@ -484,7 +488,8 @@ in the batch, the only recipe above zero by a CI-separated margin. **The gap
 widens with the number of corners:** counting corners covered with real,
 CI-separated mass, telling covers exactly one, composing one, and showing all
 $N$ — two of two at $N=2$, three of three at $N=3$ (clean $N=3$ on images) —
-so the gap is $N-1$, the disjunctive structure of showing made quantitative.
+so the gap is $N-1$ — showing's coverage advantage over telling and
+composing, made quantitative.
 Curvature called both shapes correctly in both domains.
 
 **Claim 4 — training changes the budget predictably.** Standard training

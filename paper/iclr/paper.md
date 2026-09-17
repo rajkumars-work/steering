@@ -139,7 +139,9 @@ $L$ splits into $T+E$ as usual), and predicts that such examples move a
 target only to the extent its variance is *between*-bin. We verify this
 prediction head-to-head against the strongest knob available, in two domains
 neither RAG nor in-context prompting addresses — image and crystal
-generation — and leave the text-domain measurement to future work.
+generation, where "showing" is realized as choosing the conditioning
+distribution a batch is drawn from rather than literal in-context exemplars
+— and leave the text-domain measurement to future work.
 
 **Diversity and mode collapse** (Goodfellow et al. 2014; Salimans et al.
 2016) and fidelity/diversity metrics (Sajjadi et al. 2018; Kynkäänniemi et

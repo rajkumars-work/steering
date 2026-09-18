@@ -7,53 +7,60 @@ reader needs it before the next beat), and the **paper section** it's
 grounded in. If a future edit drops a "why," that's a sign of drift, not
 just tightening — check here first before cutting.
 
+This is `story_arc.md` compressed to abstract length (~300 words). If the
+two ever disagree, `story_arc.md` wins and this file gets fixed to match.
 Update this file whenever the abstract's structure changes; treat drift
 between this file and `paper.md`'s actual abstract as a bug to fix, not
 something to silently let happen.
 
 ## The beats
 
-1. **Hook.** Knobs (prompts, guidance scales, tags) hit a ceiling — push
-   harder and the property stops moving.
-   *Why:* concrete, familiar entry point before any formalism. (§1 intro)
+1. **Hook.** A knob used to steer a generative model — a prompt, a
+   guidance scale — saturates: push it far enough and it stops moving the
+   property you care about.
+   *Why:* concrete, familiar entry point before any formalism.
+   Deliberately knob-only: slicing isn't a knob, so it doesn't belong in
+   this list — pulling it in here is the blurring beat 3 exists to
+   prevent. (§1 intro)
 
 2. **Reframe.** The ceiling isn't a flaw in the model — it's a budget fixed
    by the training data before the model exists.
    *Why:* turns an empirical annoyance into something knowable in advance;
    this is what makes it a framework, not a trick. (§1, §3.1)
 
-3. **Two ways to tell.** *Tagging* specifies an input property — an
+3. **Two ways to tell.** *Slicing* specifies an input property — an
    image's class, a crystal's element-set — and thereby fixes the subset of
    outputs we draw from. *Turning a knob* changes some *other* input
    (continuous or discrete), hoping to bias the desired property, without
    itself picking a subset.
-   *Why:* keeps "which properties define the subset" (tagging) distinct
-   from "which properties we fiddle with hoping to move the target"
+   *Why:* keeps "which property defines the subset" (slicing) distinct
+   from "which property we fiddle with hoping to move the target"
    (knob-turning) — telling can do either or both, but they play different
    roles, and the abstract must not blur a knob into also being the thing
    that names the subset. (§1, "a prompt, a guidance scale, a property
    tag")
 
-4. **Telling's limit.** Two things cap telling: the **budget** — how far
-   the target property can move at all, fixed by the training data (beat
-   5) — and whatever subset tagging has already confined outputs to. A
-   knob, changing some other input, only moves the average within
-   whichever slice of the budget that subset contains.
-   *Why:* names both limiting factors explicitly rather than treating
-   "confined to a subset" as the only cap: a knob can't escape the tag's
-   subset, and even inside it, can't exceed what the data-fixed budget
-   allows. (Blindness — not knowing either number without an audit — is
-   implicit here, not a separate claim needing its own beat.) (§3.2,
-   "shifts weight among the outputs ... but cannot change which bin")
+4. **Telling's limit.** Two things cap telling: the **budget** (beat 5) and
+   whatever subset slicing has already confined outputs to (or the whole
+   space, if unsliced). A knob only moves the average within whichever
+   slice of the budget that subset contains.
+   *Why:* names both limiting factors explicitly — a knob can't escape the
+   slice's subset, and even inside it, can't exceed what the data-fixed
+   budget allows. Neither degenerate case helps either: a knob with no
+   slice can't isolate its own effect from the rest of the population, and
+   a slice with no knob is just arbitrary sampling of an unaudited range.
+   That not-knowing is implicit here, not a separate claim needing its own
+   beat. (§3.2, "shifts weight among the outputs ... but cannot change
+   which bin")
 
 5. **The budget.** The actual range of property values achievable across
    *all* outputs, not just one subset, is the **budget**. Telling only
    ever moves the average within its own subset's slice of that budget, so
    it cannot deliver a target average outside what that slice contains —
-   whether the slice came from a tag or was left as the whole space.
+   whether the slice came from slicing or was left as the whole space.
    *Why:* names the resource being rationed, restates beat 4's per-subset
    ceiling as a comparison against the whole, and closes the "leave it
-   untagged" escape explicitly. (§3.2, $T=\sum_b w_b v_b$)
+   unsliced" escape explicitly. (§3.2, $T=\sum_b w_b v_b$)
 
 6. **Bins and showing.** Binning — partitioning outputs by an
    easy-to-calculate property, then auditing each partition's share, mean,
@@ -62,8 +69,10 @@ something to silently let happen.
    targets any value the audit reveals, by combining bins in a chosen
    recipe rather than nudging just one.
    *Why:* binning's payoff is the audit itself; showing is only possible
-   because binning made the budget legible. (§3.1, key $\pi$; §3.2,
-   $E=\sum_b w_b(g_b-\bar g)^2$)
+   because binning made the budget legible. Note binning is an
+   output-side move (a lens on what was generated) — distinct from
+   slicing, which is input-side (changes what gets generated). (§3.1, key
+   $\pi$; §3.2, $E=\sum_b w_b(g_b-\bar g)^2$)
 
 7. **The split (result 1).** A target property's variance splits exactly
    into a within-bin part $T$ (telling's reach) and a between-bin part $E$
@@ -112,6 +121,14 @@ something to silently let happen.
     *Why:* a genuinely separate benefit, not part of the reach/budget
     story — keep it clearly marked as "also," not folded into the
     quantitative claims above it. (§1 intro, Polanyi 1966; §3.4, lift)
+
+## Contributions check
+
+Before finalizing any draft, confirm it reads as beats 1–2 (limits) →
+3–6 (why binning, not asserted) → 7 (formalism) → 8–13 (grounded results)
+— and that a reader comes away with "we found out how far steering can go
+and how to get anywhere in it," not "the contribution is binning and
+auditing." See `story_arc.md`'s "Contributions, reframed" section.
 
 ## Known-missing (flagged, not yet in the abstract, judged non-essential
 so far — revisit if space allows or reviewers ask)

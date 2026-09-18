@@ -21,10 +21,9 @@ knob is confined to — the class, chemistry, or other value an input
 property names. Turning a knob — changing some other input — only ever
 moves the target property within that subset's slice of the budget, never past
 it; we call this *telling*. We introduce *showing*, which exposes
-the whole budget and reaches any value within it, not just one subset's share,
-by binning outputs on an easy-to-calculate property, auditing each bin,
-and choosing which bins
-to draw from.
+the property's whole budget and reaches any value within it, not just
+one subset's share, by binning outputs on an easy-to-calculate property,
+auditing each bin, and choosing which bins to draw from.
 
 This audit makes the split exact: a target property's variance divides
 into a within-bin part (telling's reach) and a between-bin part (showing's

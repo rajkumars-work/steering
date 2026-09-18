@@ -19,10 +19,11 @@ the property you care about. This ceiling has two sources: a budget fixed
 by the training data before the model exists, and the subset of outputs a
 knob is confined to — the class, chemistry, or other value an input
 property names. Turning a knob — changing some other input — only ever
-moves the property within that subset's slice of the budget, never past
-it. We introduce *showing*, which exposes the whole budget and reaches
-any value within it, not just one subset's share, by binning outputs on
-an easy-to-calculate property, auditing each bin, and choosing which bins
+moves the target property within that subset's slice of the budget, never past
+it; we call this *telling*. We introduce *showing*, which exposes
+the whole budget and reaches any value within it, not just one subset's share,
+by binning outputs on an easy-to-calculate property, auditing each bin,
+and choosing which bins
 to draw from.
 
 This audit makes the split exact: a target property's variance divides
@@ -39,7 +40,8 @@ the better choice. Given showing wins, a property's curvature determines
 the shape of the fix: concentrate on one bin for an average goal, spread
 across bins for coverage. Showing further buys expressiveness a knob
 cannot: because the specification lives in the examples, it can steer
-toward a target recognized but never named.
+toward properties hard to quantify but easy to *show* such as a favorite
+collection of images.
 
 ## 1 Introduction
 

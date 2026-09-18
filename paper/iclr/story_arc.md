@@ -169,12 +169,10 @@ edited.
   clause, §4.2).
 - The scorer-free "lift" tool for tacit steering (rank correlation 0.94,
   §3.4) — related to but distinct from beat 13's expressiveness framing.
-- **Bin-granularity / choice-of-$\pi$ discussion.** Checked: this version
-  carries only one sentence on it (§3.2: "finer bins move variance into
-  $E$, coarser into $T$"). The parent (extended) paper had a fuller
-  discussion of how $\pi$'s choice matters and its influence on the split;
-  it did not make it into this version. Act II beat 5 (the two-extremes
-  argument) now covers the *intuition* in the main text, but a short
-  appendix subsection spelling out the choice-of-$\pi$ tradeoff in more
-  detail is worth adding if space allows — it wouldn't count against the
-  9-page limit.
+- ~~Bin-granularity / choice-of-$\pi$ discussion.~~ **Done.** Added
+  Appendix F: the two-extremes argument (Act II beat 5), plus the
+  already-verified in-paper evidence that a key's *structure*, not its
+  bin count, sets the split (§4.2's structured-vs-random 50-bin ablation)
+  and that key choice is itself a data-side audit (§4.2's rank-correlation
+  0.88 result). Cross-referenced from §3.2 and Introduction Contribution
+  3. No new experiments — built entirely from results already in §4.2.

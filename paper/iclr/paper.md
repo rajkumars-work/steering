@@ -13,17 +13,17 @@
 
 ## Abstract
 
-Generative models are steered by turning knobs — prompts, guidance scales,
-tags — but every knob saturates: push it far enough and it stops moving
-the property you care about. This ceiling has two sources: a budget fixed
-by the training data before the model exists, and the subset of outputs a
-knob is confined to — the class, chemistry, or other value an input
-property names. Turning a knob — changing some other input — only ever
-moves the target property within that subset's slice of the budget, never past
-it; we call this *telling*. We introduce *showing*, which exposes
-the property's whole budget and reaches any value within it, not just
-one subset's share, by binning outputs on an easy-to-calculate property,
-auditing each bin, and choosing which bins to draw from.
+Generative models are steered by turning knobs — prompts, guidance scales
+— but every knob saturates: push it far enough and it stops moving the
+property you care about. This ceiling has two sources: a budget fixed by
+the training data before the model exists, and the subset of outputs that
+slicing — naming an image's class, a crystal's element-set — already
+confines us to. Turning a knob — changing some other input — only ever
+moves the property's average within that subset's slice of the budget,
+never past it. We introduce *showing*: partition outputs into
+easy-to-compute bins, audit each one, and combine bins in the proportions
+needed to reach any value the whole budget allows, not just one slice's
+share.
 
 This audit makes the split exact: a target property's variance divides
 into a within-bin part (telling's reach) and a between-bin part (showing's
@@ -39,29 +39,31 @@ the better choice. Given showing wins, a property's curvature determines
 the shape of the fix: concentrate on one bin for an average goal, spread
 across bins for coverage. Showing further buys expressiveness a knob
 cannot: because the specification lives in the examples, it can steer
-toward properties hard to quantify but easy to *show* such as a favorite
-collection of images.
+toward a target recognized but never named.
 
 ## 1 Introduction
 
 You have a generative model and want it to lean a certain way — images with
 the feel of nature photography, crystals with a wider band gap. You reach for
-the controls: a prompt, a guidance scale, a property tag. Past a point they
+the controls: a prompt, a guidance scale, a conditioning token. Past a point they
 stop moving the property — you push harder and the output barely changes. We
 show this ceiling is not a shortcoming of the model but a **budget**, fixed by
 the training data before the model is trained, and that a different move —
 *showing* the model examples instead of turning a knob — reaches a part of the
 budget the knob structurally cannot.
 
-*Tagging* specifies an input property — an image's class, a crystal's
+*Slicing* specifies an input property — an image's class, a crystal's
 element-set — and thereby fixes the subset of outputs you draw from.
 *Turning a knob* changes some other input, continuous or discrete, hoping
 to bias the property, without itself picking a subset. Both are *telling*:
-whichever subset a tag has fixed, or the whole space if untagged, a knob
+whichever subset slicing has fixed, or the whole space if unsliced, a knob
 can only reweight the outputs *within* it, never past that subset's own
 share of the budget. *Showing* — handing over a set of examples and asking
 for more like them — reweights the mix *across* bins instead, reaching
-values no single subset contains. Our central result makes this
+values no single subset contains. Often no input names the property
+directly — there is no *nature* class to slice on, only *forest* as a
+proxy — so we find out what a slice or a knob actually delivered by
+auditing the outputs themselves. Our central result makes this
 quantitative. A generative model produces outputs $D$ (an image, a crystal
 structure). A cheap key $P=\pi(D)$ sorts each output into a bin — an image's
 class, say; for a target property $L=\psi(D)$ — an image's aesthetic score, a
@@ -99,7 +101,7 @@ scientist who flags a promising structure, for reasons they cannot fully state
    mean 4.8–26× further on the crystal properties and ~3× on high-share image
    targets; where the between-bin share is small (brightness, aesthetic) a
    strong knob wins, a crossover $E/(E{+}T)$ predicts in advance — and the same
-   score, computed data-side, picks the key $\pi$. §4.
+   score, computed data-side, picks the key $\pi$. §4, Appendix F.
 4. **Curvature sets the recipe.** A goal that is an *average* (a rate, a
    conjunction) is reached by *concentrating* the batch on one audit-chosen
    bin; a *spread* goal (coverage of opposed properties) only by a *mix* of
@@ -207,7 +209,7 @@ $$\mathrm{Var}_{\mathcal{J}}(L) \;=\; \underbrace{\textstyle\sum_b w_b v_b}_{T\ 
 $T$ is the room *telling* works in (within one bin); $E$ the room *showing*
 works in (across bins). The split is exact for any $(\pi,L,\mathcal{J})$ and is set,
 before any model exists, by the choice of key $\pi$ — finer bins move variance
-into $E$, coarser into $T$.
+into $E$, coarser into $T$ (Appendix F).
 
 ![The budget: $\mathrm{Var}(L)$ splits into within-bin $T$ (telling) and between-bin $E$ (showing). Illustrative numbers, not measured data.](figures/fig_lotv_bandgap.png){width=70%}
 
@@ -421,9 +423,9 @@ data-side across candidate keys, also **picks the key $\pi$** (rank correlation
 0.88 to the realized ratio; a random partition floors it).
 
 On all three crystal targets the knob's 95% CI includes zero (fix the chemistry
-and the property tag does essentially nothing) while bin selection's excludes it.
+and the property-bin token does essentially nothing) while bin selection's excludes it.
 Because that denominator straddles zero, the realized *ratio* (≈41–800×) is
-statistically unstable — we report it only to convey that the tag moves
+statistically unstable — we report it only to convey that the token moves
 essentially nothing, and treat the knob-free $\sqrt{E/T}$ column (which needs no
 knob estimate) as the trustworthy equal-effort comparison. The honest statement
 for these targets is "knob shift indistinguishable from zero; showing shift
@@ -552,12 +554,16 @@ not the budget; we leave it to future work.
 
 How far a generative model can be steered toward a property is fixed, before
 training, by a budget read off the data and split into a part a knob reaches
-and a part only examples reach. The split is computable, testable, and —
-verified in two unrelated domains — predicts which targets a knob cannot
-reach and, where it falls short, which *shape* of exemplar recipe closes the
-gap: concentrate the batch on one audit-chosen bin for an average, spread it
-across bins for coverage. The practical rule: audit, see which half of the
-budget a goal lives in, and use the operation that covers it.
+and a part only examples reach. The split is computable from data alone —
+no model, no GPU — and, on crystals, correctly forecast which of three
+properties would carry over to a trained model before that model was ever
+audited. Verified in two unrelated domains, it predicts which targets a
+knob cannot reach and, where it falls short, which *shape* of exemplar
+recipe closes the gap: concentrate the batch on one audit-chosen bin for an
+average, spread it across bins for coverage. Showing also reaches what a
+knob structurally cannot: a target only recognized, never named. The
+practical rule: audit, see which half of the budget a goal lives in, and use
+the operation that covers it.
 
 ## Ethics Statement
 
@@ -676,7 +682,7 @@ Encoder–decoder transformer (6 encoder / 18 decoder layers, model dim 768,
 **≈238 M** params; 16k SentencePiece vocab), trained by supervised next-token
 cross-entropy on an Alexandria-derived set (**≈225k** structures, <20 atoms, low
 energy-above-hull, LeMat-Bulk overlap excluded). A prompt is
-`<elements> | <natoms> | <property-bin tags>`; the decoder emits a structure
+`<elements> | <natoms> | <property-bin tokens>`; the decoder emits a structure
 encoding parsed to an ASE `Atoms`. Distribution-steering uses naked
 (`elements | natoms |`) prompts. Stability = single-MACE energy vs an MP hull;
 *Combined* = SUN + MSUN (stable/metastable ∧ novel ∧ unique); also BVS-GII,
@@ -697,3 +703,34 @@ fill the convex hull of the bin points, and covering a Pareto front needs
 specialist bins unless one bin's within-bin spread already reaches the corners.
 (The variance-vs-range argument and the full pitfalls list are in the extended
 version.)
+
+### F. Choosing the key $\pi$ and bin granularity
+
+Two extremes bound a usable key. One bin for the whole distribution
+($B=1$) forces every output to share the audited mean, so $E=0$ and
+$T=\mathrm{Var}(L)$: the whole budget sits within one bin, and since
+$\psi$ is expensive, any draw returns the same average — nothing is
+targetable. One bin per output ($B=N$) is scoring every output directly,
+forfeiting the cheap-key/expensive-scorer economy the framework rests on
+(§3.1): with a single scored sample per bin there is no within-bin sample
+to estimate $v_b$ from, and the audit no longer generalizes past whichever
+outputs happened to be scored. A usable $\pi$ sits between: coarse enough
+that $g_b,v_b$ are estimated from a modest scored sample per bin, fine
+enough that bins actually differ.
+
+Bin *count* alone does not fix the split — the key's *structure* does. On
+images, coarsening 1000 ImageNet classes into a structured 50 moves $E$
+from 0.0030 to 0.0002 (§4.2, Claim 1) — the expected effect of
+coarsening — but a *random* 50-bin partition of the same size collapses
+$E$ a further $\approx$18×. Two keys of identical granularity can differ
+almost twenty-fold in what they expose, because one groups outputs by a
+property the target actually varies with and the other does not: the
+budget reads the key's structure, not its resolution.
+
+This makes key choice itself auditable rather than a modeling guess: the
+same crossover score used to compare telling and showing, $E/(E{+}T)$,
+computed data-side for each candidate key, ranks candidates by how much of
+the target's variance they expose between bins — rank correlation 0.88 to
+each key's realized bin-selection gain, with an uninformative random
+partition scoring at the floor (§4.2). Picking $\pi$ is a data-side audit
+like any other quantity in this framework, not a choice made blind.

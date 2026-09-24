@@ -285,7 +285,7 @@ sensitivity). Methods: telling (1 bin), compositional (Composable Diffusion), sh
   guidance-coupled pixel stats." Low-E end has one clean point (brightness); densifying it needs a
   fresh audit (gated ImageNet stream blocked it here).
 
-## round 6 (review.1/review.2 ICLR-2027) — strongest knob + key selection
+## round 6 (review.1/review.2) — strongest knob + key selection
 
 `src/{soft_prompt,e14_strong_knob,e15_key_selection,e14_verify,e15_verify}.py`; JSONs/figures as
 above. Full writeup: `paper/image_experiments.results.md`. Pre-registered commit `5bafc8b`.

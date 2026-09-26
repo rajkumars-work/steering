@@ -27,10 +27,22 @@ from lemat_genbench.metrics.sun_metric import SUNMetric
 # PBE-DFT reference hull. The genbench default `_omat` (OMat24 reference) is mis-calibrated
 # here (scores elemental Cu at e_above_hull=0.355 instead of ~0). Verified Cu/NaCl/MgO ≈ 0
 # with _mpa. See README "orb calibration".
+#
+# `hull_type` is required per MLIP: create_multi_mlip_preprocessor's reference-energy
+# lookup (preprocess/reference_energies.py's _retrieve_df) defaults to hull_type="dft"
+# when not set, silently scoring every MLIP against the wrong reference hull instead of
+# its own. Also, "uma" must NOT carry a "model_name" key here: get_calculator(model_name,
+# **kwargs) takes model_name as its own dispatch parameter, and passing a "model_name" key
+# inside **kwargs collides with it (TypeError on every uma calculator construction) --
+# even this module's own docstring example crashes the same way. Both failures are caught
+# per-structure by multi_mlip_preprocess.py and only logged as WARNINGs, so a broken 3-MLIP
+# run completes without error and silently degrades. See the private eval repo's BUGS.md
+# ("LeMat-Bulk-hull scorers never set hull_type" / uma's model_name collision) for the full
+# root-cause writeup -- ported here 2026-09-26.
 MLIP_CFG = {
-    "orb":  {"model_type": "orb_v3_conservative_inf_mpa", "device": "cuda"},
-    "mace": {"model_type": "mp", "device": "cuda"},
-    "uma":  {"model_name": "uma-s-1p1", "task": "omat", "device": "cuda"},
+    "orb":  {"model_type": "orb_v3_conservative_inf_mpa", "device": "cuda", "hull_type": "orb_conserv_inf"},
+    "mace": {"model_type": "mp", "device": "cuda", "hull_type": "mace_mp"},
+    "uma":  {"task": "omat", "device": "cuda", "hull_type": "uma"},
 }
 
 

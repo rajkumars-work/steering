@@ -59,7 +59,15 @@ def _codegen_setstate_compat(self, d: dict) -> None:
 _CodeGenMixin.__setstate__ = _codegen_setstate_compat
 
 
-DEFAULT_MACE_PATH = "/data/assets/checkpoints/mace/mace-mp-0b3-medium.model"
+DEFAULT_MACE_PATH = os.environ.get(
+    "MACE_MODEL_PATH", "/data/assets/checkpoints/mace/mace-mp-0b3-medium.model"
+)
+# Hardcoded for the original author's own machine; several functions below
+# bind this as a default *argument* value at import time, so the env var
+# must be set before this module is first imported -- same issue, same fix,
+# as validity/structural.py's MACE_MODEL_PATH (see its own comment there).
+# Shares the MACE_MODEL_PATH env var name on purpose, since both point at
+# the same model file. Found 2026-11-09.
 DEFAULT_EHULL_CACHE_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", ".ehull_cache")
 DEFAULT_MP_API_KEY = "TnTrt09078le8A5ssIq5ZOn05hxOKdCO"

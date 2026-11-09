@@ -104,7 +104,19 @@ except ImportError:
 # import it from validity.structural.
 from chem.stability import load_stability_calc  # noqa: F401
 
-MACE_MODEL_PATH = "/data/assets/checkpoints/mace/mace-mp-0b3-medium.model"
+MACE_MODEL_PATH = os.environ.get(
+    "MACE_MODEL_PATH", "/data/assets/checkpoints/mace/mace-mp-0b3-medium.model"
+)
+# Hardcoded for the original author's own machine, with no override as
+# shipped -- load_mace() below binds this as a default *argument* value at
+# import time, so a path_override.py-style "set the module attribute after
+# import" monkeypatch (which works fine for screening.py's ED_CHECKPOINTS,
+# read fresh inside a function body) does NOT work here: the default is
+# already baked into the function object by the time any override code runs.
+# The env var must be set BEFORE this module is first imported. Found
+# running screen_batch(full=True) for real on a fresh public clone,
+# 2026-11-09 -- see cues/public/docs/HANDOFF_NEAR_EQUILIBRIUM_REBUILD.md's
+# "Known gap" section for the full story and the working download recipe.
 MP_API_KEY = "TnTrt09078le8A5ssIq5ZOn05hxOKdCO"
 _CM1_TO_THZ = 0.029979245800  # 1 cm⁻¹ in THz
 
